@@ -23,6 +23,8 @@ Unicode input, deletion, restoring a character, and moving focus preserved the t
 
 The owner requested Playwright headless tests and GitHub Actions. We added repeatable checks for Button clicks and Enter, Thai input/echo, deletion, focus, font loading and bytes, the font license, and wrapping. Local Chromium runs passed, including a run where the tests started and stopped their own dev server.
 
+The first Linux CI run caught a startup mistake: Dioxus returned HTTP 200 for its build-waiting page, so the test began before compilation finished. The runner now completes the build before starting the server. The [next CI run passed](https://github.com/jedt3d/papyrus/actions/runs/38080487726), including Rust checks and the headless browser test on a fresh Linux runner.
+
 The workflow runs on source changes in pushes and pull requests. It keeps screenshots, environment records, reports and failure traces. A passing Unicode `fill` test is not an OS IME result. Automation should save time, not manufacture evidence.
 
 See the [browser test guide](https://github.com/jedt3d/papyrus/blob/main/source/browser-tests/README.md) and [Thai evidence](https://github.com/jedt3d/papyrus/blob/main/agent-docs/evidence/phase-0-thai-web.md).

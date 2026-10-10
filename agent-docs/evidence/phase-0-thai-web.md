@@ -34,6 +34,8 @@ Playwright 1.64.0 passed against clean revision `51a8ae52b8a6bfe508cee546452e95e
 
 The [first Linux CI run](https://github.com/jedt3d/papyrus/actions/runs/38080270662) failed at navigation before any story assertion. Its saved snapshot showed Dioxus’s build-waiting page at 74% while the HTTP readiness check had already returned 200. The runner now completes `dx build` before starting `dx serve`, keeping compilation inside startup time rather than the 30-second behavior test.
 
+The [corrected Linux CI run](https://github.com/jedt3d/papyrus/actions/runs/38080487726) passed on clean revision `04a9566b155ae68048f2f8f2aa473b9b96ede186`: three Rust checks and one end-to-end browser test. The browser suite completed in 46.4 seconds including startup; the whole job took 1 minute 40 seconds. Its [environment record](phase-0-web-playwright-ci.json) reports Chromium 156.0.8078.4 on Linux x64, the same CSS hash, 1280 × 720 at scale 1, loaded Thai font, matching input/echo and zero composition counters. The run uploaded its HTML report and captures as `web-browser-tests`; that artifact expires after 14 days.
+
 ## Composition limits
 
 Automation's composition counters stayed at zero. The active macOS keyboard was ABC; Thai and Vietnamese Telex were listed as enabled. The native input-source control timed out, and Ctrl+Space did not change the selected source. Unicode entry through automation did not establish an OS IME session.
