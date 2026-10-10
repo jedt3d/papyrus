@@ -81,29 +81,32 @@
     {
       "state": 0,
       "path": "phase-0-blitz-desktop-zero.png",
-      "png_size": [
-        4718592,
-        4292935744
+      "sha256": "07eb5f051cc6113f3eb39e635e025d91a9fbc71aa760fa025a8aab44aa7b8bd2",
+      "image_size": [
+        2560,
+        1504
       ],
-      "sha256": "07eb5f051cc6113f3eb39e635e025d91a9fbc71aa760fa025a8aab44aa7b8bd2"
+      "media_type": "image/jpeg"
     },
     {
       "state": 1,
       "path": "phase-0-blitz-desktop-one.png",
-      "png_size": [
-        4718592,
-        4292935744
+      "sha256": "82407660f66df9ba758edfce261b64b82e5ccb25631a63a4425b5d25aa264e59",
+      "image_size": [
+        2560,
+        1504
       ],
-      "sha256": "82407660f66df9ba758edfce261b64b82e5ccb25631a63a4425b5d25aa264e59"
+      "media_type": "image/jpeg"
     },
     {
       "state": 2,
       "path": "phase-0-blitz-desktop-two.png",
-      "png_size": [
-        4718592,
-        4292935744
+      "sha256": "e13ac337db76dfda69e83788fce2a20d974266cb99bf4828186ee68470d8d45b",
+      "image_size": [
+        2560,
+        1504
       ],
-      "sha256": "e13ac337db76dfda69e83788fce2a20d974266cb99bf4828186ee68470d8d45b"
+      "media_type": "image/jpeg"
     }
   ],
   "interaction": {
@@ -156,5 +159,6 @@
     "Linux",
     "Release packaging",
     "Other graphics backends"
-  ]
+  ],
+  "capture_metadata_correction": "Checked file signatures on 11 October 2026: the original .png paths contain JPEG bytes. Dimensions are 2560 by 1504; original capture bytes and hashes are unchanged."
 }

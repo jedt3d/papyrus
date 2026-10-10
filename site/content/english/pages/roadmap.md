@@ -13,7 +13,7 @@ The developer diary is published and the [first Button story works on Dioxus Web
 
 Run shared Button, Card, and TextInput stories on Dioxus Web, Blitz WASM, and Blitz Desktop. Pin tool and renderer versions. Establish reload/restart, image capture, layout measurement, real input, focus, Thai text, and IME limitations.
 
-The Button baselines are verified on Web, Blitz WASM and [Blitz Desktop on macOS/Metal]({{< relref "diary/005-first-blitz-desktop.md" >}}). [Thai/input checks and automatic Web tests]({{< relref "diary/004-thai-input-and-blitz-wasm.md" >}}) record their limits. [Card and TextInput (#4)](https://github.com/jedt3d/papyrus/issues/4) are next; genuine composition and WebGL-only behavior remain unverified.
+The Button baselines are verified on Web, Blitz WASM and [Blitz Desktop on macOS/Metal]({{< relref "diary/005-first-blitz-desktop.md" >}}). [Thai/input checks and automatic Web tests]({{< relref "diary/004-thai-input-and-blitz-wasm.md" >}}) record their limits. [Shared Card and TextInput fixtures]({{< relref "diary/006-shared-stories.md" >}}) now pass their scoped baseline on all three targets. [Repeatable capture/layout (#5)](https://github.com/jedt3d/papyrus/issues/5) is next; genuine composition and WebGL-only behavior remain unverified.
 
 **Gate:** traceable results for every target, including failures and unknowns. See the [agent experiment brief](https://github.com/jedt3d/papyrus/blob/main/agent-docs/phase-0.md).
 

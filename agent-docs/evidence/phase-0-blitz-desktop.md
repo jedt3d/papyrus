@@ -16,7 +16,7 @@ Source: [`3a251335b17a95770bed5fdb2f5cf603d1457c10`](https://github.com/jedt3d/p
 | Render path | Vello Hybrid 0.11.0, wgpu_context 0.10.0, wgpu 30.0.1; Metal-only run |
 | Window request | 1280 × 720 logical content area |
 | Actual window surface / scale | 1280 × 720 physical pixels / 1, reported by winit |
-| Captures | 2560 × 1504 PNGs from Codex native app capture, including window chrome and extra blank area |
+| Captures | 2560 × 1504 JPEGs (original paths use `.png`) from Codex native app capture, including window chrome and extra blank area |
 | CSS SHA-256 | fc32371c9a9fa034d920d0e09b27293e805cdd07410b02300b3d6ff7370203f1 |
 
 The run explicitly set `WGPU_BACKEND=metal`. The installed [wgpu_context implementation](https://docs.rs/wgpu_context/0.10.0/src/wgpu_context/lib.rs.html) applies `Backends::from_env()` to the instance; [wgpu's backend parser](https://docs.rs/wgpu-types/30.0.1/src/wgpu_types/backend.rs.html) maps `metal` to Metal alone. A successfully drawn window under that restriction establishes the Metal path. We did not query the GPU adapter name or compare other backends.

@@ -11,4 +11,6 @@ Read root `AGENTS.md` first. This directory holds planning and evidence for AI a
 - [Blitz WASM evidence](evidence/phase-0-blitz-wasm.md): real canvas clicks, font delivery, selected WebGPU context, and input limits.
 - [Blitz Desktop evidence](evidence/phase-0-blitz-desktop.md): native macOS/Metal Button clicks, actual surface/scale, shared fonts, and capture/packaging limits.
 
+- [Shared story evidence](evidence/phase-0-shared-stories.md): eight selectable fixtures on all three targets, real editing, the disabled-click fix, and unresolved styling/key mapping.
+
 Only `Papyrus.md` and its English translation are explicitly published by the site build. Other agent notes are not automatically published. Keep actual decisions and verified evidence in dated diary entries; mark unresolved work as planned.

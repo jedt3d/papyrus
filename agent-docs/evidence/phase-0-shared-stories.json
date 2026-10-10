@@ -1,0 +1,366 @@
+{
+  "checked_on": "2026-10-11",
+  "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+  "tracked_source_dirty": false,
+  "working_tree_note": "Untracked evidence files existed during Web capture; its raw dirty flag is retained.",
+  "assets_sha256": {
+    "source/src/lib.rs": "1281f9ba87f6a81e1dd782a80394c3565f4a70a4494a84b27fcd7f4cdafe4154",
+    "source/assets/story.css": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "source/public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+    "source/public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+    "source/Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+    "source/blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+    "source/blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208"
+  },
+  "desktop_binary_sha256": "cd9580264b17a1b20b98050a3f4c691405abdc766c46fcdb104f5427fb40eb9d",
+  "wasm_binary_sha256": "3f7d9b37c4c3f9d0aca2a69a7caedd3425bbcd883583710d9abc59580de57e9f",
+  "environment": {
+    "os": "macOS 26.7 (25G229)",
+    "architecture": "arm64",
+    "rust": "1.98.1",
+    "dioxus": "0.7.10",
+    "blitz_revision": "7832c177ff272128154bac58afe56c2b9164b417",
+    "native_wrapper": "0.7.0",
+    "blitz_packages": "0.3.0-beta.2",
+    "vello_hybrid": "0.11.0",
+    "parley": "0.12.0",
+    "winit": "0.31.0-beta.3"
+  },
+  "web": {
+    "browser": "Chromium",
+    "version": "156.0.8078.4",
+    "playwright": "1.64.0",
+    "viewport": [
+      1280,
+      720
+    ],
+    "scale_factor": 1,
+    "headless_tests_passed": 4,
+    "ci": "https://github.com/jedt3d/papyrus/actions/runs/38086229382"
+  },
+  "wasm": {
+    "browser": "Codex In-app Browser",
+    "version": null,
+    "context": "webgpu",
+    "viewport": [
+      1280,
+      720
+    ],
+    "scale_factor": 1,
+    "canvas": [
+      1280,
+      720
+    ],
+    "story_dom_buttons": 0,
+    "story_dom_inputs": 0,
+    "trunk": "0.21.14",
+    "wasm_bindgen": "0.2.129"
+  },
+  "desktop": {
+    "target": "aarch64-apple-darwin",
+    "backend_environment": {
+      "WGPU_BACKEND": "metal"
+    },
+    "xcode": "27.0 (27A266a)",
+    "requested_logical_content_size": [
+      1280,
+      720
+    ],
+    "reported_physical_surface_size": [
+      2560,
+      1440
+    ],
+    "reported_scale_factor": 2,
+    "capture_size": [
+      2560,
+      1504
+    ],
+    "launch": "Direct unchanged executable inside the temporary Papyrus.app automation wrapper",
+    "startup_output": "Papyrus desktop: surface=PhysicalSize { width: 2560, height: 1440 }; scale=2; renderer=vello-hybrid",
+    "story_accessibility_exposed": false
+  },
+  "baseline_results": {
+    "all_eight_picker_fixtures_opened_on_each_target": true,
+    "card_default_and_long_text_visible": true,
+    "primary_button_blitz_after_two_clicks": 2,
+    "disabled_button_after_click": 0,
+    "long_button_after_click": 1,
+    "default_input_blitz": [
+      "Papyrus",
+      "Papyrusx",
+      "Papyrus"
+    ],
+    "disabled_input_after_click_and_key": "Read only fixture",
+    "long_input_wasm_suffix": "visible.x",
+    "long_input_desktop_suffix": "visible.u",
+    "default_input_after_switch_away_and_back": "Papyrus"
+  },
+  "failure": {
+    "source_revision": "24e9d3306f777986780bb990ac11702e603e6b97",
+    "target": "Blitz WASM",
+    "story": "button/disabled",
+    "observed_count_after_click": 1,
+    "fix_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+    "regression_test": "disabled_button_rejects_clicks_delivered_by_a_renderer"
+  },
+  "checks": {
+    "shared_public_tests_passed": 4,
+    "shared_fmt": "passed",
+    "shared_clippy": "passed",
+    "web_wasm_check": "passed",
+    "wasm_build": "passed",
+    "wasm_clippy": "passed",
+    "desktop_build": "passed",
+    "desktop_clippy": "passed"
+  },
+  "limits": [
+    "OS IME and Thai entry on Blitz remain untested",
+    "Native long-input key request x produced u once; cause unisolated",
+    "Selected picker background differs from Web on both Blitz targets; cause unisolated",
+    "Raw captures are not calibrated image/layout comparisons",
+    "Desktop result covers only macOS/Metal",
+    "Release packaging, WebGL-only and other browser/platform coverage untested"
+  ],
+  "captures": [
+    {
+      "path": "phase-0-stories-desktop-button-disabled.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "707963f73561ac423aa3b84f0a2c257e247321caff74cb3bbfdacb3c6ecdd42f"
+    },
+    {
+      "path": "phase-0-stories-desktop-button-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "eb064f79b029b96b5646df1ce81ee64a3b60f45926a80b113cfa1e1e5c454cf9"
+    },
+    {
+      "path": "phase-0-stories-desktop-button-primary.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "946c69b1ae4d2fe767d3982517d9827923b311928954fe00e0de2e1ee71a1d0b"
+    },
+    {
+      "path": "phase-0-stories-desktop-card-default.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "b3a7dde024dfa82b187abd4a3918a8bafea599536e1439cd7290c1bbbe3fb5da"
+    },
+    {
+      "path": "phase-0-stories-desktop-card-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "9604c6579b82a50d1b029a5d6c4b59af2863fdcc5a495f20e160fb29177fd16f"
+    },
+    {
+      "path": "phase-0-stories-desktop-input-deleted.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "e7c39a655b7c68b0e07b6c3bddd879c0189e69c05686c990a917e8050e774fa6"
+    },
+    {
+      "path": "phase-0-stories-desktop-input-disabled.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "ae3d525da339203a7692d62de133e267548e8bfee66905bd58abb2f44a1b2d7e"
+    },
+    {
+      "path": "phase-0-stories-desktop-input-edited.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "5771f12c2ef20e3cba48936ccde3f74507d35a2a68c55eb747c7b9c8d0935a13"
+    },
+    {
+      "path": "phase-0-stories-desktop-input-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "9a7114fe6942a6685f9b3b9e05d119bd8917ea5ce69eb36559790a8dc45af876"
+    },
+    {
+      "path": "phase-0-stories-desktop-input-reset.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        2560,
+        1504
+      ],
+      "sha256": "bb793d1dab7efd21f4ba977dc69bd36a41291378947aa5fb299734f75591f484"
+    },
+    {
+      "path": "phase-0-stories-wasm-button-disabled.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "e4c3c719e4e6d2fd9f49ca5d4cba54a2362df27ed682480387ba81578cb7c14c"
+    },
+    {
+      "path": "phase-0-stories-wasm-button-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "adb33e3df00489bbb12613baa5a20c33aa6fe8d269f7dbc2e779be043b2dad72"
+    },
+    {
+      "path": "phase-0-stories-wasm-button-primary.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "646b8d718edb1d3d2bb6402116ff1b20bb7e4a86f76f9ad2e6eaa063ab82c79a"
+    },
+    {
+      "path": "phase-0-stories-wasm-card-default.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "243f9e159718fd4b94e51989d2caac65871cd11ed76815924657b24108a81665"
+    },
+    {
+      "path": "phase-0-stories-wasm-card-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "460ca891abe5d13611ee356a48b4bc82562aca56ff818abd32002d6ffd3bf1e9"
+    },
+    {
+      "path": "phase-0-stories-wasm-disabled-failure.jpg",
+      "source_revision": "24e9d3306f777986780bb990ac11702e603e6b97",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "88c75cf6e02722dc724349f5fb49d57fd00836be2c7dd9d0a2a5d59f4cdc4d1b"
+    },
+    {
+      "path": "phase-0-stories-wasm-input-deleted.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "759314ccd78c042cce4233aa661174fef4c37345427c6bb1b75f9956a3ba2fd1"
+    },
+    {
+      "path": "phase-0-stories-wasm-input-disabled.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "4e921a4e0d21f8aa6007cc528aed14f69957193dc5223355894cd02fa1609c47"
+    },
+    {
+      "path": "phase-0-stories-wasm-input-edited.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "2fd737994b3f672512d205e18a8f536a244f05ff9c3360a9d3508a9562bf20fb"
+    },
+    {
+      "path": "phase-0-stories-wasm-input-long.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "272e36425512744f790ee07efbe3aa24094db4bd054d533ad3291e972b398cc8"
+    },
+    {
+      "path": "phase-0-stories-wasm-input-reset.jpg",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/jpeg",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "4a13a6c304504ad54d69efff57e018ab2f87d0a5b5fd7baaffe4f39cae5faf76"
+    },
+    {
+      "path": "phase-0-stories-web-button-long.png",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "678196629127bc179d2bd727a0ee0c56e310b10062138d8320841ea5873b933e"
+    },
+    {
+      "path": "phase-0-stories-web-card-long.png",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "5f5c2a37b5351318a0321cc57ec756ec5cdbe61104f011344a28613b78bf739a"
+    },
+    {
+      "path": "phase-0-stories-web-input-edited.png",
+      "source_revision": "31f48921f9c79b14e4880ca400bdcb423a46b499",
+      "media_type": "image/png",
+      "image_size": [
+        1280,
+        720
+      ],
+      "sha256": "0bbefa51662105f1b8d2b7bf1c66f9cb948a6a149c189ee66169f7bd97927a76"
+    }
+  ]
+}
