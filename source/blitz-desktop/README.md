@@ -1,6 +1,6 @@
 # Blitz Desktop experiment
 
-This launcher opens a native Blitz window. It imports `papyrus-stories::Preview`, including `button/primary`, from the shared library. The Button label, callback, CSS declarations, Thai fixtures and font bytes are the same as the Web and WASM experiments.
+This launcher opens a native Blitz window. It imports `papyrus-stories::Preview`, including Button, Card, TextInput and the [shared fixture picker](../README.md#choose-the-same-fixture-on-each-target), from the shared library. Props, callbacks, CSS declarations, text fixtures and font bytes are the same as the Web and WASM experiments.
 
 ## Build and run
 

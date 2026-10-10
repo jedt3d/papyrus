@@ -1,6 +1,27 @@
 # Papyrus software source
 
-This is the source-code area for Papyrus. It contains shared `button/primary` and `text-input/thai` stories. They are small experiments, not the complete Papyrus workbench.
+This is the source-code area for Papyrus. It contains shared Button, Card and TextInput stories. They are small experiments, not the complete Papyrus workbench.
+
+## Choose the same fixture on each target
+
+Every launcher imports `papyrus_stories::Preview`. Use the buttons at the top to choose a fixture. The visible `Story:` line and `data-story-id` identify the selection; Blitz paints them inside its canvas or native window.
+
+| Picker button | Story identity | Starting fixture |
+| --- | --- | --- |
+| Button / Primary | `button/primary` | Press me; count 0 |
+| Button / Disabled | `button/disabled` | Disabled Press me; count 0 |
+| Button / Long content | `button/long-content` | Long wrapping label; count 0 |
+| Card / Default | `card/default` | Short title and body, 320px maximum card width |
+| Card / Long content | `card/long-content` | Same title with a shared long paragraph |
+| TextInput / Default | `text-input/default` | Editable `Papyrus` with visible value feedback |
+| TextInput / Disabled | `text-input/disabled` | Disabled `Read only fixture` with matching feedback |
+| TextInput / Long content | `text-input/long-content` | Shared long paragraph, editable input and wrapping feedback |
+
+Select another fixture and return to reset its local state. Clicking the already selected picker does not reset it. Reload Web/WASM or restart Desktop to return to Button / Primary. That selection also displays the existing `text-input/thai` experiment below the Button.
+
+Card is a non-interactive text container, so disabled does not apply. There are no target-specific component or fixture overrides. Both Blitz launchers use the existing embedded stylesheet/font delivery adaptation; Web uses served assets. Disabled props omit the HTML boolean attribute when false because the pinned Native adapter would otherwise keep `disabled="false"` present.
+
+For a baseline check, inspect both Cards and their final words. Type and delete a character in the default TextInput and compare its value with the feedback; repeat with long content. Try the disabled fixtures and confirm that their values/counts stay unchanged. Click the long Button and confirm count 1. The generic TextInput is controlled for this simple editing check; the separate Thai observer stays uncontrolled for later composition checks. Neither proves genuine IME support.
 
 ## Run the Button story
 
@@ -36,7 +57,7 @@ Dioxus prints the output location. Serve that bundle with an HTTP server; do not
 
 ## Shared code and assets
 
-`src/lib.rs` exports the Button, both stories, the preview, Thai fixtures, and the stylesheet asset. `src/main.rs` only selects the Web launcher. Blitz experiments import the library without copying the component. Their launch, font, and asset setup needs separate validation.
+`src/lib.rs` exports Button, Card, TextInput, their stories, the shared preview and text fixtures, and the stylesheet asset. `Preview` loads styles once so changing the selection keeps the same CSS. `src/main.rs` only selects the Web launcher. Blitz experiments import the library without copying components. Their launch, font, and asset setup needs separate validation.
 
 The CSS is ordinary CSS. Its presence here proves no Blitz compatibility. The Web feature includes Dioxus devtools because the 0.7.10 Web history implementation gets its required `web-sys/Location` feature through devtools.
 

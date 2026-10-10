@@ -1,6 +1,6 @@
 # Automatic Web browser checks
 
-The owner requested headless Playwright and GitHub Actions. These tests exercise the real Dioxus Web bundle in Chromium. They check Button clicks and Enter, Thai input/echo, deletion, focus, bundled-font loading and bytes, its license, and long-text wrapping. `check-web.mjs` also runs through Codex's documented browser API.
+The owner requested headless Playwright and GitHub Actions. These tests exercise the real Dioxus Web bundle in Chromium. They check the shared story picker, Card text/wrapping, TextInput editing/feedback and fixture reset, disabled controls, and long Button labels. The existing Button clicks/Enter, Thai input/echo, deletion, focus, fonts/bytes/license and wrapping checks remain. `check-web.mjs` also runs through Codex's documented browser API.
 
 ## Run
 

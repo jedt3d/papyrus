@@ -1,6 +1,6 @@
 # Blitz WASM experiment
 
-This launcher imports the same `papyrus-stories::Preview`, Button, Thai fixtures, CSS source and licensed fonts as Dioxus Web. It renders through Blitz into a browser canvas. It is not a Desktop result or the full Papyrus workbench.
+This launcher imports the same `papyrus-stories::Preview`, Button, Card, TextInput, fixtures, CSS source and licensed fonts as Dioxus Web. It renders through Blitz into a browser canvas. Use the [shared fixture picker and baseline steps](../README.md#choose-the-same-fixture-on-each-target) after building. It is not a Desktop result or the full Papyrus workbench.
 
 ## Build and open
 
