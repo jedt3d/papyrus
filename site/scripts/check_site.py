@@ -12,9 +12,18 @@ class PageLinks(HTMLParser):
         super().__init__()
         self.links = []
         self.ids = set()
+        self.language = None
+        self.alternates = {}
+        self.language_links = {}
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'html':
+            self.language = attrs.get('lang')
+        if tag == 'link' and attrs.get('rel') == 'alternate' and attrs.get('hreflang'):
+            self.alternates[attrs['hreflang']] = attrs.get('href')
+        if tag == 'a' and attrs.get('hreflang'):
+            self.language_links[attrs['hreflang']] = (attrs.get('href'), attrs.get('aria-current'))
         if 'id' in attrs:
             self.ids.add(attrs['id'])
         for name in ('href', 'src'):
@@ -49,9 +58,19 @@ def check_site():
             elif url.fragment and target in pages and unquote(url.fragment) not in pages[target].ids:
                 failures.append(f'{file.name}: missing anchor {raw}')
     assert not failures, '\n'.join(failures)
-    proposal = (ROOT / 'proposal/index.html').read_text()
-    assert 'lang=th' in proposal or 'lang="th"' in proposal
-    assert 'mermaid' in proposal, 'Proposal diagram output is missing'
+    proposal_urls = {'en': urljoin(BASE, 'proposal/'), 'th': urljoin(BASE, 'proposal/th/')}
+    for language, path in [('en', 'proposal/index.html'), ('th', 'proposal/th/index.html')]:
+        file = ROOT / path
+        assert file in pages, f'Missing {language} proposal'
+        page = pages[file]
+        assert page.language == language, f'Wrong HTML language for {path}'
+        for target_language, target_url in proposal_urls.items():
+            assert page.alternates.get(target_language) == target_url, f'Missing language alternate in {path}'
+            link, current = page.language_links[target_language]
+            assert urljoin(BASE, link) == target_url, f'Wrong language link in {path}'
+            assert (current == 'page') == (target_language == language), f'Wrong active language in {path}'
+        assert page.alternates.get('x-default') == proposal_urls['en'], f'English must be the default in {path}'
+        assert 'mermaid' in file.read_text(), f'Proposal diagram output is missing in {path}'
     assert not (ROOT / 'agent-docs').exists(), 'Agent directory must not be auto-published'
     print(f'Checked {checked} internal links/assets across {len(pages)} HTML pages')
 

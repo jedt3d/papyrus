@@ -6,11 +6,13 @@ on:
     paths:
       - 'site/**'
       - 'agent-docs/Papyrus.md'
+      - 'agent-docs/Papyrus.en.md'
       - '.github/workflows/pages.yml'
   pull_request:
     paths:
       - 'site/**'
       - 'agent-docs/Papyrus.md'
+      - 'agent-docs/Papyrus.en.md'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 

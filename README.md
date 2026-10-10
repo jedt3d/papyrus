@@ -4,6 +4,7 @@ Papyrus is a planned Rust component workbench for designing, previewing, and che
 
 - **Developer diary:** https://jedt3d.github.io/papyrus/
 - **Original proposal:** [agent-docs/Papyrus.md](agent-docs/Papyrus.md) (Thai)
+- **Published proposal:** [English (default)](https://jedt3d.github.io/papyrus/proposal/) · [Thai](https://jedt3d.github.io/papyrus/proposal/th/). English source: [agent-docs/Papyrus.en.md](agent-docs/Papyrus.en.md).
 - **Next experiment:** [agent-docs/phase-0.md](agent-docs/phase-0.md)
 - **Web stories:** [run guide](source/README.md), [Thai/input evidence](agent-docs/evidence/phase-0-thai-web.md), and [headless browser tests](source/browser-tests/README.md).
 - **Blitz WASM:** [run guide](source/blitz-wasm/README.md) and [verified evidence](agent-docs/evidence/phase-0-blitz-wasm.md).
@@ -23,7 +24,7 @@ papyrus/
 └── .github/      Publishing workflow
 ```
 
-The three areas are intentionally separate. The site exports only the original proposal from agent documents, rather than exposing every agent note.
+The three areas are intentionally separate. The site exports the proposal and its English translation from agent documents, rather than exposing every agent note.
 
 ## Priorities
 
@@ -54,7 +55,7 @@ pnpm build
 python3 scripts/check_site.py
 ```
 
-Python 3 is used by the static link/path check (also run in CI). Output is `site/public/` and is ignored by Git. The build synchronizes the original proposal and regenerates Hugoplate theme tokens before Hugo runs.
+Python 3 is used by the static link/path check (also run in CI). Output is `site/public/` and is ignored by Git. The build synchronizes both proposal languages and regenerates Hugoplate theme tokens before Hugo runs.
 
 ## Publish and write
 
@@ -62,7 +63,7 @@ Pushes to `main` build and deploy through `.github/workflows/pages.yml`; pull re
 
 - Diary entries: `site/content/english/diary/`.
 - Public roadmap/reference/user guide pages: `site/content/english/pages/`.
-- Proposal: edit `agent-docs/Papyrus.md` when a proposal change is intended. Its public page is generated.
+- Proposal: edit `agent-docs/Papyrus.md` (Thai) and `agent-docs/Papyrus.en.md` (English) when a proposal change is intended. Keep the versions aligned; both public pages are generated. Other site content remains in English.
 - Theme tokens: `site/data/theme.json`.
 - Local presentation overrides: `site/layouts/` and `site/assets/css/custom.css`.
 

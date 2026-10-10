@@ -7,6 +7,10 @@
   lang="{{ .Params.content_language | default site.Language.Locale | default `en-US` }}"
   itemtype="http://schema.org/WebPage">
   <head>
+    {{ range .Params.proposal_languages }}
+    <link rel="alternate" hreflang="{{ .lang }}" href="{{ .url | absURL }}">
+    {{ if eq .lang "en" }}<link rel="alternate" hreflang="x-default" href="{{ .url | absURL }}">{{ end }}
+    {{ end }}
     <!-- head (don't cache it) -->
     {{ partial "essentials/head.html" . }}
 

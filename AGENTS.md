@@ -12,7 +12,7 @@ The proposal is a design reference, not an instruction to implement every future
 
 - `source/`: Rust application code, renderer experiments, software tests and fixtures.
 - `site/`: Hugo/Hugoplate developer diary and future public software reference/user guide.
-- `agent-docs/`: agent briefs, planning and evidence. Only the original proposal is deliberately exported to the site.
+- `agent-docs/`: agent briefs, planning and evidence. The proposal and its English translation are deliberately exported to the site.
 
 Keep `AGENTS.md` and `README.md` at the repository root. Use these canonical uppercase names; do not create lowercase duplicates.
 
@@ -76,7 +76,7 @@ pnpm build
 python3 scripts/check_site.py
 ```
 
-`dev` and `build` synchronize the original proposal from `agent-docs/Papyrus.md`. Do not edit the generated `site/content/english/pages/proposal.md`; edit the canonical proposal only when requested. Record changes to the proposal explicitly.
+`dev` and `build` synchronize the Thai proposal from `agent-docs/Papyrus.md` and its Plain English translation from `agent-docs/Papyrus.en.md`. English is the default at `/proposal/`; Thai is at `/proposal/th/`. Edit these sources when a proposal change is requested; the two `proposal*.md` pages under `site/content/english/pages/` are generated. When revising either source, check both versions for matching scope, sections, diagrams and citations. Preserve the original Thai wording unless a content change is requested.
 
 Hugoplate uses Hugo's current `layouts/home.html`, `layouts/baseof.html`, and `layouts/_partials/` conventions, plus Tailwind CSS v4. Add local overrides under `site/layouts/` and `site/assets/css/custom.css`; preserve vendored theme files. Edit `site/data/theme.json`, not generated theme CSS. Keep dependency lockfiles.
 

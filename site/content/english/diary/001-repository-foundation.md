@@ -11,7 +11,7 @@ draft: false
 
 Papyrus begins with three independent areas: `source/` for software, `site/` for public publishing, and `agent-docs/` for AI agent planning. Root `README.md` and `AGENTS.md` explain the boundary and priorities.
 
-The original Thai proposal is preserved in `agent-docs/Papyrus.md`. The Hugo build creates its [public reading page]({{< relref "pages/proposal.md" >}}) from that source; it does not publish every agent document.
+The original Thai proposal is preserved in `agent-docs/Papyrus.md`. The Hugo build creates its [public reading page]({{< relref "pages/proposal-th.md" >}}) from that source; it does not publish every agent document.
 
 ## Publishing foundation
 

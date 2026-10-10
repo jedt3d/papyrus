@@ -5,6 +5,19 @@ const os = require('node:os');
 const path = require('node:path');
 const { proposalPage, syncProposal } = require('./syncProposal');
 
+test('publishes English at the default proposal URL and Thai at its own URL', () => {
+  const english = proposalPage('**1. Purpose**\n\nEnglish proposal.\n', 'en');
+  const thai = proposalPage('**1. ขอบเขต**\n\nต้นฉบับไทย\n', 'th');
+  assert.match(english, /content_language: "en"/);
+  assert.match(english, /url: "\/proposal\/"/);
+  assert.ok(english.endsWith('## 1. Purpose\n\nEnglish proposal.\n'));
+  assert.match(thai, /url: "\/proposal\/th\/"/);
+  for (const page of [english, thai]) {
+    assert.match(page, /label: "English"/);
+    assert.match(page, /label: "ไทย"/);
+  }
+});
+
 test('preserves Thai, code fences and links while adding section navigation', () => {
   const body = '**1. ขอบเขต**\n\n[Blitz](https://blitz.is)\n\n```mermaid\nflowchart TD\n A --> B\n```\n';
   const result = proposalPage(body);

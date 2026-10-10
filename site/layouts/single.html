@@ -1,6 +1,13 @@
 {{ define "main" }}
 <article class="reading-shell" {{ with .Params.content_language }}lang="{{ . }}"{{ end }}>
   <p class="diary-kicker">Papyrus / {{ if eq .Section "diary" }}Developer diary{{ else }}Project documents{{ end }}</p>
+  {{ with .Params.proposal_languages }}
+  <nav class="diary-links" aria-label="{{ if eq $.Params.content_language `th` }}ภาษาของข้อเสนอ{{ else }}Proposal language{{ end }}">
+    {{ range . }}
+    <a href="{{ .url | relURL }}" lang="{{ .lang }}" hreflang="{{ .lang }}" {{ if eq .lang $.Params.content_language }}aria-current="page"{{ end }}>{{ if eq .lang $.Params.content_language }}<strong>{{ .label }}</strong>{{ else }}{{ .label }}{{ end }}</a>
+    {{ end }}
+  </nav>
+  {{ end }}
   <h1>{{ .Title }}</h1>
   <p class="diary-meta">{{ with .Params.status }}{{ . }}{{ end }}{{ if eq .Section "diary" }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>{{ end }}</p>
   <p class="mt-4">{{ .Description }}</p>
