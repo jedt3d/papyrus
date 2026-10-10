@@ -16,6 +16,7 @@ dioxus-html = { version = "=0.7.10", features = ["serialize"] }
 default = ["web"]
 # Web history in 0.7.10 gets its required Location API from devtools.
 web = ["dioxus/web", "dioxus/devtools"]
+embedded-style = []
 
 [[bin]]
 name = "papyrus-web"

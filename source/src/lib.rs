@@ -2,6 +2,7 @@ use dioxus::prelude::*;
 
 pub const BUTTON_STORY_ID: &str = "button/primary";
 pub const STORY_CSS: Asset = asset!("/assets/story.css");
+pub const STORY_CSS_TEXT: &str = include_str!("../assets/story.css");
 pub const THAI_FIXTURE: &str = "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย";
 pub const THAI_LONG: &str = "ภาษาไทยมีสระและวรรณยุกต์อยู่หลายตำแหน่ง เราต้องอ่านข้อความนี้ได้ครบโดยไม่มีตัวอักษรหายและไม่มีเครื่องหมายถูกตัด ข้อความยาวนี้ใช้ตรวจการตัดบรรทัดในพื้นที่แคบ";
 
@@ -54,9 +55,15 @@ pub fn Preview() -> Element {
 #[component]
 pub fn ButtonStory() -> Element {
     let mut presses = use_signal(|| 0_u32);
+    // Trunk does not resolve Dioxus asset URLs; embed the same CSS for Blitz.
+    let styles = if cfg!(feature = "embedded-style") {
+        rsx! { document::Style { "{STORY_CSS_TEXT}" } }
+    } else {
+        rsx! { document::Stylesheet { href: STORY_CSS } }
+    };
 
     rsx! {
-        document::Stylesheet { href: STORY_CSS }
+        {styles}
         main {
             class: "story",
             "data-story-id": BUTTON_STORY_ID,

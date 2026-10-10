@@ -32,3 +32,7 @@ rustc-ice-*.txt
 /site/themes/hugoplate/assets/css/generated-theme.css
 /site/content/english/pages/proposal.md
 .DS_Store
+/source/blitz-wasm/dist/
+/source/browser-tests/node_modules/
+/source/browser-tests/test-results/
+/source/browser-tests/playwright-report/
