@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Papyrus Sans";
+  src: url("DejaVuSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f4f1e9;
+  color: #202b25;
+  font-family: "Papyrus Sans", sans-serif;
+  font-size: 16px;
+}
+.story { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+.eyebrow { color: #486653; font-size: 13px; letter-spacing: 1px; }
+h1 { margin: 16px 0; font-size: 36px; font-weight: 400; }
+.description { line-height: 1.6; }
+.fixture {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 32px;
+  background: #fffdf7;
+  border: 1px solid #d5dbd3;
+  border-radius: 12px;
+}
+.primary-button {
+  padding: 14px 24px;
+  background: #24553d;
+  color: #ffffff;
+  border: 1px solid #24553d;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+.primary-button:focus-visible { outline: 3px solid #8a591d; outline-offset: 4px; }
+.primary-button:active { background: #163a28; }
+.story-id { margin-top: 24px; color: #486653; font-size: 13px; }
