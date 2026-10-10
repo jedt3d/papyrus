@@ -13,7 +13,7 @@ WGPU_BACKEND=metal cargo run --locked
 
 `WGPU_BACKEND=metal` restricts this macOS run to Metal. Other platforms need their own backend and runtime checks. First-time dependency setup needs network access; later builds can add `--offline` when the cache is complete.
 
-The window requests a 1280 × 720 logical content area. Startup reports the actual physical surface size and scale factor. Check those values rather than assuming the request was accepted. Click **Press me** twice and observe `Presses: 0 → 1 → 2`. Close and reopen the window to check that the count starts at zero again.
+The window requests a 1280 × 720 logical content area. Startup reports the actual physical surface size and scale factor. Each pointer button event also prints `Papyrus capture:` with the current surface, scale and theme. Use those capture-time values alongside the raw screenshot; startup output alone cannot calibrate a capture. Click **Press me** twice and observe `Presses: 0 → 1 → 2`. Close and reopen the window to check that the count starts at zero again.
 
 ## Pins and shared assets
 
@@ -33,4 +33,4 @@ These tests check shared event wiring and byte-identical font delivery. The actu
 
 ## Limits
 
-This is a debug renderer experiment, not an installer or the complete Papyrus Studio. It needs no browser, Trunk, HTTP server or WebView. Keyboard activation, accessibility, genuine Thai keyboard/IME input, reload and repeatable image comparison are later Phase 0 checks. See the [Desktop evidence](../../agent-docs/evidence/phase-0-blitz-desktop.md) for the tested revision and actual results.
+This is a debug renderer experiment, not an installer or the complete Papyrus Studio. It needs no browser, Trunk, HTTP server or WebView. [Capture evidence](../../agent-docs/evidence/phase-0-capture.md) records same-session repeat images and unresolved native image/input mapping. Internal component geometry is not exposed by this launcher. Keyboard activation, accessibility, genuine Thai keyboard/IME input and reload remain later checks. See the [Desktop evidence](../../agent-docs/evidence/phase-0-blitz-desktop.md) for the first Button baseline.

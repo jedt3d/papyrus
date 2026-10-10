@@ -1,0 +1,23 @@
+{
+  "canvasPixels": [
+    1280,
+    720
+  ],
+  "canvasRect": {
+    "height": 720,
+    "width": 1280,
+    "x": 0,
+    "y": 0
+  },
+  "context": "webgpu",
+  "scaleFactor": 1,
+  "scroll": [
+    0,
+    0
+  ],
+  "storyDOMElements": 0,
+  "viewport": [
+    1280,
+    720
+  ]
+}

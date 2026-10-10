@@ -1,0 +1,82 @@
+[
+  {
+    "file": "desktop-calibration-scale-1.jpg",
+    "capturedAt": "2026-10-10T21:20:26.981Z"
+  },
+  {
+    "file": "desktop-live-calibration.jpg",
+    "capturedAt": "2026-10-10T21:21:53.918Z"
+  },
+  {
+    "file": "desktop-button-primary.jpg",
+    "capturedAt": "2026-10-10T21:22:19.366Z"
+  },
+  {
+    "file": "desktop-button-disabled.jpg",
+    "capturedAt": "2026-10-10T21:22:21.662Z"
+  },
+  {
+    "file": "desktop-button-long-content.jpg",
+    "capturedAt": "2026-10-10T21:22:23.988Z"
+  },
+  {
+    "file": "desktop-card-default.jpg",
+    "capturedAt": "2026-10-10T21:22:30.645Z"
+  },
+  {
+    "file": "desktop-card-long-content.jpg",
+    "capturedAt": "2026-10-10T21:22:32.966Z"
+  },
+  {
+    "file": "desktop-text-input-default.jpg",
+    "capturedAt": "2026-10-10T21:22:35.286Z"
+  },
+  {
+    "file": "desktop-text-input-disabled.jpg",
+    "capturedAt": "2026-10-10T21:22:44.592Z"
+  },
+  {
+    "file": "desktop-text-input-long-content.jpg",
+    "capturedAt": "2026-10-10T21:22:46.956Z"
+  },
+  {
+    "file": "desktop-card-long-content-repeat.jpg",
+    "capturedAt": "2026-10-10T21:22:49.288Z"
+  },
+  {
+    "file": "wasm-button-primary.jpg",
+    "capturedAt": "2026-10-10T21:23:34.675Z"
+  },
+  {
+    "file": "wasm-button-disabled.jpg",
+    "capturedAt": "2026-10-10T21:23:35.253Z"
+  },
+  {
+    "file": "wasm-button-long-content.jpg",
+    "capturedAt": "2026-10-10T21:23:35.835Z"
+  },
+  {
+    "file": "wasm-card-default.jpg",
+    "capturedAt": "2026-10-10T21:23:40.675Z"
+  },
+  {
+    "file": "wasm-card-long-content.jpg",
+    "capturedAt": "2026-10-10T21:23:41.181Z"
+  },
+  {
+    "file": "wasm-text-input-default.jpg",
+    "capturedAt": "2026-10-10T21:23:41.767Z"
+  },
+  {
+    "file": "wasm-text-input-disabled.jpg",
+    "capturedAt": "2026-10-10T21:23:47.531Z"
+  },
+  {
+    "file": "wasm-text-input-long-content.jpg",
+    "capturedAt": "2026-10-10T21:23:48.035Z"
+  },
+  {
+    "file": "wasm-card-long-content-repeat.jpg",
+    "capturedAt": "2026-10-10T21:23:48.742Z"
+  }
+]

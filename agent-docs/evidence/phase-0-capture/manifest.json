@@ -1,0 +1,702 @@
+{
+  "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+  "trackedSoftwareClean": true,
+  "profile": {
+    "id": "phase-0-capture-v1",
+    "logicalViewport": [
+      1280,
+      720
+    ],
+    "theme": "fixed light story.css",
+    "fixtures": "eight initial fixtures from shared Rust; Button presses 0; TextInput initial values; no component has focus",
+    "repeat": "Card long-content; select other stories first; restore same Card",
+    "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db"
+  },
+  "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b",
+  "assetsSHA256": {
+    "source/src/lib.rs": "1281f9ba87f6a81e1dd782a80394c3565f4a70a4494a84b27fcd7f4cdafe4154",
+    "source/assets/story.css": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "source/public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+    "source/public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+    "source/Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+    "source/blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+    "source/blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+    "source/blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+    "source/blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+    "source/blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+    "source/browser-tests/capture.spec.mjs": "20c10d18b69dbb4aa3b5374c9e2ada4c592b96704f634aba481e5547ffc177fb",
+    "source/browser-tests/measure-preview.mjs": "57dd6448a91f9645fa95ec9460965d113364788e4524429cc5d41b75aa1db593"
+  },
+  "artifactsSHA256": {
+    "desktop": "8aec7f312f307a2306e09429f48e080efb23c3ef0fa62e1e0d74a2b25455d37e",
+    "desktopWrapperCopy": "8aec7f312f307a2306e09429f48e080efb23c3ef0fa62e1e0d74a2b25455d37e",
+    "wasm": "3f7d9b37c4c3f9d0aca2a69a7caedd3425bbcd883583710d9abc59580de57e9f"
+  },
+  "environment": {
+    "os": "macOS 26.7 (25G229)",
+    "architecture": "arm64",
+    "rust": "1.98.1",
+    "dioxus": "0.7.10",
+    "blitzRevision": "7832c177ff272128154bac58afe56c2b9164b417",
+    "node": "26.9.0",
+    "playwright": "1.64.0",
+    "chromium": "156.0.8078.4",
+    "hugo": "0.158.0",
+    "trunk": "0.21.14",
+    "rasterAnalysis": "Python 3.14.7 / Pillow 12.3.0; decoded RGB, exact nonzero channel comparison; no threshold or image resizing"
+  },
+  "targets": {
+    "web": {
+      "geometryFile": "web-geometry.json",
+      "componentGeometry": "measured CSS px viewport-relative border boxes",
+      "scale": 1,
+      "capture": "headless Playwright PNG, caret hidden, animations disabled, picker focused, mouse (0,0)"
+    },
+    "wasm": {
+      "geometry": {
+        "canvasPixels": [
+          1280,
+          720
+        ],
+        "canvasRect": {
+          "height": 720,
+          "width": 1280,
+          "x": 0,
+          "y": 0
+        },
+        "context": "webgpu",
+        "scaleFactor": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "storyDOMElements": 0,
+        "viewport": [
+          1280,
+          720
+        ]
+      },
+      "componentGeometry": null,
+      "componentGeometryReason": "canvas host has no story DOM; launch_cfg does not expose BaseDocument to the component",
+      "capture": "CUA JPEG; host canvas focus outline; pointer/background click (10,700); font readiness judged from painted fixture, not document.fonts"
+    },
+    "desktop": {
+      "windowLog": "desktop-window.log",
+      "captureTimeWindowSamples": 40,
+      "surfacePhysicalPixels": [
+        1280,
+        720
+      ],
+      "scale": 1,
+      "windowTheme": "Light",
+      "rawImagePixels": [
+        2560,
+        1504
+      ],
+      "componentGeometry": null,
+      "componentGeometryReason": "launch_cfg owns the document; document::eval is a no-op; accessibility disabled",
+      "capture": "CUA JPEG includes chrome, pointer halo and blank area; repeated neutral click (20,1400)",
+      "calibration": {
+        "paintedRegionImagePixels": [
+          0,
+          32,
+          1280,
+          720
+        ],
+        "basis": "visually inspected raster; not a Window or component geometry measurement",
+        "pointerProbe": {
+          "observedCardPickerImagePixels": [
+            540,
+            120
+          ],
+          "directClickResult": "no fixture change",
+          "successfulCUAClick": [
+            1080,
+            240
+          ],
+          "directProbeRevision": "aab18f6aa9f7d694e7f78c93dd72cabfd6dfe7c9",
+          "successfulProbeRevision": "78da51d776e381cef316b968eda2bb11bc6126ff"
+        },
+        "mappingStatus": "unresolved capture/input/window coordinate mismatch; raw Native raster unsuitable for automatic cross-renderer pixel gates"
+      }
+    }
+  },
+  "repeats": [
+    {
+      "first": "web-5-card-long-content.png",
+      "second": "web-9-card-long-content.png",
+      "size": [
+        1280,
+        720
+      ],
+      "changedPixels": 50,
+      "changedFraction": 5.425347222222222e-05,
+      "maximumRGBChannelDifference": 1,
+      "changedImagePixelBounds": [
+        304,
+        69,
+        813,
+        300
+      ],
+      "identicalFileBytes": false
+    },
+    {
+      "first": "wasm-card-long-content.jpg",
+      "second": "wasm-card-long-content-repeat.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "changedPixels": 0,
+      "changedFraction": 0.0,
+      "maximumRGBChannelDifference": 0,
+      "changedImagePixelBounds": null,
+      "identicalFileBytes": true
+    },
+    {
+      "first": "desktop-card-long-content.jpg",
+      "second": "desktop-card-long-content-repeat.jpg",
+      "size": [
+        2560,
+        1504
+      ],
+      "changedPixels": 0,
+      "changedFraction": 0.0,
+      "maximumRGBChannelDifference": 0,
+      "changedImagePixelBounds": null,
+      "identicalFileBytes": true
+    },
+    {
+      "first": "web-trial-5-card-long-content.png",
+      "second": "web-trial-9-card-long-content.png",
+      "size": [
+        1280,
+        720
+      ],
+      "changedPixels": 50,
+      "changedFraction": 5.425347222222222e-05,
+      "maximumRGBChannelDifference": 1,
+      "changedImagePixelBounds": [
+        304,
+        69,
+        813,
+        300
+      ],
+      "identicalFileBytes": false
+    }
+  ],
+  "images": [
+    {
+      "file": "desktop-button-disabled.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/disabled",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 110514,
+      "sha256": "748e70f0fc0e8070a53131fcaec04fce5c256abe4a5c01e099ab05b626dfc528",
+      "capturedAt": "2026-10-10T21:22:21.662Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-button-long-content.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/long-content",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 120699,
+      "sha256": "ce83facc994810f4df9ef036f2decb5cfba40981bc87c75782fe3768765fed46",
+      "capturedAt": "2026-10-10T21:22:23.988Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-button-primary.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/primary",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 116184,
+      "sha256": "3d6529923e5064ac961cda71d4cd9501531d961a64444450800b4c008382faca",
+      "capturedAt": "2026-10-10T21:22:19.366Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-calibration-scale-1.jpg",
+      "target": "desktop",
+      "stage": "preliminary calibration",
+      "sourceRevision": "aab18f6aa9f7d694e7f78c93dd72cabfd6dfe7c9",
+      "fixture": null,
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 128281,
+      "sha256": "9c7f7b733e7d573c818e1afdc877267d3b92d97f79890cb668e037f7c89501ee",
+      "capturedAt": "2026-10-10T21:20:26.981Z",
+      "profileSHA256": null
+    },
+    {
+      "file": "desktop-card-default.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/default",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 110015,
+      "sha256": "2b51b6c265134febe95008e54808d3fc4ffd6f994dccde3c5c381c5e65c9a6a6",
+      "capturedAt": "2026-10-10T21:22:30.645Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-card-long-content-repeat.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 128663,
+      "sha256": "e4922ce59f2ca3e2d11612c2c00a70fdc1242dc5c3f4eacc711f3c3c58ef2d3b",
+      "capturedAt": "2026-10-10T21:22:49.288Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-card-long-content.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 128663,
+      "sha256": "e4922ce59f2ca3e2d11612c2c00a70fdc1242dc5c3f4eacc711f3c3c58ef2d3b",
+      "capturedAt": "2026-10-10T21:22:32.966Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-live-calibration.jpg",
+      "target": "desktop",
+      "stage": "calibration",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": null,
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 128658,
+      "sha256": "3e7ad4954a5eb3220de4269c32518fa01cff0f86a2f6d53b4a5e25786b0d1000",
+      "capturedAt": "2026-10-10T21:21:53.918Z",
+      "profileSHA256": null
+    },
+    {
+      "file": "desktop-text-input-default.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/default",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 107321,
+      "sha256": "3655f098ee666bead00457904a4459588c66d0d647ec88e62c4bea972ce00c21",
+      "capturedAt": "2026-10-10T21:22:35.286Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-text-input-disabled.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/disabled",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 108785,
+      "sha256": "884202bff6feb1f54b33d5a071a2042e8d4c6d653402c3b4cdfe80b6502367a5",
+      "capturedAt": "2026-10-10T21:22:44.592Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "desktop-text-input-long-content.jpg",
+      "target": "desktop",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/long-content",
+      "size": [
+        2560,
+        1504
+      ],
+      "format": "JPEG",
+      "bytes": 135556,
+      "sha256": "bd765ff62889a49bee5f73bcba8c7fa55cb471fb901496c794f06be8b2b1c516",
+      "capturedAt": "2026-10-10T21:22:46.956Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-button-disabled.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/disabled",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 41904,
+      "sha256": "e4c3c719e4e6d2fd9f49ca5d4cba54a2362df27ed682480387ba81578cb7c14c",
+      "capturedAt": "2026-10-10T21:23:35.253Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-button-long-content.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 48766,
+      "sha256": "da09dd7e50f00270763b49be05879c556d1b157b21b1e2e02d8d9fdb1157a414",
+      "capturedAt": "2026-10-10T21:23:35.835Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-button-primary.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/primary",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 45808,
+      "sha256": "06ad5694fe6ff573fcab1c3badf4e7c055894f665d9517ce57d2f51ec2672949",
+      "capturedAt": "2026-10-10T21:23:34.675Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-card-default.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/default",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 41809,
+      "sha256": "243f9e159718fd4b94e51989d2caac65871cd11ed76815924657b24108a81665",
+      "capturedAt": "2026-10-10T21:23:40.675Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-card-long-content-repeat.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 54956,
+      "sha256": "460ca891abe5d13611ee356a48b4bc82562aca56ff818abd32002d6ffd3bf1e9",
+      "capturedAt": "2026-10-10T21:23:48.742Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-card-long-content.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 54956,
+      "sha256": "460ca891abe5d13611ee356a48b4bc82562aca56ff818abd32002d6ffd3bf1e9",
+      "capturedAt": "2026-10-10T21:23:41.181Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-text-input-default.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/default",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 39531,
+      "sha256": "4a13a6c304504ad54d69efff57e018ab2f87d0a5b5fd7baaffe4f39cae5faf76",
+      "capturedAt": "2026-10-10T21:23:41.767Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-text-input-disabled.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/disabled",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 40538,
+      "sha256": "4e921a4e0d21f8aa6007cc528aed14f69957193dc5223355894cd02fa1609c47",
+      "capturedAt": "2026-10-10T21:23:47.531Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "wasm-text-input-long-content.jpg",
+      "target": "wasm",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "bytes": 59433,
+      "sha256": "cf3b092216c791592504cad91fedaa93b003c16889c7b1923d68ea4d69ba8b02",
+      "capturedAt": "2026-10-10T21:23:48.035Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-1-button-primary.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/primary",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 47172,
+      "sha256": "9ab4190d89acad8d7c70ee67e87de8ffc86b7be5d902d385923f387e2ef4d080",
+      "capturedAt": "2026-10-10T21:22:03.731Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-2-button-disabled.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/disabled",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 41344,
+      "sha256": "05bc93185144c78ef77331ccc71726a7b7d97e82bc5ef4773b998ed28d4deea0",
+      "capturedAt": "2026-10-10T21:22:03.917Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-3-button-long-content.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "button/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 50314,
+      "sha256": "5c485d8f6e7653706249344582c30d4c099734310ab410b36971364670e8c47f",
+      "capturedAt": "2026-10-10T21:22:04.024Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-4-card-default.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/default",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 40569,
+      "sha256": "87e7447ab231434f40a267c860d76895734183f98dc150aa6f785a04dde0025b",
+      "capturedAt": "2026-10-10T21:22:04.140Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-5-card-long-content.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 59718,
+      "sha256": "d911c29c795ddc7392b9f7ab7c89feb563baae83a91ce632cce516374f49e1d2",
+      "capturedAt": "2026-10-10T21:22:04.258Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-6-text-input-default.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/default",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 35880,
+      "sha256": "af6b3a7adc268fdd348e9a0e443bb86ceb55a5558135057c956e54b7bf2a3c92",
+      "capturedAt": "2026-10-10T21:22:04.356Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-7-text-input-disabled.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/disabled",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 37579,
+      "sha256": "f05cd392dcd20d6cc696b4b071e148515031ee2567d978f95f52e312fcde9243",
+      "capturedAt": "2026-10-10T21:22:04.457Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-8-text-input-long-content.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "text-input/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 61086,
+      "sha256": "81aabc080d61502637807be9a3fe1216b9a95abc2b2b6c7933b7966c6103e08c",
+      "capturedAt": "2026-10-10T21:22:04.558Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-9-card-long-content.png",
+      "target": "web",
+      "stage": "baseline",
+      "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+      "fixture": "card/long-content",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 59610,
+      "sha256": "ff76056d0de5141565581cb6c6f7e2be97943786a1ef325e3ae2676cf562d560",
+      "capturedAt": "2026-10-10T21:22:04.674Z",
+      "profileSHA256": "5e4e5767e6df8d2c4d40c02a5b2240ebbd3f4654cd0bb9eeeb1cbd659e45b43b"
+    },
+    {
+      "file": "web-trial-5-card-long-content.png",
+      "target": "web",
+      "stage": "preliminary",
+      "sourceRevision": "aab18f6aa9f7d694e7f78c93dd72cabfd6dfe7c9",
+      "fixture": null,
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 59718,
+      "sha256": "d911c29c795ddc7392b9f7ab7c89feb563baae83a91ce632cce516374f49e1d2",
+      "capturedAt": null,
+      "profileSHA256": null
+    },
+    {
+      "file": "web-trial-9-card-long-content.png",
+      "target": "web",
+      "stage": "preliminary",
+      "sourceRevision": "aab18f6aa9f7d694e7f78c93dd72cabfd6dfe7c9",
+      "fixture": null,
+      "size": [
+        1280,
+        720
+      ],
+      "format": "PNG",
+      "bytes": 59610,
+      "sha256": "ff76056d0de5141565581cb6c6f7e2be97943786a1ef325e3ae2676cf562d560",
+      "capturedAt": null,
+      "profileSHA256": null
+    }
+  ],
+  "comparisons": {
+    "matchingBaselineCount": 27,
+    "matchBasis": "same committed revision, shared Rust/CSS/font bytes, initial fixture state and logical viewport; differing capture pipelines and focus recorded",
+    "layout": "Web API geometry saved; Blitz component geometry unavailable in existing launchers, so no numeric component-layout delta is claimed",
+    "raster": "Card body wraps to seven visible lines and heading to two in all three captures; picker selected background differs on Web vs Blitz; color/edge differences observed; no cross-target pixel score",
+    "native": "painted region placement is a diagnostic observation, not calibrated device-pixel geometry"
+  },
+  "limitations": [
+    "two same-session observations for one fixture per target, not cross-session reproducibility",
+    "JPEG can hide small raster differences",
+    "Native image/input mapping unresolved; no automatic crop/rescale normalization",
+    "Blitz internal geometry API found but runtime units/scale mapping not calibrated",
+    "WASM browser version unavailable; actual backend WebGPU",
+    "OS IME, other operating systems, WebGL-only behavior and broader CSS compatibility unverified"
+  ]
+}

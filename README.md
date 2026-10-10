@@ -9,7 +9,7 @@ Papyrus is a planned Rust component workbench for designing, previewing, and che
 - **Web stories:** [run guide](source/README.md), [Thai/input evidence](agent-docs/evidence/phase-0-thai-web.md), and [headless browser tests](source/browser-tests/README.md).
 - **Blitz WASM:** [run guide](source/blitz-wasm/README.md) and [verified evidence](agent-docs/evidence/phase-0-blitz-wasm.md).
 - **Blitz Desktop:** [run guide](source/blitz-desktop/README.md) and [macOS/Metal evidence](agent-docs/evidence/phase-0-blitz-desktop.md).
-- **Phase 0 tickets:** [GitHub Issues](https://github.com/jedt3d/papyrus/issues?q=is%3Aissue%20is%3Aopen%20label%3Aphase%3A0); Shared Button, Card and TextInput baselines are verified on all three targets; [evidence and limits](agent-docs/evidence/phase-0-shared-stories.md). [#5, repeatable capture and layout](https://github.com/jedt3d/papyrus/issues/5) is next. Genuine composition remains open in #8.
+- **Phase 0 tickets:** [GitHub Issues](https://github.com/jedt3d/papyrus/issues?q=is%3Aissue%20is%3Aopen%20label%3Aphase%3A0); shared Button, Card and TextInput baselines are verified on all three targets; [evidence and limits](agent-docs/evidence/phase-0-shared-stories.md). [Capture/layout evidence](agent-docs/evidence/phase-0-capture.md) records Web geometry and unresolved Native mapping. [#6, CSS reload](https://github.com/jedt3d/papyrus/issues/6) is next. Genuine composition remains open in #8.
 - **Agent instructions:** [AGENTS.md](AGENTS.md)
 - **Project skills:** [Matt Pocock's Engineering and Productivity skills](.agents/skills/README.md)
 

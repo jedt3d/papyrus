@@ -1,0 +1,876 @@
+{
+  "sourceRevision": "78da51d776e381cef316b968eda2bb11bc6126ff",
+  "trackedSoftwareDirty": false,
+  "assetsSHA256": {
+    "rust": "1281f9ba87f6a81e1dd782a80394c3565f4a70a4494a84b27fcd7f4cdafe4154",
+    "css": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "sans": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+    "thai": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+  },
+  "browser": "Chromium",
+  "browserVersion": "156.0.8078.4",
+  "os": "darwin",
+  "architecture": "arm64",
+  "units": "CSS px; viewport-relative border boxes; x right, y down; scroll recorded separately",
+  "capture": "PNG; device pixels; viewport only; animations disabled; caret hidden; pointer at (0,0); picker keeps focus",
+  "repeat": {
+    "first": "5-card-long-content.png",
+    "second": "9-card-long-content.png",
+    "identicalGeometry": true,
+    "identicalPNG": false
+  },
+  "captures": [
+    {
+      "image": "1-button-primary.png",
+      "capturedAt": "2026-10-10T21:22:03.731Z",
+      "sha256": "9ab4190d89acad8d7c70ee67e87de8ffc86b7be5d902d385923f387e2ef4d080",
+      "fixture": "button/primary",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": false,
+        "feedback": "Presses: 0",
+        "focus": "Button / Primary"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 453.59375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 259,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "fixture": {
+          "x": 304,
+          "y": 373.59375,
+          "width": 672,
+          "height": 115,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 670
+        },
+        "component": {
+          "x": 337,
+          "y": 406.59375,
+          "width": 122.625,
+          "height": 49,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 121,
+          "scrollWidth": 121
+        },
+        "feedback": {
+          "x": 483.625,
+          "y": 421.59375,
+          "width": 80.953125,
+          "height": 19,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 81,
+          "scrollWidth": 81
+        },
+        "identity": {
+          "x": 304,
+          "y": 512.59375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "2-button-disabled.png",
+      "capturedAt": "2026-10-10T21:22:03.917Z",
+      "sha256": "05bc93185144c78ef77331ccc71726a7b7d97e82bc5ef4773b998ed28d4deea0",
+      "fixture": "button/disabled",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": true,
+        "feedback": "Presses: 0",
+        "focus": "Button / Disabled"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 453.59375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 259,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "fixture": {
+          "x": 304,
+          "y": 373.59375,
+          "width": 672,
+          "height": 115,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 670
+        },
+        "component": {
+          "x": 337,
+          "y": 406.59375,
+          "width": 122.625,
+          "height": 49,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 121,
+          "scrollWidth": 121
+        },
+        "feedback": {
+          "x": 483.625,
+          "y": 421.59375,
+          "width": 80.953125,
+          "height": 19,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 81,
+          "scrollWidth": 81
+        },
+        "identity": {
+          "x": 304,
+          "y": 512.59375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "3-button-long-content.png",
+      "capturedAt": "2026-10-10T21:22:04.024Z",
+      "sha256": "5c485d8f6e7653706249344582c30d4c099734310ab410b36971364670e8c47f",
+      "fixture": "button/long-content",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": false,
+        "feedback": "Presses: 0",
+        "focus": "Button / Long content"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 491.59375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 259,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "fixture": {
+          "x": 304,
+          "y": 373.59375,
+          "width": 672,
+          "height": 153,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 670
+        },
+        "component": {
+          "x": 337,
+          "y": 406.59375,
+          "width": 320,
+          "height": 87,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 318,
+          "scrollWidth": 318
+        },
+        "feedback": {
+          "x": 681,
+          "y": 440.59375,
+          "width": 80.953125,
+          "height": 19,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 81,
+          "scrollWidth": 81
+        },
+        "identity": {
+          "x": 304,
+          "y": 550.59375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "4-card-default.png",
+      "capturedAt": "2026-10-10T21:22:04.140Z",
+      "sha256": "87e7447ab231434f40a267c860d76895734183f98dc150aa6f785a04dde0025b",
+      "fixture": "card/default",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": null,
+        "feedback": null,
+        "focus": "Card / Default"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 430.09375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 288,
+          "width": 320,
+          "height": 177.09375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 318,
+          "scrollWidth": 318
+        },
+        "cardHeading": {
+          "x": 329,
+          "y": 313,
+          "width": 270,
+          "height": 56,
+          "font": "24px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "cardBody": {
+          "x": 329,
+          "y": 388.90625,
+          "width": 270,
+          "height": 51.1875,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "identity": {
+          "x": 304,
+          "y": 489.09375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "5-card-long-content.png",
+      "capturedAt": "2026-10-10T21:22:04.258Z",
+      "sha256": "d911c29c795ddc7392b9f7ab7c89feb563baae83a91ce632cce516374f49e1d2",
+      "fixture": "card/long-content",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": null,
+        "feedback": null,
+        "focus": "Card / Long content"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 558.0625,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 288,
+          "width": 320,
+          "height": 305.0625,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 318,
+          "scrollWidth": 318
+        },
+        "cardHeading": {
+          "x": 329,
+          "y": 313,
+          "width": 270,
+          "height": 56,
+          "font": "24px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "cardBody": {
+          "x": 329,
+          "y": 388.90625,
+          "width": 270,
+          "height": 179.15625,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "identity": {
+          "x": 304,
+          "y": 617.0625,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "6-text-input-default.png",
+      "capturedAt": "2026-10-10T21:22:04.356Z",
+      "sha256": "af6b3a7adc268fdd348e9a0e443bb86ceb55a5558135057c956e54b7bf2a3c92",
+      "fixture": "text-input/default",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": "Papyrus",
+        "disabled": false,
+        "feedback": "Value: Papyrus",
+        "focus": "TextInput / Default"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 374.59375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 323,
+          "width": 672,
+          "height": 45,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 670
+        },
+        "feedback": {
+          "x": 304,
+          "y": 384,
+          "width": 672,
+          "height": 25.59375,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "identity": {
+          "x": 304,
+          "y": 433.59375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "7-text-input-disabled.png",
+      "capturedAt": "2026-10-10T21:22:04.457Z",
+      "sha256": "f05cd392dcd20d6cc696b4b071e148515031ee2567d978f95f52e312fcde9243",
+      "fixture": "text-input/disabled",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": "Read only fixture",
+        "disabled": true,
+        "feedback": "Value: Read only fixture",
+        "focus": "TextInput / Disabled"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 374.59375,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 323,
+          "width": 672,
+          "height": 45,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 670
+        },
+        "feedback": {
+          "x": 304,
+          "y": 384,
+          "width": 672,
+          "height": 25.59375,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "identity": {
+          "x": 304,
+          "y": 433.59375,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "8-text-input-long-content.png",
+      "capturedAt": "2026-10-10T21:22:04.558Z",
+      "sha256": "81aabc080d61502637807be9a3fe1216b9a95abc2b2b6c7933b7966c6103e08c",
+      "fixture": "text-input/long-content",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.",
+        "disabled": false,
+        "feedback": "Value: A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.",
+        "focus": "TextInput / Long content"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 425.78125,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 323,
+          "width": 672,
+          "height": 45,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 670,
+          "scrollWidth": 1759
+        },
+        "feedback": {
+          "x": 304,
+          "y": 384,
+          "width": 672,
+          "height": 76.78125,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "identity": {
+          "x": 304,
+          "y": 484.78125,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    },
+    {
+      "image": "9-card-long-content.png",
+      "capturedAt": "2026-10-10T21:22:04.674Z",
+      "sha256": "ff76056d0de5141565581cb6c6f7e2be97943786a1ef325e3ae2676cf562d560",
+      "fixture": "card/long-content",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scaleFactor": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "theme": {
+        "background": "rgb(244, 241, 233)",
+        "color": "rgb(32, 43, 37)"
+      },
+      "fontsReady": true,
+      "state": {
+        "value": null,
+        "disabled": null,
+        "feedback": null,
+        "focus": "Card / Long content"
+      },
+      "rects": {
+        "picker": {
+          "x": 280,
+          "y": 0,
+          "width": 720,
+          "height": 151,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "main": {
+          "x": 280,
+          "y": 151,
+          "width": 720,
+          "height": 558.0625,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 720,
+          "scrollWidth": 720
+        },
+        "heading": {
+          "x": 304,
+          "y": 231,
+          "width": 672,
+          "height": 41,
+          "font": "36px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        },
+        "component": {
+          "x": 304,
+          "y": 288,
+          "width": 320,
+          "height": 305.0625,
+          "font": "16px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 318,
+          "scrollWidth": 318
+        },
+        "cardHeading": {
+          "x": 329,
+          "y": 313,
+          "width": 270,
+          "height": 56,
+          "font": "24px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "cardBody": {
+          "x": 329,
+          "y": 388.90625,
+          "width": 270,
+          "height": 179.15625,
+          "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "25.6px",
+          "clientWidth": 270,
+          "scrollWidth": 270
+        },
+        "identity": {
+          "x": 304,
+          "y": 617.0625,
+          "width": 672,
+          "height": 15,
+          "font": "13px \"Papyrus Sans\", sans-serif",
+          "lineHeight": "normal",
+          "clientWidth": 672,
+          "scrollWidth": 672
+        }
+      }
+    }
+  ]
+}

@@ -21,7 +21,7 @@ Keep `AGENTS.md` and `README.md` at the repository root. Use these canonical upp
 The repository has a publishing site and shared Button, Card and TextInput baselines verified on Dioxus Web, Blitz WASM and Blitz Desktop (macOS/Metal), plus headless Web tests. The full Papyrus application and harness are still planned.
 
 1. Maintain the reproducible Hugo build and GitHub Pages deployment.
-2. Continue Phase 0 with repeatable capture and layout evidence (#5), then reload and wider input/Thai/IME checks (#6–#8). Read `agent-docs/evidence/phase-0-shared-stories.md` before using the eight fixtures; it records a fixed disabled callback and unresolved picker styling/key mapping. Record actual scale and calibrate captures before comparison. Genuine IME remains unverified in #8. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
+2. Continue Phase 0 with CSS reload (#6), then wider input/Thai/IME checks (#7–#8). Read `agent-docs/evidence/phase-0-shared-stories.md` before using the fixtures. Before capture/comparison, read `agent-docs/evidence/phase-0-capture.md`: Web geometry is available; Blitz component geometry and Native image/input mapping remain unresolved. Record capture-time scale. Genuine IME remains unverified in #8. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
 3. Build the compatibility checker and harness from evidence gathered in Phase 0.
 4. Add Studio, local backend, revision-aware reload, and static gallery export.
 5. Add Web CSS import/adaptation and then team/CI workflows.
