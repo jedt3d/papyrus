@@ -28,6 +28,10 @@ Browser automation entered `น้ำ กุ้ง ปี่ กี้ เก้
 
 The owner separately reported that typing and editing worked normally with the **Thai keyboard**. This is human-reported keyboard-layout evidence; the owner's browser/version and exact tested revision were not separately captured. No preedit/commit/Esc composition result was reported.
 
+## Headless browser run
+
+Playwright 1.64.0 passed against clean revision `51a8ae52b8a6bfe508cee546452e95e7b786e355`, starting and stopping its own Dioxus server with `CI=true`. The [environment record](phase-0-web-playwright.json) reports Chromium 156.0.8078.4 on macOS arm64, 1280 × 720 at scale 1, the bundled Thai font loaded, and matching input/echo after deletion. Composition counters remained zero. The suite also verified both font files against their source hashes and the served license. This is a Web DOM run; it does not inspect the Blitz canvas.
+
 ## Composition limits
 
 Automation's composition counters stayed at zero. The active macOS keyboard was ABC; Thai and Vietnamese Telex were listed as enabled. The native input-source control timed out, and Ctrl+Space did not change the selected source. Unicode entry through automation did not establish an OS IME session.

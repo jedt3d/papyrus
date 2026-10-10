@@ -1,0 +1,24 @@
+{
+  "sourceRevision": "51a8ae52b8a6bfe508cee546452e95e7b786e355",
+  "workingTreeDirty": false,
+  "styleSHA256": "fc32371c9a9fa034d920d0e09b27293e805cdd07410b02300b3d6ff7370203f1",
+  "browser": "Chromium",
+  "browserVersion": "156.0.8078.4",
+  "os": "darwin",
+  "architecture": "arm64",
+  "renderer": "Dioxus Web / browser DOM CSS",
+  "inputMethod": "Playwright Unicode fill and browser keys; OS IME untested",
+  "viewport": [
+    1280,
+    720
+  ],
+  "scaleFactor": 1,
+  "input": "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไท",
+  "echo": "Input value: น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไท",
+  "composition": "Composition: idle; starts: 0; updates: 0; ends: 0",
+  "thaiFontLoaded": true,
+  "fontStatus": "loaded",
+  "wrapWidth": 320,
+  "wrapHeight": 115.1875,
+  "lineHeight": "28.8px"
+}
