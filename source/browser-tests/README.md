@@ -12,7 +12,7 @@ pnpm exec playwright install chromium
 pnpm test
 ```
 
-The runner starts `dx serve` on `127.0.0.1:8080` and stops that child server when done. Locally it can reuse a server already there; make sure that server runs the revision you intend to test. To require a fresh server, stop the existing one and run `CI=true pnpm test`.
+The runner first completes `dx build`, then starts `dx serve` on `127.0.0.1:8080` and stops that child server when done. Locally it can reuse a server already there; make sure that server runs the revision you intend to test. To require a fresh server, stop the existing one and run `CI=true pnpm test`. The build runs before the server because Dioxus can return HTTP 200 for its build-waiting page; that response alone does not mean the stories are ready.
 
 The viewport is 1280 × 720 with scale factor 1. Playwright 1.64.0 and its package graph are pinned. Each successful run saves `web-preview.png` and `environment.json` under `test-results/`, including Chromium version, source revision, dirty-worktree flag and stylesheet hash. Failure screenshots and traces help diagnose broken runs; the HTML report is in `playwright-report/`. Generated output is ignored by Git.
 

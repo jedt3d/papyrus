@@ -17,7 +17,7 @@ export default defineConfig({
     trace: "retain-on-failure",
   },
   webServer: {
-    command: "dx serve --web --bin papyrus-web --locked --addr 127.0.0.1 --port 8080 --open false --interactive false --hot-reload false",
+    command: "dx build --web --bin papyrus-web --locked && dx serve --web --bin papyrus-web --locked --addr 127.0.0.1 --port 8080 --open false --interactive false --hot-reload false",
     cwd: "..",
     url: "http://127.0.0.1:8080",
     reuseExistingServer: !process.env.CI,

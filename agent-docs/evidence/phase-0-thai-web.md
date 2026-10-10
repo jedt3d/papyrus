@@ -30,7 +30,9 @@ The owner separately reported that typing and editing worked normally with the *
 
 ## Headless browser run
 
-Playwright 1.64.0 passed against clean revision `51a8ae52b8a6bfe508cee546452e95e7b786e355`, starting and stopping its own Dioxus server with `CI=true`. The [environment record](phase-0-web-playwright.json) reports Chromium 156.0.8078.4 on macOS arm64, 1280 × 720 at scale 1, the bundled Thai font loaded, and matching input/echo after deletion. Composition counters remained zero. The suite also verified both font files against their source hashes and the served license. This is a Web DOM run; it does not inspect the Blitz canvas.
+Playwright 1.64.0 passed against clean revision `51a8ae52b8a6bfe508cee546452e95e7b786e355`, starting and stopping its own Dioxus server with `CI=true`. The [environment record](phase-0-web-playwright.json) reports Chromium 156.0.8078.4 on macOS arm64, 1280 × 720 at scale 1, the bundled Thai font loaded, and matching input/echo after deletion. Composition counters remained zero. The suite also verified the Thai font against its source hash and the served license. This is a Web DOM run; it does not inspect the Blitz canvas.
+
+The [first Linux CI run](https://github.com/jedt3d/papyrus/actions/runs/38080270662) failed at navigation before any story assertion. Its saved snapshot showed Dioxus’s build-waiting page at 74% while the HTTP readiness check had already returned 200. The runner now completes `dx build` before starting `dx serve`, keeping compilation inside startup time rather than the 30-second behavior test.
 
 ## Composition limits
 
