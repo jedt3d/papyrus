@@ -1,0 +1,12 @@
+  0.00s  INFO Building project...
+  1.55s  INFO Compiled [166/167]: papyrus_stories
+  1.85s  INFO Compiled [167/167]: papyrus-web
+  1.86s  INFO Bundling app...
+  1.94s  INFO Running wasm-bindgen...
+  2.97s  INFO Copying asset (1/5): /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/source/public/LICENSE-NotoSansThai.txt
+  2.97s  INFO Copying asset (2/5): /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/source/public/LICENSE-DejaVu.txt
+  2.97s  INFO Copying asset (3/5): /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/source/assets/story.css
+  2.97s  INFO Copying asset (4/5): /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/source/public/assets/NotoSansThai.ttf
+  2.97s  INFO Copying asset (5/5): /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/source/public/assets/DejaVuSans.woff2
+  2.97s  INFO Client build completed successfully! 🚀 path="/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/dx/papyrus-web/debug/web/public"
+Built immutable output /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/web-run/jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/output

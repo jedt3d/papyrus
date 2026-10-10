@@ -10,6 +10,7 @@ const original = process.env.PAPYRUS_RELOAD_SOURCE;
 const source = join(job, "source");
 const output = join(job, "output");
 const cwd = target === "web" ? source : join(source, target === "wasm" ? "blitz-wasm" : "blitz-desktop");
+// shortcut: one coordinator per target, add a shared cache lock before multi-session runners.
 const cache = target === "web" ? join(original, "target") : join(original, `blitz-${target}`, "target");
 const env = {
   ...process.env, CARGO_TARGET_DIR: cache, PAPYRUS_STORY_ID: revision.story,

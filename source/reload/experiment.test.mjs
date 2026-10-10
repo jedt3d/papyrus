@@ -17,6 +17,12 @@ test("failed updates keep the draft; corrections succeed; late older results can
     const job = process.argv[2];
     const css = await readFile(job + '/source/assets/story.css', 'utf8');
     if (css === 'failed draft') process.exit(1);
+    if (css === 'native signal exit') {
+      const dir = job + '/output/Papyrus.app/Contents/MacOS';
+      await mkdir(dir, {recursive:true});
+      await writeFile(dir + '/papyrus-blitz-desktop', '#!/usr/bin/env node\\nconsole.log("Papyrus desktop: test startup");\\nprocess.kill(process.pid,"SIGTERM");\\n', {mode:0o755});
+      process.exit(0);
+    }
     await mkdir(job + '/output');
     await writeFile(job + '/output/index.html', '<body>' + css + '</body>');
   `);
@@ -32,7 +38,7 @@ test("failed updates keep the draft; corrections succeed; late older results can
       const next = await lines.next();
       assert.equal(next.done, false, stderr);
       const value = JSON.parse(next.value);
-      if (value.status === status) return value;
+      if ([status].flat().includes(value.status)) return value;
     }
   };
   const submit = async (css, delayMs = 0) => {
@@ -63,6 +69,10 @@ test("failed updates keep the draft; corrections succeed; late older results can
     await submit("failed draft");
     await event("failed");
     assert.equal((await event("stale")).id, oldBeforeFailure.id);
+    assert.equal(JSON.parse(await readFile(join(output, "current.json"))).id, latest.id);
+    await writeFile(profile, JSON.stringify({ target: "desktop", environment: "test subprocess" }));
+    await submit("native signal exit");
+    assert.equal((await event(["failed", "current"])).status, "failed");
     assert.equal(JSON.parse(await readFile(join(output, "current.json"))).id, latest.id);
   } finally {
     runner.kill();

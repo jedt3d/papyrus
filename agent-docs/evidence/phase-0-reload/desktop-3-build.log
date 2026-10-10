@@ -1,0 +1,8 @@
+   Compiling papyrus-stories v0.1.0 (/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/desktop-run/jobs/2f3c109b-9972-4974-a8ed-953c83874a90/source)
+error: `../assets/story.css` wasn't a utf-8 file
+  --> ../assets/story.css:82:1
+   |
+82 | �
+   | ^ byte `255` is not valid utf-8
+
+error: could not compile `papyrus-stories` (lib) due to 1 previous error

@@ -1,0 +1,1634 @@
+{
+  "investigationRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+  "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+  "story": "card/long-content",
+  "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+  "builds": {
+    "web": [
+      {
+        "id": "c4ba39dd-98b1-400e-b05e-baad6e01737c",
+        "sequence": 1,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:45:46.990Z",
+        "path": "jobs/c4ba39dd-98b1-400e-b05e-baad6e01737c/output",
+        "evidence": {
+          "revision.json": "web-1-revision.json",
+          "build.log": "web-1-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "acb89085bee3273295291cb5df90661c5204211f2bfcec0fe552eab9066ee719"
+      },
+      {
+        "id": "23102434-9f61-458e-969f-2abee7221059",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:47:23.421Z",
+        "path": "jobs/23102434-9f61-458e-969f-2abee7221059/output",
+        "evidence": {
+          "revision.json": "web-2-revision.json",
+          "build.log": "web-2-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "988b8943e1b3d5c4e5b26a225f5ce9d541e205c40892a5e029f2b5daa97aec0a"
+      },
+      {
+        "id": "7e59ad56-0e94-4053-8954-96425d70d627",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:48:14.853Z",
+        "path": "jobs/7e59ad56-0e94-4053-8954-96425d70d627/output",
+        "evidence": {
+          "revision.json": "web-3-revision.json",
+          "build.log": "web-3-build.log"
+        },
+        "observedStatus": "failed"
+      },
+      {
+        "id": "de1b199e-a4f9-4bfd-9874-ccc2eb82ca91",
+        "sequence": 4,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "1b37a4d12d0bb4a16cbf5034692ec442f9b88415f640f5f6d43718fe44f1ec6e",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:49:14.350Z",
+        "path": "jobs/de1b199e-a4f9-4bfd-9874-ccc2eb82ca91/output",
+        "evidence": {
+          "revision.json": "web-4-revision.json",
+          "build.log": "web-4-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "c2362316fe47848948cbfc495a32b5c16c11700b1661096ae82b8be4f13b956b"
+      },
+      {
+        "id": "e62cd6a8-fa69-48f9-be1c-f949ee5c2c44",
+        "sequence": 5,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "5ba72f0aa508be97b8759dc20cc5f7cd953c4352a1544f2b830415c71709f3ec",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:50:16.571Z",
+        "path": "jobs/e62cd6a8-fa69-48f9-be1c-f949ee5c2c44/output",
+        "evidence": {
+          "revision.json": "web-5-revision.json",
+          "build.log": "web-5-build.log"
+        },
+        "observedStatus": "stale",
+        "artifactSHA256": "76c2b6cf5728103894007cb700e3f1cdc60dbdec90962814294981dcea3e4aed"
+      },
+      {
+        "id": "f2e5011a-8b22-4053-b2af-ecf091bbb299",
+        "sequence": 6,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "6afef78a6f2d314fa8a42931ee5b62b42232886e0358fa01e5585eeb45a73052",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:50:16.586Z",
+        "path": "jobs/f2e5011a-8b22-4053-b2af-ecf091bbb299/output",
+        "evidence": {
+          "revision.json": "web-6-revision.json",
+          "build.log": "web-6-build.log"
+        },
+        "observedStatus": "current",
+        "artifactSHA256": "7fba21bba484a8f898e5fb0b865ca7df7960523b3c1b3f35f25e1ea9651266f1"
+      }
+    ],
+    "wasm": [
+      {
+        "id": "b9e10c4c-907e-4083-a75c-4cd0960058b4",
+        "sequence": 1,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:46:01.282Z",
+        "path": "jobs/b9e10c4c-907e-4083-a75c-4cd0960058b4/output",
+        "evidence": {
+          "revision.json": "wasm-1-revision.json",
+          "build.log": "wasm-1-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "0ba6a5e0265746bad2eb59fe8367e24849d90faf1cb577786c11cd8d3ea44652"
+      },
+      {
+        "id": "b7b67d7c-05af-4872-b157-d5957157f77a",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:47:26.127Z",
+        "path": "jobs/b7b67d7c-05af-4872-b157-d5957157f77a/output",
+        "evidence": {
+          "revision.json": "wasm-2-revision.json",
+          "build.log": "wasm-2-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "d569f4e901f3fd0a3bc9b83883ddbd98654279f979e6dfdc1cbd574911013e29"
+      },
+      {
+        "id": "bf933e90-df37-4fe1-9042-20a63e9584f7",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:48:17.601Z",
+        "path": "jobs/bf933e90-df37-4fe1-9042-20a63e9584f7/output",
+        "evidence": {
+          "revision.json": "wasm-3-revision.json",
+          "build.log": "wasm-3-build.log"
+        },
+        "observedStatus": "failed"
+      },
+      {
+        "id": "9bdeefc5-17e3-4432-b071-164f947d32f8",
+        "sequence": 4,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "1b37a4d12d0bb4a16cbf5034692ec442f9b88415f640f5f6d43718fe44f1ec6e",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:49:17.209Z",
+        "path": "jobs/9bdeefc5-17e3-4432-b071-164f947d32f8/output",
+        "evidence": {
+          "revision.json": "wasm-4-revision.json",
+          "build.log": "wasm-4-build.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "1eeed52fb0b85c192ade8ca38a3231096b16f28f78d9ffdd7de726c3cec1aa44"
+      },
+      {
+        "id": "086b0c58-0542-4d25-9442-0691305ad004",
+        "sequence": 5,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "5ba72f0aa508be97b8759dc20cc5f7cd953c4352a1544f2b830415c71709f3ec",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:50:19.273Z",
+        "path": "jobs/086b0c58-0542-4d25-9442-0691305ad004/output",
+        "evidence": {
+          "revision.json": "wasm-5-revision.json",
+          "build.log": "wasm-5-build.log"
+        },
+        "observedStatus": "stale",
+        "artifactSHA256": "2c6e6feffc5d61a2f7455fe9a6653a3c5aa2dd1b628678669865d4e204e55f50"
+      },
+      {
+        "id": "dd3ba613-74e5-4ee1-9576-03b06c54f659",
+        "sequence": 6,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "6afef78a6f2d314fa8a42931ee5b62b42232886e0358fa01e5585eeb45a73052",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:50:19.290Z",
+        "path": "jobs/dd3ba613-74e5-4ee1-9576-03b06c54f659/output",
+        "evidence": {
+          "revision.json": "wasm-6-revision.json",
+          "build.log": "wasm-6-build.log"
+        },
+        "observedStatus": "current",
+        "artifactSHA256": "c89b344e8bbf1a1ec28e25ae2fe3a605bf81a3dc55bdcf986d1e5bb819ad79ab"
+      }
+    ],
+    "desktop": [
+      {
+        "id": "55cb0045-567b-4217-a191-db8a4acb5892",
+        "sequence": 1,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:46:04.087Z",
+        "path": "jobs/55cb0045-567b-4217-a191-db8a4acb5892/output",
+        "evidence": {
+          "revision.json": "desktop-1-revision.json",
+          "build.log": "desktop-1-build.log",
+          "runtime.log": "desktop-1-runtime.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "eeb1b3cbeeacef2ed2637424f12799026a0b4d572b9c888c15eafb87fcb2e34a"
+      },
+      {
+        "id": "56b4eb87-c2c2-4b27-bd10-15d4e33ee566",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:47:28.848Z",
+        "path": "jobs/56b4eb87-c2c2-4b27-bd10-15d4e33ee566/output",
+        "evidence": {
+          "revision.json": "desktop-2-revision.json",
+          "build.log": "desktop-2-build.log",
+          "runtime.log": "desktop-2-runtime.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "8eeddf19101250758a3044cf4e8e07ddc5cabc796a95ee1f17da7650081a9b7e"
+      },
+      {
+        "id": "2f3c109b-9972-4974-a8ed-953c83874a90",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:48:20.347Z",
+        "path": "jobs/2f3c109b-9972-4974-a8ed-953c83874a90/output",
+        "evidence": {
+          "revision.json": "desktop-3-revision.json",
+          "build.log": "desktop-3-build.log"
+        },
+        "observedStatus": "failed"
+      },
+      {
+        "id": "e65b9206-14d6-4206-8ead-c7753799daf0",
+        "sequence": 4,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "1b37a4d12d0bb4a16cbf5034692ec442f9b88415f640f5f6d43718fe44f1ec6e",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:49:19.797Z",
+        "path": "jobs/e65b9206-14d6-4206-8ead-c7753799daf0/output",
+        "evidence": {
+          "revision.json": "desktop-4-revision.json",
+          "build.log": "desktop-4-build.log",
+          "runtime.log": "desktop-4-runtime.log"
+        },
+        "observedStatus": "current (later superseded)",
+        "artifactSHA256": "4845540363a02f2340bfd9d90ad42b466e15821cb693c08a0ee859715be86f28"
+      },
+      {
+        "id": "953929eb-1abe-4eff-9c61-d2bad0715ac0",
+        "sequence": 5,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "5ba72f0aa508be97b8759dc20cc5f7cd953c4352a1544f2b830415c71709f3ec",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:50:22.067Z",
+        "path": "jobs/953929eb-1abe-4eff-9c61-d2bad0715ac0/output",
+        "evidence": {
+          "revision.json": "desktop-5-revision.json",
+          "build.log": "desktop-5-build.log"
+        },
+        "observedStatus": "stale",
+        "artifactSHA256": "29baa9163ab8c768c7c793e46bb118cf5260b85bf27cfb36f1ad6474157d918e"
+      },
+      {
+        "id": "315932d8-bdff-4bd0-979e-3f7801dbe401",
+        "sequence": 6,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "6afef78a6f2d314fa8a42931ee5b62b42232886e0358fa01e5585eeb45a73052",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:50:22.086Z",
+        "path": "jobs/315932d8-bdff-4bd0-979e-3f7801dbe401/output",
+        "evidence": {
+          "revision.json": "desktop-6-revision.json",
+          "build.log": "desktop-6-build.log",
+          "runtime.log": "desktop-6-runtime.log"
+        },
+        "observedStatus": "current",
+        "artifactSHA256": "b4d79a3bfd70c69863aabdb2996d0ff3e051970dbb2462a089d09435d2da3c1c"
+      }
+    ]
+  },
+  "images": [
+    {
+      "file": "desktop-baseline.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        2560,
+        1504
+      ],
+      "sha256": "03bbfbcd1c16aecc115576f4b7c9c57f1f5bf93ddf6052cdc58387f9a41357ed"
+    },
+    {
+      "file": "desktop-corrected.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        2560,
+        1504
+      ],
+      "sha256": "98aa01ded4ce34ecbf532eb90c6899f12e3fe707b678f4021b3087ceb28d669c"
+    },
+    {
+      "file": "desktop-failed-update.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        2560,
+        1504
+      ],
+      "sha256": "fc936a9821ee25b4d180d1f093e7608c6c0fd819d46e41a59d9b531cff401da3"
+    },
+    {
+      "file": "desktop-newer.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        2560,
+        1504
+      ],
+      "sha256": "a5fd2ca68cf71e787629b78b592a8e52461e0e8ded0fd08f54d202b7e8f4cfce"
+    },
+    {
+      "file": "desktop-yellow.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        2560,
+        1504
+      ],
+      "sha256": "fbe2bde2598c8143b6a20d3ec95f5e5d5177d0984d725464b61169ec958fc975"
+    },
+    {
+      "file": "wasm-baseline.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "ee92228c792e33f51930dcda5616bf822fa9a78441ec335570353276299c7048"
+    },
+    {
+      "file": "wasm-corrected.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "c9cc1fa6cc2dc9bc25434c9ce10b0dbe31aa536f3c920042c8651a07ac4e98ee"
+    },
+    {
+      "file": "wasm-failed-update.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "b0288369ad9bc24350c8aa4dfe3f2b59382d255f98c36359ba84e78ae1e30bcb"
+    },
+    {
+      "file": "wasm-newer.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "4b243546e587d866ffcf61d3b35e5fd25eb0343fc4f5281578aff62a2d0bab63"
+    },
+    {
+      "file": "wasm-yellow.jpg",
+      "format": "JPEG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "b0288369ad9bc24350c8aa4dfe3f2b59382d255f98c36359ba84e78ae1e30bcb"
+    },
+    {
+      "file": "web-baseline.png",
+      "format": "PNG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "12ea15985d0762471a84567223776fca8bcd0d105ad22b7774946e462de6f9c0"
+    },
+    {
+      "file": "web-corrected.png",
+      "format": "PNG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "9872d937945f8613f83970f3d06c986a6a5e49ff37e459466f8af85434936b4b"
+    },
+    {
+      "file": "web-failed-update.png",
+      "format": "PNG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "9d7a42b677b3ceab60f3c85fbb8516efedc1f0ad30ca2c6b6dbc348a989bb893"
+    },
+    {
+      "file": "web-newer.png",
+      "format": "PNG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "9e99cda96cc6b878a0fcf9ec7dd0f1881990ff413a903debdd5c87322a98cb0a"
+    },
+    {
+      "file": "web-yellow.png",
+      "format": "PNG",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "sha256": "9d7a42b677b3ceab60f3c85fbb8516efedc1f0ad30ca2c6b6dbc348a989bb893"
+    }
+  ],
+  "failureResults": {
+    "web": {
+      "currentUnchanged": true,
+      "draftUnchanged": true,
+      "current": {
+        "id": "23102434-9f61-458e-969f-2abee7221059",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:47:23.421Z",
+        "path": "jobs/23102434-9f61-458e-969f-2abee7221059/output"
+      },
+      "failed": {
+        "id": "7e59ad56-0e94-4053-8954-96425d70d627",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "web",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": null,
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Chromium 156.0.8078.4",
+          "runner": "Playwright 1.64.0",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "15f3c079b3c2ae7b8958129fe59e42809624fef086e9ced46e620e69b407826d",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "web"
+        ],
+        "submittedAt": "2026-10-10T21:48:14.853Z",
+        "path": "jobs/7e59ad56-0e94-4053-8954-96425d70d627/output"
+      }
+    },
+    "wasm": {
+      "currentUnchanged": true,
+      "draftUnchanged": true,
+      "current": {
+        "id": "b7b67d7c-05af-4872-b157-d5957157f77a",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:47:26.127Z",
+        "path": "jobs/b7b67d7c-05af-4872-b157-d5957157f77a/output"
+      },
+      "failed": {
+        "id": "bf933e90-df37-4fe1-9042-20a63e9584f7",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "wasm",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "browser": "Codex IAB; exact version unavailable",
+          "backend": "WebGPU (verify at runtime)",
+          "viewport": [
+            1280,
+            720
+          ],
+          "scale": 1
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "3d51f601a71276a82d96fc744fa9a9e278c20a566d17739e93ac74dc12fdc985",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "wasm"
+        ],
+        "submittedAt": "2026-10-10T21:48:17.601Z",
+        "path": "jobs/bf933e90-df37-4fe1-9042-20a63e9584f7/output"
+      }
+    },
+    "desktop": {
+      "currentUnchanged": true,
+      "draftUnchanged": true,
+      "current": {
+        "id": "56b4eb87-c2c2-4b27-bd10-15d4e33ee566",
+        "sequence": 2,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "0fc9e97541c32972e3dbc138773f33aaf5a380718e74c211205b203b89f8e484",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:47:28.848Z",
+        "path": "jobs/56b4eb87-c2c2-4b27-bd10-15d4e33ee566/output"
+      },
+      "failed": {
+        "id": "2f3c109b-9972-4974-a8ed-953c83874a90",
+        "sequence": 3,
+        "story": "card/long-content",
+        "target": "desktop",
+        "environment": {
+          "os": "macOS 26.7 (25G229)",
+          "arch": "arm64",
+          "rust": "1.98.1",
+          "dioxus": "0.7.10",
+          "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+          "fonts": [
+            "DejaVu Sans (bundled)",
+            "Noto Sans Thai (bundled)"
+          ],
+          "theme": "light",
+          "backend": "Metal / Vello Hybrid",
+          "requestedLogicalSurface": [
+            1280,
+            720
+          ],
+          "scale": "read capture-time runtime log"
+        },
+        "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+        "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+        "sourceFiles": {
+          "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+          "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+          "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+          "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+          "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+          "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+          "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+          "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+          "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+          "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+          "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+          "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+          "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+          "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+          "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+          "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+          "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+        },
+        "styleHash": "ea68bb042f50fb57b8b2d13c6b64cb28c3f07da5e3e6b6e946ed5d0c37fd7f0c",
+        "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+        "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+        "buildCommand": [
+          "node",
+          "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+          "desktop"
+        ],
+        "submittedAt": "2026-10-10T21:48:20.347Z",
+        "path": "jobs/2f3c109b-9972-4974-a8ed-953c83874a90/output"
+      }
+    }
+  },
+  "staleResults": {
+    "web": {
+      "olderJob": "e62cd6a8-fa69-48f9-be1c-f949ee5c2c44",
+      "delayMs": 30000,
+      "newerJob": "f2e5011a-8b22-4053-b2af-ecf091bbb299",
+      "currentAfterOlderCompletion": "f2e5011a-8b22-4053-b2af-ecf091bbb299",
+      "olderBuiltButNotActivated": true
+    },
+    "wasm": {
+      "olderJob": "086b0c58-0542-4d25-9442-0691305ad004",
+      "delayMs": 30000,
+      "newerJob": "dd3ba613-74e5-4ee1-9576-03b06c54f659",
+      "currentAfterOlderCompletion": "dd3ba613-74e5-4ee1-9576-03b06c54f659",
+      "olderBuiltButNotActivated": true
+    },
+    "desktop": {
+      "olderJob": "953929eb-1abe-4eff-9c61-d2bad0715ac0",
+      "delayMs": 30000,
+      "newerJob": "315932d8-bdff-4bd0-979e-3f7801dbe401",
+      "currentAfterOlderCompletion": "315932d8-bdff-4bd0-979e-3f7801dbe401",
+      "olderBuiltButNotActivated": true
+    }
+  },
+  "nativeCaptureLimit": "Startup scale varied 2 -> 1 -> 2; only the retained yellow run received successful capture-time pointer samples. Newest Native pointer attempts reported no windows in CUA despite a live process and readable screenshot. Cause and capture mapping remain unresolved."
+}

@@ -34,3 +34,5 @@ These tests check shared event wiring and byte-identical font delivery. The actu
 ## Limits
 
 This is a debug renderer experiment, not an installer or the complete Papyrus Studio. It needs no browser, Trunk, HTTP server or WebView. [Capture evidence](../../agent-docs/evidence/phase-0-capture.md) records same-session repeat images and unresolved native image/input mapping. Internal component geometry is not exposed by this launcher. Keyboard activation, accessibility, genuine Thai keyboard/IME input and reload remain later checks. See the [Desktop evidence](../../agent-docs/evidence/phase-0-blitz-desktop.md) for the first Button baseline.
+
+For CSS edits, use the [local reload/restart experiment](../reload/README.md). It restores the submitted story after a complete build and retains the previous output on build failure. Read its cache, startup and state-reset limits before running it.

@@ -1,0 +1,13 @@
+  0.01s  INFO Building project...
+  1.70s  INFO  [1m[91merror[0m[1m: `../assets/story.css` wasn't a utf-8 file[0m
+  [1m[94m--> [0m../assets/story.css:82:1
+   [1m[94m|[0m
+[1m[94m82[0m [1m[94m|[0m �
+   [1m[94m|[0m [1m[91m^[0m [1m[91mbyte `255` is not valid utf-8[0m
+
+
+  2.29s  WARN error: could not compile `papyrus-stories` (lib) due to 1 previous error 
+  2.29s  WARN Caused by: 
+  2.29s  WARN   process didn't exit successfully: `/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/toolchain/dioxus-0.7.10/dx /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/toolchain/rustup/toolchains/1.98.1-aarch64-apple-darwin/bin/rustc --crate-name papyrus_stories --edition=2024 src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 --cfg 'feature="web"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "embedded-style", "web"))' -C metadata=4fcf0205f0afea6c -C extra-filename=-f97242d673a7667c --out-dir /Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/wasm32-unknown-unknown/wasm-dev/deps --target wasm32-unknown-unknown -C incremental=/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/wasm32-unknown-unknown/wasm-dev/incremental -L dependency=/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/wasm32-unknown-unknown/wasm-dev/deps -L dependency=/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/wasm-dev/deps --extern dioxus=/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/target/wasm32-unknown-unknown/wasm-dev/deps/libdioxus-5ffe0ec81b1bda5e.rmeta --cfg 'getrandom_backend="wasm_js"'` (exit status: 1) 
+
+[31mERROR[0m [33mdx build[0m: cargo build finished with errors for target: papyrus-web [wasm32-unknown-unknown]

@@ -1,0 +1,22 @@
+{
+  "id": "phase-0-reload-v1",
+  "target": "desktop",
+  "environment": {
+    "os": "macOS 26.7 (25G229)",
+    "arch": "arm64",
+    "rust": "1.98.1",
+    "dioxus": "0.7.10",
+    "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+    "fonts": [
+      "DejaVu Sans (bundled)",
+      "Noto Sans Thai (bundled)"
+    ],
+    "theme": "light",
+    "backend": "Metal / Vello Hybrid",
+    "requestedLogicalSurface": [
+      1280,
+      720
+    ],
+    "scale": "read capture-time runtime log"
+  }
+}

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Papyrus Sans";
+  src: url("DejaVuSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+* { box-sizing: border-box; }
+@font-face {
+  font-family: "Papyrus Thai";
+  src: url("NotoSansThai.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+body {
+  margin: 0;
+  background: #f4f1e9;
+  color: #202b25;
+  font-family: "Papyrus Sans", sans-serif;
+  font-size: 16px;
+}
+.story { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+.eyebrow { color: #486653; font-size: 13px; letter-spacing: 1px; }
+h1 { margin: 16px 0; font-size: 36px; font-weight: 400; }
+.description { line-height: 1.6; }
+.fixture {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 32px;
+  background: #fffdf7;
+  border: 1px solid #d5dbd3;
+  border-radius: 12px;
+}
+.primary-button {
+  max-width: 320px;
+  padding: 14px 24px;
+  background: #24553d;
+  color: #ffffff;
+  border: 1px solid #24553d;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+.primary-button:focus-visible { outline: 3px solid #8a591d; outline-offset: 4px; }
+.primary-button:active { background: #163a28; }
+.primary-button:disabled { background: #e3e7e1; color: #58645d; border-color: #a8b5aa; cursor: default; }
+.story-id { margin-top: 24px; color: #486653; font-size: 13px; }
+.thai-story { padding-top: 0; font-family: "Papyrus Thai", "Papyrus Sans", sans-serif; line-height: 1.8; }
+#thai-long { max-width: 320px; }
+.thai-story label, .thai-story output { display: block; }
+.thai-story input { width: 100%; padding: 12px; font: inherit; border: 1px solid #486653; }
+.thai-story input:focus-visible { outline: 3px solid #8a591d; outline-offset: 2px; }
+.input-note { font-size: 13px; }
+.story-picker {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  max-width: 720px; margin: 0 auto; padding: 24px 24px 0;
+}
+.story-picker button {
+  padding: 8px 12px; border: 1px solid #486653; border-radius: 4px;
+  background: #fffdf7; color: #202b25; font: inherit; cursor: pointer;
+}
+.story-picker button[aria-pressed="true"] { background: #24553d; color: #fff; }
+.card {
+  max-width: 320px; padding: 24px; background: #fffdf7;
+  border: 1px solid #d5dbd3; border-radius: 12px;
+}
+.card h2 { margin-top: 0; font-size: 24px; font-weight: 400; }
+.card-body { margin-bottom: 0; line-height: 1.6; overflow-wrap: anywhere; }
+.input-story label, .input-story output { display: block; margin: 16px 0; }
+.input-story input {
+  width: 100%; padding: 12px; font: inherit; color: #202b25;
+  background: #fffdf7; border: 1px solid #486653;
+}
+.input-story input:disabled { background: #e3e7e1; color: #58645d; }
+.input-story output { line-height: 1.6; overflow-wrap: anywhere; }
+
+.card { background: #a8dadc; }

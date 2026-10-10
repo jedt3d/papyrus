@@ -1,0 +1,55 @@
+{
+  "id": "e65b9206-14d6-4206-8ead-c7753799daf0",
+  "sequence": 4,
+  "story": "card/long-content",
+  "target": "desktop",
+  "environment": {
+    "os": "macOS 26.7 (25G229)",
+    "arch": "arm64",
+    "rust": "1.98.1",
+    "dioxus": "0.7.10",
+    "blitzCommit": "7832c177ff272128154bac58afe56c2b9164b417",
+    "fonts": [
+      "DejaVu Sans (bundled)",
+      "Noto Sans Thai (bundled)"
+    ],
+    "theme": "light",
+    "backend": "Metal / Vello Hybrid",
+    "requestedLogicalSurface": [
+      1280,
+      720
+    ],
+    "scale": "read capture-time runtime log"
+  },
+  "gitRevision": "1b7ecff849bf4afd12ed5bf074e70ea4951faca9",
+  "sourceHash": "7700ada6ec4f9cea3497a919d79cfb82f5ea28078ecf2b9490fc2e169327f32c",
+  "sourceFiles": {
+    "blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+    "blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+    "blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+    "blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+    "blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+    "blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+    "blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+    "Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+    "Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+    "Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+    "public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+    "public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+    "public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+    "public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+    "rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+    "src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+    "src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4"
+  },
+  "styleHash": "1b37a4d12d0bb4a16cbf5034692ec442f9b88415f640f5f6d43718fe44f1ec6e",
+  "profileHash": "cf77fd681f2714e7a7e7c7be1ed4da56f26a613733ba1e558ea70162765e8d6c",
+  "runnerHash": "57dbe2fa764f1bb8b4f725fec3252514f867d49e5cd7d71d59027438281ea52b",
+  "buildCommand": [
+    "node",
+    "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/papyrus/source/reload/build.mjs",
+    "desktop"
+  ],
+  "submittedAt": "2026-10-10T21:49:19.797Z",
+  "path": "jobs/e65b9206-14d6-4206-8ead-c7753799daf0/output"
+}

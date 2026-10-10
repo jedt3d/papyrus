@@ -14,4 +14,6 @@ Read root `AGENTS.md` first. This directory holds planning and evidence for AI a
 - [Shared story evidence](evidence/phase-0-shared-stories.md): eight selectable fixtures on all three targets, real editing, the disabled-click fix, and unresolved styling/key mapping.
 - [Capture/layout evidence](evidence/phase-0-capture.md): 27 matching baseline images, Web geometry, same-session repeat results, inspected Blitz APIs and unresolved native capture/input mapping.
 
+- [CSS reload evidence](evidence/phase-0-reload.md): local immutable builds, automatic reload/restart, retained failed drafts and rejection of delayed results.
+
 Only `Papyrus.md` and its English translation are explicitly published by the site build. Other agent notes are not automatically published. Keep actual decisions and verified evidence in dated diary entries; mark unresolved work as planned.

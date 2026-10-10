@@ -1,0 +1,27 @@
+import { chromium } from "../../papyrus/source/browser-tests/node_modules/@playwright/test/index.mjs";
+import { createInterface } from "node:readline";
+import { writeFile, readFile } from "node:fs/promises";
+import assert from "node:assert/strict";
+const browser = await chromium.launch();
+const page = await browser.newPage({viewport:{width:1280,height:720}, deviceScaleFactor:1});
+const errors=[]; page.on('pageerror', error => errors.push(error.message));
+await page.goto('http://127.0.0.1:8090/');
+await page.locator('main[data-story-id="card/long-content"]').waitFor();
+console.log('ready: '+page.url());
+for await (const label of createInterface({input:process.stdin})) {
+  const current=JSON.parse(await readFile(new URL('./web-run/current.json',import.meta.url)));
+  await page.waitForURL('http://127.0.0.1:8090/'+current.path+'/');
+  await page.locator('main[data-story-id="card/long-content"]').waitFor();
+  await page.evaluate(async()=>{await document.fonts.ready; await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));});
+  const measured=await page.evaluate(()=>({story:document.querySelector('main').dataset.storyId, banner:document.querySelector('#preview-revision').textContent, cardBackground:getComputedStyle(document.querySelector('.card')).backgroundColor, scale:devicePixelRatio, fonts:document.fonts.status}));
+  assert.ok(measured.banner.includes(current.id.slice(0,8)));
+  assert.ok(measured.banner.includes(current.sourceHash.slice(0,12)));
+  assert.ok(measured.banner.includes(current.styleHash.slice(0,12)));
+  assert.ok(measured.banner.includes(current.profileHash.slice(0,12)));
+  assert.equal(errors.length,0,errors.join(';'));
+  await page.screenshot({path:new URL('./web-'+label+'.png',import.meta.url).pathname});
+  const result={label,time:new Date().toISOString(),browser:browser.version(),url:page.url(),...measured,revision:current};
+  await writeFile(new URL('./web-'+label+'.json',import.meta.url),JSON.stringify(result,null,2));
+  console.log(JSON.stringify({label,cardBackground:measured.cardBackground,id:current.id,story:measured.story}));
+}
+await browser.close();

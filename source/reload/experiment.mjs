@@ -14,6 +14,7 @@ const root = resolve(destination);
 const source = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 mkdirSync(root);
 const hash = bytes => createHash("sha256").update(bytes).digest("hex");
+const runnerHash = hash(readFileSync(fileURLToPath(import.meta.url)));
 const emit = (status, value) => {
   const { sourceFiles, environment, buildCommand, ...summary } = value;
   process.stdout.write(JSON.stringify({ status, ...summary }) + "\n");
@@ -72,7 +73,7 @@ function snapshot(request, sequence) {
     gitRevision: execFileSync("git", ["rev-parse", "HEAD"], { cwd: source, encoding: "utf8" }).trim(),
     sourceHash: hash(JSON.stringify(files)), sourceFiles: files,
     styleHash: hash(css), profileHash: hash(profileBytes),
-    runnerHash: hash(readFileSync(fileURLToPath(import.meta.url))), buildCommand: command,
+    runnerHash, buildCommand: command,
     submittedAt: new Date().toISOString(), path: `jobs/${id}/output`,
   };
   writeFileSync(join(job, "revision.json"), JSON.stringify(revision, null, 2));
@@ -121,13 +122,13 @@ async function activate(item) {
       let started = false;
       for (let attempt = 0; attempt < 40; attempt++) {
         await delay(250);
-        if (startError || candidate.exitCode !== null) throw startError ?? new Error("Native candidate exited before activation");
+        if (startError || candidate.exitCode !== null || candidate.signalCode !== null) throw startError ?? new Error("Native candidate exited before activation");
         if (readFileSync(logPath, "utf8").includes("Papyrus desktop:")) { started = true; break; }
       }
       if (!started) throw new Error("Native candidate did not report a window within 10 seconds");
       // shortcut: window startup + grace is a smoke check, add a paint acknowledgement in the permanent runner.
       await delay(1000);
-      if (candidate.exitCode !== null) throw new Error("Native candidate exited during startup grace");
+      if (candidate.exitCode !== null || candidate.signalCode !== null) throw new Error("Native candidate exited during startup grace");
     }
     if (item.revision.sequence !== newest) { candidate?.kill(); return emit("stale", item.revision); }
     // Only this atomic pointer changes; every published output retains its own assets.

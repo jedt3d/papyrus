@@ -17,7 +17,7 @@ cp source/assets/story.css /tmp/papyrus-draft.css
 node source/reload/experiment.mjs /tmp/papyrus-web-session -- node "$PWD/source/reload/build.mjs" web
 ```
 
-Use a **new** session directory; existing directories are rejected to preserve their results. Paste one JSON record per line into that process, including after each edit:
+Use a **new** session directory; existing directories are rejected to preserve their results. Run only one coordinator per target, and wait for it to finish building before using that target's cache through another command. The cache is shared; cross-process locking for several sessions is not implemented. Paste one JSON record per line into that process, including after each edit:
 
 ```json
 {"draft":"/tmp/papyrus-draft.css","story":"card/long-content","profile":"/tmp/papyrus-profile.json"}
@@ -45,6 +45,6 @@ Build commands are serialized to safely reuse each target's existing Cargo cache
 node --test source/reload/experiment.test.mjs
 ```
 
-This runs the public JSON-lines CLI with a real child builder at the external-process boundary. It checks retained draft/output, correction, a delayed older success and an older success arriving after the latest failure. It does not mock the coordinator or prove renderer behavior. GitHub Actions runs this check beside the existing Web tests; real renderer observations belong in the evidence record.
+This runs the public JSON-lines CLI with a real child builder at the external-process boundary. It checks retained draft/output, correction, a delayed older success, an older success arriving after the latest failure, and rejection of a native candidate terminated by signal during startup. It does not mock the coordinator or prove renderer behavior. GitHub Actions runs this check beside the existing Web tests; real renderer observations belong in the evidence record.
 
 Native activation keeps its previous owned process until the candidate reports a window and survives one second. This is a startup smoke check, not a paint acknowledgement or recovery from a later crash. The local runner trusts its developer-supplied build command; never expose it as a remote build API. Snapshots retain source and build outputs and may be large. Clean up only after preserving evidence. End the coordinator with Ctrl+C to close the native window it owns.

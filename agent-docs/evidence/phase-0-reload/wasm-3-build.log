@@ -1,0 +1,18 @@
+   Compiling papyrus-stories v0.1.0 (/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/wasm-run/jobs/bf933e90-df37-4fe1-9042-20a63e9584f7/source)
+error: `../assets/story.css` wasn't a utf-8 file
+  --> ../assets/story.css:82:1
+   |
+82 | �
+   | ^ byte `255` is not valid utf-8
+
+error: could not compile `papyrus-stories` (lib) due to 1 previous error
+2026-10-10T21:48:19.475123Z ERROR ❌ error
+error from build pipeline
+
+Caused by:
+    0: HTML build pipeline failed (1 errors), showing first
+    1: error from asset pipeline
+    2: running cargo build
+    3: error during cargo build execution
+    4: cargo call to executable 'cargo' with args: '["build", "--target=wasm32-unknown-unknown", "--manifest-path", "/Users/worajedt/Documents/Codex/2026-10-11/https-dioxuslabs-com-learn-0-7/work/issue-6/wasm-run/jobs/bf933e90-df37-4fe1-9042-20a63e9584f7/source/blitz-wasm/Cargo.toml", "--frozen"]' returned a bad status: exit status: 101
+2026-10-10T21:48:19.476400Z ERROR error from build pipeline
