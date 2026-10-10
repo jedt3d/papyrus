@@ -6,6 +6,26 @@ pub const STORY_CSS_TEXT: &str = include_str!("../assets/story.css");
 pub const THAI_FIXTURE: &str = "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย";
 pub const THAI_LONG: &str = "ภาษาไทยมีสระและวรรณยุกต์อยู่หลายตำแหน่ง เราต้องอ่านข้อความนี้ได้ครบโดยไม่มีตัวอักษรหายและไม่มีเครื่องหมายถูกตัด ข้อความยาวนี้ใช้ตรวจการตัดบรรทัดในพื้นที่แคบ";
 
+#[cfg(feature = "embedded-style")]
+pub fn embedded_stylesheet() -> String {
+    use base64::{Engine, engine::general_purpose::STANDARD};
+    STORY_CSS_TEXT
+        .replace(
+            "DejaVuSans.woff2",
+            &format!(
+                "data:font/woff2;base64,{}",
+                STANDARD.encode(include_bytes!("../public/assets/DejaVuSans.woff2"))
+            ),
+        )
+        .replace(
+            "NotoSansThai.ttf",
+            &format!(
+                "data:font/ttf;base64,{}",
+                STANDARD.encode(include_bytes!("../public/assets/NotoSansThai.ttf"))
+            ),
+        )
+}
+
 #[component]
 pub fn Button(label: String, onpress: EventHandler<()>) -> Element {
     rsx! {
@@ -55,12 +75,14 @@ pub fn Preview() -> Element {
 #[component]
 pub fn ButtonStory() -> Element {
     let mut presses = use_signal(|| 0_u32);
-    // Trunk does not resolve Dioxus asset URLs; embed the same CSS for Blitz.
-    let styles = if cfg!(feature = "embedded-style") {
-        rsx! { document::Style { "{STORY_CSS_TEXT}" } }
-    } else {
-        rsx! { document::Stylesheet { href: STORY_CSS } }
+    // Native asset URLs call filesystem APIs on WASM; use the data URI provider.
+    #[cfg(feature = "embedded-style")]
+    let styles = {
+        let css = use_hook(embedded_stylesheet);
+        rsx! { document::Style { "{css}" } }
     };
+    #[cfg(not(feature = "embedded-style"))]
+    let styles = rsx! { document::Stylesheet { href: STORY_CSS } };
 
     rsx! {
         {styles}
