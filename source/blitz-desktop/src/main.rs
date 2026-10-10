@@ -31,6 +31,21 @@ fn main() {
 
 fn preview() -> dioxus::prelude::Element {
     let window = dioxus_native::use_window();
+    let capture_window = window.clone();
+    dioxus_native::use_window_event(move |event, _| {
+        // Startup scale can differ from capture time; sample after real pointer input.
+        if matches!(
+            event,
+            dioxus_native::winit::event::WindowEvent::PointerButton { .. }
+        ) {
+            eprintln!(
+                "Papyrus capture: surface={:?}; scale={}; theme={:?}",
+                capture_window.surface_size(),
+                capture_window.scale_factor(),
+                capture_window.theme()
+            );
+        }
+    });
     dioxus::prelude::use_hook(move || {
         eprintln!(
             "Papyrus desktop: surface={:?}; scale={}; renderer=vello-hybrid",
