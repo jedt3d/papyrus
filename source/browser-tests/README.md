@@ -18,6 +18,8 @@ The viewport is 1280 × 720 with scale factor 1. Playwright 1.64.0 and its packa
 
 `capture.spec.mjs` also saves all eight initial fixtures and a restored long Card: nine viewport PNGs plus `captures.json`. `measure-preview.mjs` reads real DOM border boxes in CSS pixels, scroll/overflow, font readiness, values and focus. The test waits for fonts and two animation frames; screenshots disable animations and hide the caret. It checks the repeated geometry and records PNG equality without requiring pixel identity. Source/CSS/font hashes and capture timestamps travel with the results. See the [capture evidence](../../agent-docs/evidence/phase-0-capture.md) before cross-renderer comparison; these DOM measurements cannot measure Blitz content.
 
+`input.spec.mjs` checks Tab/Shift+Tab, Button Enter/Space activation, TextInput caret/deletion/select-all, disabled attempts and keyboard access to long controls. It also checks a separate 390 × 600 Web viewport with scrolling and wrapping. It saves focus/computed outline, real Chromium accessibility trees through CDP, source/style/font/test hashes and PNGs. macOS uses Command+Right for Web end-of-line; Linux uses End. These are browser input checks, not OS IME or a screen-reader audit.
+
 ## CI and limits
 
 [Web tests workflow](../../.github/workflows/web-tests.yml) runs for pushes to `main` and pull requests that change `source/` or the workflow. It uses Ubuntu 24.04 / Node 22, pinned Rust and checksum-verified Dioxus CLI 0.7.10. It installs Chromium with its Linux dependencies, starts a fresh server, and uploads `web-browser-tests` artifacts for 14 days. It tests code; it does not publish the application or process Issues automatically.
