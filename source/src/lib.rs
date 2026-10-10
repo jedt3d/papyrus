@@ -2,6 +2,8 @@ use dioxus::prelude::*;
 
 pub const BUTTON_STORY_ID: &str = "button/primary";
 pub const STORY_CSS: Asset = asset!("/assets/story.css");
+pub const THAI_FIXTURE: &str = "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย";
+pub const THAI_LONG: &str = "ภาษาไทยมีสระและวรรณยุกต์อยู่หลายตำแหน่ง เราต้องอ่านข้อความนี้ได้ครบโดยไม่มีตัวอักษรหายและไม่มีเครื่องหมายถูกตัด ข้อความยาวนี้ใช้ตรวจการตัดบรรทัดในพื้นที่แคบ";
 
 #[component]
 pub fn Button(label: String, onpress: EventHandler<()>) -> Element {
@@ -13,6 +15,40 @@ pub fn Button(label: String, onpress: EventHandler<()>) -> Element {
             "{label}"
         }
     }
+}
+
+#[component]
+pub fn TextInputStory() -> Element {
+    let mut value = use_signal(String::new);
+    let mut starts = use_signal(|| 0_u32);
+    let mut updates = use_signal(|| 0_u32);
+    let mut ends = use_signal(|| 0_u32);
+    let mut phase = use_signal(|| "idle");
+    let mut composition = use_signal(String::new);
+    rsx! {
+        section { class: "story thai-story", "data-story-id": "text-input/thai", lang: "th",
+            h2 { "Thai text / Input" }
+            p { id: "thai-marks", "{THAI_FIXTURE}" }
+            p { id: "thai-long", "{THAI_LONG}" }
+            label { r#for: "thai-input", "Thai / IME input" }
+            // Keep the input uncontrolled so observing preedit never rewrites it.
+            input { id: "thai-input", r#type: "text",
+                oninput: move |event| value.set(event.value()),
+                oncompositionstart: move |_| { starts += 1; phase.set("active"); },
+                oncompositionupdate: move |event| { updates += 1; composition.set(event.data().data()); },
+                oncompositionend: move |event| { ends += 1; phase.set("idle"); composition.set(event.data().data()); },
+            }
+            output { id: "input-echo", "Input value: {value}" }
+            p { class: "input-note", "The value may include preedit. A typed Thai string alone does not prove IME composition." }
+            output { id: "composition-status", "Composition: {phase}; starts: {starts}; updates: {updates}; ends: {ends}" }
+            output { id: "composition-data", "Last composition data: {composition}" }
+        }
+    }
+}
+
+#[component]
+pub fn Preview() -> Element {
+    rsx! { ButtonStory {} TextInputStory {} }
 }
 
 #[component]

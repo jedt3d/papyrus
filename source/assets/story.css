@@ -7,6 +7,13 @@
 }
 
 * { box-sizing: border-box; }
+@font-face {
+  font-family: "Papyrus Thai";
+  src: url("NotoSansThai.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
 body {
   margin: 0;
   background: #f4f1e9;
@@ -41,3 +48,9 @@ h1 { margin: 16px 0; font-size: 36px; font-weight: 400; }
 .primary-button:focus-visible { outline: 3px solid #8a591d; outline-offset: 4px; }
 .primary-button:active { background: #163a28; }
 .story-id { margin-top: 24px; color: #486653; font-size: 13px; }
+.thai-story { padding-top: 0; font-family: "Papyrus Thai", "Papyrus Sans", sans-serif; line-height: 1.8; }
+#thai-long { max-width: 320px; }
+.thai-story label, .thai-story output { display: block; }
+.thai-story input { width: 100%; padding: 12px; font: inherit; border: 1px solid #486653; }
+.thai-story input:focus-visible { outline: 3px solid #8a591d; outline-offset: 2px; }
+.input-note { font-size: 13px; }

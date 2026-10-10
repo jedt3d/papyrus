@@ -1,6 +1,6 @@
 # Papyrus software source
 
-This is the source-code area for Papyrus. It contains the first Dioxus Web experiment: the `button/primary` story. It is a small baseline, not the complete Papyrus workbench.
+This is the source-code area for Papyrus. It contains shared `button/primary` and `text-input/thai` stories. They are small experiments, not the complete Papyrus workbench.
 
 ## Run the Button story
 
@@ -22,6 +22,10 @@ dx serve --web --bin papyrus-web --locked --addr 127.0.0.1 --port 8080 --open fa
 
 Open the address printed by Dioxus. The page starts with `Presses: 0`. Click **Press me** twice: the count must become 1, then 2. Reload the page to reset it. The count is local to the story and is not saved.
 
+Below the Button, enter `น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย` into **Thai / IME input**. Check that the input and echo match. Delete and restore the last character, then move focus with Shift+Tab. The text must remain intact. Inspect the static Thai marks and the long paragraph, which wraps in a 320px area.
+
+To check composition, select an actual OS input method with preedit. Observe start/update/end counts while composing; test commit, Esc cancellation, editing, and focus changes. The input is uncontrolled: its observer does not write the value back during preedit. The echo can include preedit and is not labelled as committed text. Unicode automation and Thai keyboard entry alone do not prove composition support.
+
 To build a static Web bundle:
 
 ```sh
@@ -32,15 +36,17 @@ Dioxus prints the output location. Serve that bundle with an HTTP server; do not
 
 ## Shared code and assets
 
-`src/lib.rs` exports the Button component, its explicit `button/primary` story, and the stylesheet asset. `src/main.rs` only selects the Web launcher. Future Blitz experiments can import the library and launch the same story without copying it. Their launch, font, and asset setup still needs validation.
+`src/lib.rs` exports the Button, both stories, the preview, Thai fixtures, and the stylesheet asset. `src/main.rs` only selects the Web launcher. Blitz experiments import the library without copying the component. Their launch, font, and asset setup needs separate validation.
 
 The CSS is ordinary CSS. Its presence here proves no Blitz compatibility. The Web feature includes Dioxus devtools because the 0.7.10 Web history implementation gets its required `web-sys/Location` feature through devtools.
 
-The bundled DejaVu Sans font is copied unchanged from [Blitz's 7GUIs example at commit 7832c17](https://github.com/DioxusLabs/blitz/blob/7832c177ff272128154bac58afe56c2b9164b417/examples/seven_guis/assets/DejaVuSans.woff2). Its SHA-256 is `a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a`. The [font license](public/LICENSE-DejaVu.txt) is included in the static bundle. Thai font coverage and IME are separate experiments.
+The bundled DejaVu Sans font is copied unchanged from [Blitz's 7GUIs example at commit 7832c17](https://github.com/DioxusLabs/blitz/blob/7832c177ff272128154bac58afe56c2b9164b417/examples/seven_guis/assets/DejaVuSans.woff2). Its SHA-256 is `a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a`. It does not cover the Thai fixture. The Thai story uses unchanged [Noto Sans Thai at Google Fonts commit 8b0a1d0](https://github.com/google/fonts/tree/8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5/ofl/notosansthai), saved as `NotoSansThai.ttf`; SHA-256 `5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8`.
+
+Both [DejaVu](public/LICENSE-DejaVu.txt) and [Noto](public/LICENSE-NotoSansThai.txt) licenses travel with the bundle. `Dioxus.toml` explicitly sets `application.public_dir`: in CLI 0.7.10, an absent application table otherwise leaves this directory unset. A stale output can hide missing assets; check font loading and matching served bytes after a fresh build.
 
 ## Checks and limits
 
-The Rust test sends a serialized click event through Dioxus's public event boundary and checks the story's rendered count. It catches broken callback/state wiring without a browser. It does not test browser hit targets, fonts, or real keyboard delivery; repeat the browser steps above as well.
+The Rust tests send serialized click and input events through Dioxus's public event boundary and check the visible count and Thai echo. They catch broken callback/state wiring without a browser. They do not test browser hit targets, fonts, keyboard layouts, or real composition; repeat the browser steps above as well.
 
 Before committing source changes:
 
