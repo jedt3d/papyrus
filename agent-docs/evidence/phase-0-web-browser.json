@@ -1,0 +1,31 @@
+{
+  "checkedOn": "2026-10-11",
+  "sourceRevision": "78d6005c851f5b6114c3fb1b06621b12ef3b570c",
+  "browser": "Codex In-app Browser",
+  "browserVersion": null,
+  "browserVersionNote": "Not exposed by the available browser automation surface.",
+  "os": "macOS 26.7",
+  "architecture": "arm64",
+  "renderer": "Dioxus Web / browser DOM",
+  "url": "http://127.0.0.1:8080/",
+  "actions": [
+    "reload: Presses: 0",
+    "click: Presses: 1",
+    "click: Presses: 2",
+    "Enter on focused button: Presses: 3"
+  ],
+  "count": "Presses: 3",
+  "fontFaceCount": 1,
+  "fontFamily": "\"Papyrus Sans\", sans-serif",
+  "fontLoaded": true,
+  "fontStatus": "loaded",
+  "storyId": "button/primary",
+  "stylesheets": [
+    "/assets/story-dxh6ab5eee27060dea3.css"
+  ],
+  "viewport": {
+    "height": 720,
+    "scaleFactor": 2,
+    "width": 1280
+  }
+}

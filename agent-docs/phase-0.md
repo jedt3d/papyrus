@@ -1,6 +1,6 @@
 # Phase 0 technical validation
 
-Status: planned. No renderer compatibility claim has been verified in this repository.
+Status: in progress. The first Button story is [verified on Dioxus Web](evidence/phase-0-web.md). Blitz WASM, Blitz Desktop, and cross-renderer compatibility remain unverified.
 
 ## GitHub tickets and work order
 
@@ -18,7 +18,7 @@ The owner requested ticket creation on 11 October 2026. The experiments are trac
 | 8 | 1 | [#8: Thai text, fonts, and IME](https://github.com/jedt3d/papyrus/issues/8) | #4 |
 | 9 | 1 | [#9: Findings and architecture recommendation](https://github.com/jedt3d/papyrus/issues/9) | #5, #6, #7, #8 |
 
-Start with #1. After it closes, #2 and #3 are independent; favor WASM first because online preview is the first priority. After #4 closes, #5–#8 can proceed independently. Work the unblocked tickets, not every ticket with a readiness label. All nine are required; priority 1 means later, not optional. Native GitHub links are the source of truth if the plan changes.
+The Web baseline in #1 is implemented and checked. Once #1 is closed, #2 and #3 are independent; favor WASM first because online preview is the first priority. After #4 closes, #5–#8 can proceed independently. Work the unblocked tickets, not every ticket with a readiness label. All nine are required; priority 1 means later, not optional. Native GitHub links are the source of truth if the plan changes.
 
 ## Objective
 

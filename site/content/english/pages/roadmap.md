@@ -1,17 +1,19 @@
 ---
 title: "Roadmap and current priorities"
 description: "Build the publishing foundation, prove renderer behavior, then implement the workbench."
-status: "Planning"
+status: "Phase 0 in progress"
 draft: false
 ---
 
 ## Current state
 
-The repository and developer diary are scaffolded. Papyrus software, the importer, and the compatibility harness are not implemented. The [proposal]({{< relref "pages/proposal.md" >}}) describes future capabilities.
+The developer diary is published and the [first Button story works on Dioxus Web]({{< relref "diary/003-first-web-button.md" >}}). The full workbench, importer, and compatibility harness are not implemented. The [proposal]({{< relref "pages/proposal.md" >}}) describes future capabilities.
 
 ## Phase 0 — Prove the rendering paths
 
 Run shared Button, Card, and TextInput stories on Dioxus Web, Blitz WASM, and Blitz Desktop. Pin tool and renderer versions. Establish reload/restart, image capture, layout measurement, real input, focus, Thai text, and IME limitations.
+
+The Web Button baseline is verified. [Blitz WASM (#2)](https://github.com/jedt3d/papyrus/issues/2) is the next priority; [Desktop (#3)](https://github.com/jedt3d/papyrus/issues/3) is a separate experiment.
 
 **Gate:** traceable results for every target, including failures and unknowns. See the [agent experiment brief](https://github.com/jedt3d/papyrus/blob/main/agent-docs/phase-0.md).
 
@@ -37,4 +39,4 @@ Add renderer adapters in response to concrete project needs. Other Rust GUI fram
 
 ## Documentation grows with implementation
 
-The [software reference]({{< relref "pages/reference.md" >}}) will cover actual APIs, schemas and CLI behavior. The [user guide]({{< relref "pages/user-guide.md" >}}) will explain real workflows. Neither currently claims working Papyrus features.
+The [software reference]({{< relref "pages/reference.md" >}}) will cover actual APIs, schemas and CLI behavior. The [user guide]({{< relref "pages/user-guide.md" >}}) will explain real workflows. Both distinguish the verified experiment from planned workbench features.

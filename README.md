@@ -1,11 +1,12 @@
 # Papyrus
 
-Papyrus is a planned Rust component workbench for designing, previewing, and checking styles across **Dioxus Web** and **Dioxus Native / Blitz**. This repository currently contains the project foundation and a Hugo developer diary. The Rust application and compatibility harness are not implemented yet.
+Papyrus is a planned Rust component workbench for designing, previewing, and checking styles across **Dioxus Web** and **Dioxus Native / Blitz**. This repository contains a Hugo developer diary and the first working Web Button story. The full workbench and compatibility harness are not implemented yet.
 
 - **Developer diary:** https://jedt3d.github.io/papyrus/
 - **Original proposal:** [agent-docs/Papyrus.md](agent-docs/Papyrus.md) (Thai)
 - **Next experiment:** [agent-docs/phase-0.md](agent-docs/phase-0.md)
-- **Phase 0 tickets:** [GitHub Issues](https://github.com/jedt3d/papyrus/issues?q=is%3Aissue%20is%3Aopen%20label%3Aphase%3A0); start with [#1](https://github.com/jedt3d/papyrus/issues/1).
+- **Web Button experiment:** [run guide](source/README.md) and [verified evidence](agent-docs/evidence/phase-0-web.md).
+- **Phase 0 tickets:** [GitHub Issues](https://github.com/jedt3d/papyrus/issues?q=is%3Aissue%20is%3Aopen%20label%3Aphase%3A0); the Web baseline is implemented, with [#2](https://github.com/jedt3d/papyrus/issues/2) and [#3](https://github.com/jedt3d/papyrus/issues/3) next.
 - **Agent instructions:** [AGENTS.md](AGENTS.md)
 - **Project skills:** [Matt Pocock's Engineering and Productivity skills](.agents/skills/README.md)
 

@@ -18,10 +18,10 @@ Keep `AGENTS.md` and `README.md` at the repository root. Use these canonical upp
 
 ## Current status and priority
 
-The repository has a publishing scaffold, not a working Papyrus application.
+The repository has a publishing site and a verified Dioxus Web Button experiment. The full Papyrus application and harness are still planned.
 
 1. Maintain the reproducible Hugo build and GitHub Pages deployment.
-2. Perform the Phase 0 experiment in `agent-docs/phase-0.md`; pin versions before compatibility claims.
+2. Continue Phase 0 from the Web baseline in `agent-docs/evidence/phase-0-web.md`, with Blitz WASM (#2) and Desktop (#3) next. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
 3. Build the compatibility checker and harness from evidence gathered in Phase 0.
 4. Add Studio, local backend, revision-aware reload, and static gallery export.
 5. Add Web CSS import/adaptation and then team/CI workflows.

@@ -26,4 +26,4 @@ When a skill says to publish a spec or ticket, create a GitHub issue. When it sa
 
 ## Current scope
 
-The owner authorized workflow setup and Phase 0 ticket creation. This does not start implementation, schedule unattended agents, or create a GitHub Actions workflow that processes issues automatically.
+A ticket describes work; begin implementation when the user requests that ticket or a workflow covering it. Follow the current request and the live blockers. Workflow setup does not schedule unattended agents or create a GitHub Actions workflow that processes issues automatically.
