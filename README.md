@@ -5,6 +5,7 @@ Papyrus is a planned Rust component workbench for designing, previewing, and che
 - **Developer diary:** https://jedt3d.github.io/papyrus/
 - **Original proposal:** [agent-docs/Papyrus.md](agent-docs/Papyrus.md) (Thai)
 - **Next experiment:** [agent-docs/phase-0.md](agent-docs/phase-0.md)
+- **Phase 0 tickets:** [GitHub Issues](https://github.com/jedt3d/papyrus/issues?q=is%3Aissue%20is%3Aopen%20label%3Aphase%3A0); start with [#1](https://github.com/jedt3d/papyrus/issues/1).
 - **Agent instructions:** [AGENTS.md](AGENTS.md)
 - **Project skills:** [Matt Pocock's Engineering and Productivity skills](.agents/skills/README.md)
 

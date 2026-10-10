@@ -46,7 +46,17 @@ Matt Pocock's Engineering and Productivity skills are installed in `.agents/skil
 
 Respect each skill's invocation policy. Skills marked for explicit invocation run when the user requests that workflow. Installing them does not start an interview, create issues, or implement the roadmap.
 
-Before the first issue-driven engineering workflow, run `setup-matt-pocock-skills` with the user to confirm tracker settings. Keep its configuration, glossary, and decision records under `agent-docs/`; use `agent-docs/skills/`, `agent-docs/GLOSSARY.md`, and `agent-docs/adr/` in place of the upstream examples' `docs/agents/`, root glossary, and `docs/adr/`. The project's three areas and Plain English rules apply to documents produced by these skills.
+### Issue tracker
+
+Use GitHub Issues in `jedt3d/papyrus` for specs and tickets. Before tracker work, read `agent-docs/skills/issue-tracker.md`. Work only on tickets whose blockers are resolved, in priority order.
+
+### Triage labels
+
+Before triage or ticket creation, read `agent-docs/skills/triage-labels.md` for the default five roles, phase labels, and priority order. A `ready-for-agent` label does not override open blockers.
+
+### Domain docs
+
+Papyrus has one domain context. Read `agent-docs/skills/domain.md` before domain work. Keep configuration, glossary, and decision records under `agent-docs/`; use `agent-docs/skills/`, `agent-docs/GLOSSARY.md`, and `agent-docs/adr/` in place of the upstream examples' `docs/agents/`, root glossary, and `docs/adr/`. The project's three areas and Plain English rules apply to documents produced by these skills.
 
 ## Publishing workflow
 

@@ -8,6 +8,6 @@ Codex can discover these project skills when working in this repository. Newly i
 
 Start with `ask-matt` when choosing a workflow. Use `writing-for-agents` for agent instructions; it complements Papyrus's Plain English rule rather than replacing it.
 
-The engineering tracker setup has not run yet. Before an issue-driven workflow, use `setup-matt-pocock-skills` to confirm settings and save its configuration under `agent-docs/skills/`. GitHub Issues in `jedt3d/papyrus` is the proposed tracker. No issues or labels were created during installation.
+The engineering tracker is configured for GitHub Issues in `jedt3d/papyrus`. Read [tracker rules](../../agent-docs/skills/issue-tracker.md), [label rules](../../agent-docs/skills/triage-labels.md), and [domain rules](../../agent-docs/skills/domain.md) before the corresponding work. Configuration lives under `agent-docs/skills/`; edit it there if the project workflow changes.
 
 Updates are manual. Review a new upstream revision before replacing these copies, and update this provenance record with the commit used.
