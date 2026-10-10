@@ -59,6 +59,24 @@ The site theme CSS is publishing UI; it does not demonstrate Blitz CSS compatibi
 
 ## Documentation discipline
 
-Keep the original Thai proposal intact. Use English for initial navigation and engineering notes; identify Thai content with the appropriate language metadata. Distinguish planned, investigated, verified, and failed work. Diary entries include dates, decisions, evidence, limitations, and next steps. Never publish invented benchmarks, APIs, or compatibility guarantees.
+### Writing style for all documents
+
+Use easy-to-read **Plain English** when drafting, writing, or revising any project content: blog/diary entries, README files, agent briefs, plans, software reference, user guides, and website copy. Use familiar words, short sentences, and concise paragraphs. Explain technical terms when readers need them. Keep necessary detail, but remove filler, repetition, and unnecessary jargon. A little relevant humor is welcome; it must not obscure instructions, evidence, or conclusions.
+
+Give readers the following context where it applies:
+
+- **Background:** where the idea, request, or problem came from.
+- **Direction:** what outcome we want and where the work leads.
+- **Reason:** why we chose this approach.
+- **Need:** why the work is necessary and what problem it solves.
+- **Priority:** what matters first and what can wait.
+- **Plan:** what we intend to do and in what order.
+- **Expected process:** how we expect to carry out and check the work.
+- **Possible problems:** likely obstacles, limitations, and how we plan to handle them.
+- **Conclusion after the work:** what actually happened, what the evidence shows, what we learned, and what comes next.
+
+These are writing prompts, not nine mandatory headings for every page. Combine them into a short, natural account; include only what helps the reader understand the document. A small reference entry may need only purpose, behavior, and limits. For unfinished work, state that results are pending; write conclusions from evidence after the work is done.
+
+Keep the original Thai proposal intact as source material; this Plain English rule applies to authored content, not a silent translation or rewrite of imported references. Identify retained Thai content with the appropriate language metadata. Distinguish planned, investigated, verified, and failed work. Diary entries include dates, decisions, evidence, limitations, and next steps. Never publish invented benchmarks, APIs, or compatibility guarantees.
 
 Future `Software reference` documents APIs, schemas and CLI behavior; `User guide` explains real user workflows. Until implemented, their pages must state that they are planned. Preserve upstream license notices and do not redistribute unlicensed demo images.
