@@ -1,0 +1,8 @@
+{
+  "name": "papyrus-browser-tests",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": { "test": "playwright test" },
+  "devDependencies": { "@playwright/test": "1.64.0" }
+}

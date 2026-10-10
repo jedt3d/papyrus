@@ -1,0 +1,55 @@
+name: Test Papyrus Web stories
+
+on:
+  push:
+    branches: [main]
+    paths: ['source/**', '.github/workflows/web-tests.yml']
+  pull_request:
+    paths: ['source/**', '.github/workflows/web-tests.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  web:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Rust toolchain
+        working-directory: source
+        run: rustup show
+      - name: Check Rust behavior
+        working-directory: source
+        run: |
+          cargo test --locked --no-default-features
+          cargo test --locked --no-default-features --features embedded-style --test embedded_assets
+      - name: Install Dioxus CLI 0.7.10
+        working-directory: ${{ runner.temp }}
+        run: |
+          archive=dx-x86_64-unknown-linux-gnu.tar.gz
+          curl --fail --location --retry 3 "https://github.com/DioxusLabs/dioxus/releases/download/v0.7.10/$archive" --output "$archive"
+          echo "4363e4ed2a3f1eb7f4d38d2d59aed59ce43271c44c16b425e92c89a64761fbe7  $archive" | sha256sum --check
+          mkdir dioxus-bin
+          tar -xzf "$archive" -C dioxus-bin
+          echo "$RUNNER_TEMP/dioxus-bin" >> "$GITHUB_PATH"
+      - name: Install test dependencies and Chromium
+        working-directory: source/browser-tests
+        run: |
+          npx --yes pnpm@10.11.0 install --frozen-lockfile
+          npx --yes pnpm@10.11.0 exec playwright install --with-deps chromium
+      - name: Run headless browser tests
+        working-directory: source/browser-tests
+        run: npx --yes pnpm@10.11.0 test
+      - name: Save browser report and evidence
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-browser-tests
+          path: |
+            source/browser-tests/playwright-report/
+            source/browser-tests/test-results/
+          retention-days: 14
