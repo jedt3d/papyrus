@@ -1,0 +1,37 @@
+/* Publishing UI; this stylesheet is not a Blitz compatibility fixture. */
+.diary-shell { max-width: 1120px; margin-inline: auto; padding: 3rem 1.5rem 5rem; }
+.diary-kicker { color: var(--color-primary); font: 500 .8rem/1.5 var(--font-primary); letter-spacing: .13em; text-transform: uppercase; }
+.diary-intro { display: grid; grid-template-columns: 1.8fr 1fr; gap: 4rem; padding-block: 1rem 3.5rem; border-bottom: 1px solid var(--color-border); }
+.diary-intro h1 { font-family: var(--font-secondary); font-weight: 400; font-size: clamp(2.7rem, 5vw, 4.7rem); line-height: 1.13; margin-block: 1rem 1.5rem; }
+.diary-lede { font-size: 1.1rem; line-height: 1.8; max-width: 42rem; }
+.diary-aside { align-self: end; border-left: 1px solid var(--color-border); padding-left: 2rem; }
+.diary-aside h2 { font-size: 1.1rem; margin-bottom: 1rem; }
+.diary-aside p { line-height: 1.7; }
+.diary-links { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.75rem; }
+.diary-links a, .diary-aside a { text-decoration: underline; text-underline-offset: .25em; }
+.diary-section-title { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-block: 3rem 1.5rem; }
+.diary-section-title h2 { font-size: 1.7rem; font-family: var(--font-secondary); font-weight: 400; }
+.diary-entry { display: grid; grid-template-columns: 10rem 1fr; gap: 2rem; padding-block: 1.8rem; border-top: 1px solid var(--color-border); }
+.diary-entry h3 { font-size: 1.5rem; margin-bottom: .75rem; font-family: var(--font-secondary); font-weight: 500; }
+.diary-entry p { line-height: 1.8; max-width: 42rem; }
+.diary-meta { font-size: .85rem; line-height: 1.8; color: var(--color-text-light); }
+.diary-status { display: inline-block; margin-top: .65rem; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; }
+.reading-shell { max-width: 860px; margin-inline: auto; padding: 3rem 1.5rem 5rem; }
+.reading-shell > h1 { font-family: var(--font-secondary); font-weight: 400; font-size: clamp(2.2rem, 4vw, 3.5rem); line-height: 1.2; margin-block: 1rem; }
+.reading-shell .content { margin-top: 2.5rem; line-height: 1.85; }
+.reading-shell .content table { display: block; overflow-x: auto; }
+.reading-shell .content pre { overflow-x: auto; }
+.reading-toc { margin-top: 2rem; padding: 1.25rem; border: 1px solid var(--color-border); }
+.reading-toc summary { cursor: pointer; }
+.reading-toc nav { margin-top: 1rem; }
+.reading-toc a { text-decoration: underline; text-underline-offset: .2em; }
+.content h2, .content h3 { scroll-margin-top: 7rem; }
+.skip-link { position: absolute; left: 1rem; top: -10rem; z-index: 100; padding: .75rem 1rem; background: var(--color-body); }
+.skip-link:focus { top: 1rem; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 4px; }
+.dark .diary-kicker { color: var(--color-darkmode-primary); }
+.dark .diary-intro, .dark .diary-aside, .dark .diary-entry, .dark .reading-toc { border-color: var(--color-darkmode-border); }
+.dark .diary-meta { color: var(--color-darkmode-text-light); }
+.dark .skip-link { background: var(--color-darkmode-body); }
+.dark a:focus-visible, .dark button:focus-visible, .dark summary:focus-visible { outline-color: var(--color-darkmode-primary); }
+@media (max-width: 720px) { .diary-intro { grid-template-columns: 1fr; gap: 2rem; } .diary-aside { border-left: 0; border-top: 1px solid var(--color-border); padding: 1.5rem 0 0; } .diary-entry { grid-template-columns: 1fr; gap: .6rem; } .diary-section-title { align-items: start; } }

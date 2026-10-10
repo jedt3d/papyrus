@@ -1,0 +1,4 @@
+<article class="diary-entry">
+  <div class="diary-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time><br><span class="diary-status">{{ .Params.status }}</span></div>
+  <div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description }}</p></div>
+</article>

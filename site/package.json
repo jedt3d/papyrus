@@ -1,0 +1,28 @@
+{
+  "name": "papyrus-diary",
+  "description": "Papyrus developer diary and documentation",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "zeon.studio",
+  "scripts": {
+    "dev": "node scripts/syncProposal.js && concurrently \"node scripts/syncProposal.js --watch\" \"node scripts/themeGenerator.js --watch\" \"hugo server --bind 127.0.0.1\"",
+    "build": "node scripts/syncProposal.js && node scripts/themeGenerator.js && hugo --gc --minify",
+    "preview": "node scripts/syncProposal.js && node scripts/themeGenerator.js && hugo server --bind 127.0.0.1 --environment production --disableFastRender",
+    "check": "node scripts/syncProposal.js && node --test scripts/*.test.js",
+    "test": "node scripts/syncProposal.js && node --test scripts/*.test.js",
+    "postinstall": "node -e \"const fs=require('fs'),p='node_modules/.bin/tailwindcss';try{fs.lstatSync(p).isSymbolicLink()||((fs.unlinkSync(p)),fs.symlinkSync('../@tailwindcss/cli/dist/index.mjs',p))}catch(e){}\""
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "concurrently": "^9.2.1",
+    "prettier": "^3.8.3",
+    "prettier-plugin-go-template": "0.0.15",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "tailwind-bootstrap-grid": "^7.0.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "private": true,
+  "packageManager": "pnpm@10.11.0"
+}

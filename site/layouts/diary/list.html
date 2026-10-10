@@ -1,0 +1,5 @@
+{{ define "main" }}
+<section class="diary-shell"><p class="diary-kicker">Papyrus / Field notes</p><h1 class="mt-4 mb-6">{{ .Title }}</h1><div class="content mb-10">{{ .Content }}</div>
+{{ range .RegularPages.ByDate.Reverse }}{{ partial "diary-entry.html" . }}{{ end }}
+</section>
+{{ end }}

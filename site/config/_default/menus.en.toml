@@ -1,0 +1,35 @@
+[[main]]
+name = "Diary"
+url = "/diary/"
+weight = 1
+[[main]]
+name = "Proposal"
+url = "/proposal/"
+weight = 2
+[[main]]
+name = "Roadmap"
+url = "/roadmap/"
+weight = 3
+[[main]]
+name = "Documentation"
+weight = 4
+[[main]]
+parent = "Documentation"
+name = "Software reference"
+url = "/reference/"
+[[main]]
+parent = "Documentation"
+name = "User guide"
+url = "/user-guide/"
+[[footer]]
+name = "Proposal"
+url = "/proposal/"
+weight = 1
+[[footer]]
+name = "Roadmap"
+url = "/roadmap/"
+weight = 2
+[[footer]]
+name = "Repository"
+url = "https://github.com/jedt3d/papyrus"
+weight = 3

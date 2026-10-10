@@ -1,0 +1,82 @@
+name: Publish Papyrus diary
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'agent-docs/Papyrus.md'
+      - '.github/workflows/pages.yml'
+  pull_request:
+    paths:
+      - 'site/**'
+      - 'agent-docs/Papyrus.md'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: '0.158.0'
+  HUGO_ENVIRONMENT: production
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.25.1'
+          cache-dependency-path: site/go.sum
+      - name: Install Hugo Extended
+        working-directory: ${{ runner.temp }}
+        run: |
+          archive="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          release="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          curl --fail --location --retry 3 "$release/$archive" --output "$archive"
+          curl --fail --location --retry 3 "$release/hugo_${HUGO_VERSION}_checksums.txt" --output checksums.txt
+          grep "  $archive$" checksums.txt | sha256sum --check
+          mkdir -p hugo-bin
+          tar -xzf "$archive" -C hugo-bin hugo
+          echo "$RUNNER_TEMP/hugo-bin" >> "$GITHUB_PATH"
+      - name: Install dependencies
+        run: npx --yes pnpm@10.11.0 install --frozen-lockfile
+      - name: Check proposal synchronization
+        run: npx --yes pnpm@10.11.0 test
+      - name: Build site
+        run: npx --yes pnpm@10.11.0 build
+      - name: Verify Pages paths and links
+        run: python3 scripts/check_site.py
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

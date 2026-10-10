@@ -1,0 +1,40 @@
+---
+title: "Roadmap and current priorities"
+description: "Build the publishing foundation, prove renderer behavior, then implement the workbench."
+status: "Planning"
+draft: false
+---
+
+## Current state
+
+The repository and developer diary are scaffolded. Papyrus software, the importer, and the compatibility harness are not implemented. The [proposal]({{< relref "pages/proposal.md" >}}) describes future capabilities.
+
+## Phase 0 — Prove the rendering paths
+
+Run shared Button, Card, and TextInput stories on Dioxus Web, Blitz WASM, and Blitz Desktop. Pin tool and renderer versions. Establish reload/restart, image capture, layout measurement, real input, focus, Thai text, and IME limitations.
+
+**Gate:** traceable results for every target, including failures and unknowns. See the [agent experiment brief](https://github.com/jedt3d/papyrus/blob/main/agent-docs/phase-0.md).
+
+## Phase 1 — Compatibility harness
+
+Parse CSS and validate properties, values, selectors, at-rules, and generated styles against an evidence-backed profile. Add repeatable rendering and interaction tests. Unknown is not supported.
+
+## Phase 2 — Papyrus MVP
+
+Component browser, explicit controls, CSS editor, local backend, revision-aware preview reload, comparison, and static gallery export. Preserve drafts and the last working preview after build failures.
+
+## Phase 3 — Import and adaptation
+
+Import HTML, CSS and assets while preserving originals. Suggest reviewed transformations and explicit target overrides. JavaScript behavior is not automatically converted to Rust.
+
+## Phase 4 — Team workflow
+
+CI reports, baseline review, galleries per source revision, and hosted build services after the local loop is reliable.
+
+## Phase 5 — Additional targets
+
+Add renderer adapters in response to concrete project needs. Other Rust GUI frameworks may share tokens or story intent without sharing CSS.
+
+## Documentation grows with implementation
+
+The [software reference]({{< relref "pages/reference.md" >}}) will cover actual APIs, schemas and CLI behavior. The [user guide]({{< relref "pages/user-guide.md" >}}) will explain real workflows. Neither currently claims working Papyrus features.

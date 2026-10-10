@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="reading-shell" {{ with .Params.content_language }}lang="{{ . }}"{{ end }}>
+  <p class="diary-kicker">Papyrus / {{ if eq .Section "diary" }}Developer diary{{ else }}Project documents{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  <p class="diary-meta">{{ with .Params.status }}{{ . }}{{ end }}{{ if eq .Section "diary" }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>{{ end }}</p>
+  <p class="mt-4">{{ .Description }}</p>
+  {{ if .TableOfContents }}<details class="reading-toc"><summary>On this page</summary>{{ .TableOfContents }}</details>{{ end }}
+  <div class="content">{{ .Content }}</div>
+</article>
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="diary-shell">
+  <p class="diary-kicker">Papyrus / Developer diary</p>
+  <div class="diary-intro">
+    <div>
+      <h1>A shared design,<br>across two renderers.</h1>
+      <p class="diary-lede">Building a Rust component workbench for Web CSS and Blitz CSS. This is our working notebook: the decisions, experiments, and evidence behind Papyrus.</p>
+      <div class="diary-links">
+        {{ with site.GetPage "pages/proposal" }}<a href="{{ .RelPermalink }}">Read the project proposal →</a>{{ end }}
+        {{ with site.GetPage "diary" }}<a href="{{ .RelPermalink }}">Browse the diary →</a>{{ end }}
+      </div>
+    </div>
+    <aside class="diary-aside" aria-label="Project status">
+      <p class="diary-kicker">Current chapter / 00</p>
+      <h2>Foundation before the workbench</h2>
+      <p>The publishing foundation is in place. Renderer validation is next; the Papyrus application is still planned.</p>
+      {{ with site.GetPage "pages/roadmap" }}<p class="mt-4"><a href="{{ .RelPermalink }}">What we need to prove next →</a></p>{{ end }}
+    </aside>
+  </div>
+  <div class="diary-section-title"><h2>Notes from development</h2><span class="diary-meta">Decisions · Evidence · Next steps</span></div>
+  {{ range first 6 (where site.RegularPages "Section" "diary").ByDate.Reverse }}
+    {{ partial "diary-entry.html" . }}
+  {{ end }}
+</section>
+{{ end }}
