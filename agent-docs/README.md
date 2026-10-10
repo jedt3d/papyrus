@@ -9,5 +9,6 @@ Read root `AGENTS.md` first. This directory holds planning and evidence for AI a
 - [Web Button evidence](evidence/phase-0-web.md): the first completed renderer experiment, its source revision and browser check.
 - [Thai/input evidence](evidence/phase-0-thai-web.md): early Web checks, the owner’s Thai keyboard result, and untested OS composition.
 - [Blitz WASM evidence](evidence/phase-0-blitz-wasm.md): real canvas clicks, font delivery, selected WebGPU context, and input limits.
+- [Blitz Desktop evidence](evidence/phase-0-blitz-desktop.md): native macOS/Metal Button clicks, actual surface/scale, shared fonts, and capture/packaging limits.
 
 Only `Papyrus.md` and its English translation are explicitly published by the site build. Other agent notes are not automatically published. Keep actual decisions and verified evidence in dated diary entries; mark unresolved work as planned.

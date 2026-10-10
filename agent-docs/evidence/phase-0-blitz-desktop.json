@@ -1,0 +1,160 @@
+{
+  "checked_on": "2026-10-11",
+  "source_revision": "3a251335b17a95770bed5fdb2f5cf603d1457c10",
+  "tracked_source_dirty_at_capture": false,
+  "target": "aarch64-apple-darwin",
+  "os": {
+    "name": "macOS",
+    "version": "26.7",
+    "build": "25G229",
+    "architecture": "arm64"
+  },
+  "rust": "1.98.1",
+  "cargo": "1.98.1",
+  "xcode": "27.0 (27A266a)",
+  "dioxus": "0.7.10",
+  "blitz_revision": "7832c177ff272128154bac58afe56c2b9164b417",
+  "dioxus_native": "0.7.0",
+  "blitz_packages": "0.3.0-beta.2",
+  "renderer": {
+    "name": "Vello Hybrid",
+    "version": "0.11.0",
+    "wgpu_context": "0.10.0",
+    "wgpu": "30.0.1",
+    "backend_environment": {
+      "WGPU_BACKEND": "metal"
+    },
+    "gpu_adapter_name": null,
+    "backend_evidence": "Successfully drawn native window; wgpu_context applies the environment to InstanceDescriptor.backends; metal parses to Metal alone."
+  },
+  "story": {
+    "id": "button/primary",
+    "label": "Press me",
+    "entry": "papyrus_stories::Preview",
+    "initial_count": 0,
+    "observed_counts": [
+      0,
+      1,
+      2
+    ]
+  },
+  "window": {
+    "title": "Papyrus / Blitz Desktop / Phase 0",
+    "requested_logical_content_size": [
+      1280,
+      720
+    ],
+    "reported_physical_surface_size": [
+      1280,
+      720
+    ],
+    "reported_scale_factor": 1,
+    "startup_output": "Papyrus desktop: surface=PhysicalSize { width: 1280, height: 720 }; scale=1; renderer=vello-hybrid"
+  },
+  "assets": {
+    "stylesheet": {
+      "path": "source/assets/story.css",
+      "sha256": "fc32371c9a9fa034d920d0e09b27293e805cdd07410b02300b3d6ff7370203f1"
+    },
+    "dejavu": {
+      "path": "source/public/assets/DejaVuSans.woff2",
+      "sha256": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a"
+    },
+    "noto_thai": {
+      "path": "source/public/assets/NotoSansThai.ttf",
+      "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+    },
+    "desktop_lock": {
+      "path": "source/blitz-desktop/Cargo.lock",
+      "sha256": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208"
+    },
+    "binary": {
+      "path": "source/blitz-desktop/target/debug/papyrus-blitz-desktop",
+      "sha256": "78bde586ee138aa31c0984bceaa8d6100ddcabba7aaefe24e07ee3dc0502e7d9"
+    },
+    "automation_binary": {
+      "path": "../work/Papyrus.app/Contents/MacOS/papyrus-blitz-desktop",
+      "sha256": "78bde586ee138aa31c0984bceaa8d6100ddcabba7aaefe24e07ee3dc0502e7d9"
+    }
+  },
+  "captures": [
+    {
+      "state": 0,
+      "path": "phase-0-blitz-desktop-zero.png",
+      "png_size": [
+        4718592,
+        4292935744
+      ],
+      "sha256": "07eb5f051cc6113f3eb39e635e025d91a9fbc71aa760fa025a8aab44aa7b8bd2"
+    },
+    {
+      "state": 1,
+      "path": "phase-0-blitz-desktop-one.png",
+      "png_size": [
+        4718592,
+        4292935744
+      ],
+      "sha256": "82407660f66df9ba758edfce261b64b82e5ccb25631a63a4425b5d25aa264e59"
+    },
+    {
+      "state": 2,
+      "path": "phase-0-blitz-desktop-two.png",
+      "png_size": [
+        4718592,
+        4292935744
+      ],
+      "sha256": "e13ac337db76dfda69e83788fce2a20d974266cb99bf4828186ee68470d8d45b"
+    }
+  ],
+  "interaction": {
+    "method": "Codex native app pointer automation; visible screenshot inspection",
+    "synthetic_dioxus_events": false,
+    "counter_injection": false,
+    "ax_story_controls_exposed": false,
+    "missed_click": [
+      399,
+      312
+    ],
+    "missed_click_observed_pointer_approx": [
+      200,
+      156
+    ],
+    "successful_clicks": [
+      [
+        798,
+        624
+      ],
+      [
+        798,
+        624
+      ]
+    ],
+    "capture_click_coordinate_mapping": "Observed factor-of-two mismatch; not calibrated layout evidence."
+  },
+  "checks": {
+    "offline_build": "passed",
+    "desktop_fmt": "passed",
+    "desktop_clippy_warnings_denied": "passed",
+    "shared_button_state_test": "passed",
+    "shared_thai_event_wiring_test": "passed",
+    "embedded_font_byte_comparison_test": "passed"
+  },
+  "automation_wrapper": {
+    "temporary": true,
+    "binary_unchanged": true,
+    "launch": "Direct executable inside temporary work/Papyrus.app, with WGPU_BACKEND=metal",
+    "launch_services_attempt": "open -a failed with -10810; cause not isolated; no claim that this wrapper is distributable"
+  },
+  "untested": [
+    "Desktop keyboard activation",
+    "Desktop accessibility",
+    "Actual Thai keyboard input",
+    "Genuine IME preedit/commit/cancel",
+    "CSS reload",
+    "Calibrated capture/layout comparison",
+    "Windows",
+    "Linux",
+    "Release packaging",
+    "Other graphics backends"
+  ]
+}

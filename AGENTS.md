@@ -18,10 +18,10 @@ Keep `AGENTS.md` and `README.md` at the repository root. Use these canonical upp
 
 ## Current status and priority
 
-The repository has a publishing site and verified Dioxus Web and Blitz WASM Button experiments, plus headless Web tests. The full Papyrus application and harness are still planned.
+The repository has a publishing site and verified Button experiments on Dioxus Web, Blitz WASM and Blitz Desktop (macOS/Metal), plus headless Web tests. The full Papyrus application and harness are still planned.
 
 1. Maintain the reproducible Hugo build and GitHub Pages deployment.
-2. Continue Phase 0 with Desktop (#3). Read the Web Thai and Blitz WASM records under `agent-docs/evidence/`; genuine IME composition remains unverified in #8. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
+2. Continue Phase 0 with shared Card and TextInput stories (#4). Read the Web Thai, Blitz WASM and Desktop records under `agent-docs/evidence/`; genuine IME composition remains unverified in #8. Desktop captures need coordinate calibration before layout comparison. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
 3. Build the compatibility checker and harness from evidence gathered in Phase 0.
 4. Add Studio, local backend, revision-aware reload, and static gallery export.
 5. Add Web CSS import/adaptation and then team/CI workflows.

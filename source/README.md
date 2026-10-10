@@ -57,6 +57,6 @@ cargo test --locked --no-default-features
 cargo check --locked --target wasm32-unknown-unknown
 ```
 
-Use [headless browser checks](browser-tests/README.md) to run the Web checks automatically. [Blitz WASM](blitz-wasm/README.md) has its own pinned launcher and asset-delivery path; its results are recorded separately. Read the [Phase 0 brief](../agent-docs/phase-0.md) before continuing. Desktop, CSS reload guarantees, capture comparison, broader input and genuine IME composition remain unverified.
+Use [headless browser checks](browser-tests/README.md) to run the Web checks automatically. [Blitz WASM](blitz-wasm/README.md) and [Blitz Desktop](blitz-desktop/README.md) have separate pinned launchers and evidence. The Desktop Button baseline is verified on macOS/Metal. Read the [Phase 0 brief](../agent-docs/phase-0.md) before continuing. CSS reload guarantees, capture comparison, broader input and genuine IME composition remain unverified.
 
 Keep Hugo publishing code in `../site/`; keep agent planning in `../agent-docs/`.
