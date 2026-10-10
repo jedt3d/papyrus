@@ -6,6 +6,7 @@ Papyrus is a planned Rust component workbench for designing, previewing, and che
 - **Original proposal:** [agent-docs/Papyrus.md](agent-docs/Papyrus.md) (Thai)
 - **Next experiment:** [agent-docs/phase-0.md](agent-docs/phase-0.md)
 - **Agent instructions:** [AGENTS.md](AGENTS.md)
+- **Project skills:** [Matt Pocock's Engineering and Productivity skills](.agents/skills/README.md)
 
 ## Repository layout
 

@@ -35,6 +35,19 @@ Web CSS means browser-rendered CSS; Blitz CSS means CSS rendered by Blitz. They 
 
 Keep source/style/profile revisions together in reports. Never compare mismatched preview revisions or count a WASM result as Desktop validation. Preserve drafts and the last working build after errors.
 
+## Agent skills
+
+Matt Pocock's Engineering and Productivity skills are installed in `.agents/skills/`. Read the selected skill's `SKILL.md` before using it; provenance and installation details are in `.agents/skills/README.md`.
+
+- When drafting or editing agent instructions, use `.agents/skills/writing-for-agents/SKILL.md`.
+- When a software change needs tests, use `.agents/skills/tdd/SKILL.md` for small tests of observable behavior.
+- When investigating a difficult bug, use `.agents/skills/diagnosing-bugs/SKILL.md`.
+- When the user asks which workflow fits, use `.agents/skills/ask-matt/SKILL.md`.
+
+Respect each skill's invocation policy. Skills marked for explicit invocation run when the user requests that workflow. Installing them does not start an interview, create issues, or implement the roadmap.
+
+Before the first issue-driven engineering workflow, run `setup-matt-pocock-skills` with the user to confirm tracker settings. Keep its configuration, glossary, and decision records under `agent-docs/`; use `agent-docs/skills/`, `agent-docs/GLOSSARY.md`, and `agent-docs/adr/` in place of the upstream examples' `docs/agents/`, root glossary, and `docs/adr/`. The project's three areas and Plain English rules apply to documents produced by these skills.
+
 ## Publishing workflow
 
 Use Hugo Extended **0.158.0**, Node **22+**, Go **1.24+**, and **pnpm 10.11.0** (declared in `site/package.json`). Theme provenance and license are in `site/themes/hugoplate/UPSTREAM.md` and `LICENSE`.
