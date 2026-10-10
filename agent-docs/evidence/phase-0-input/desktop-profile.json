@@ -1,0 +1,19 @@
+{
+  "renderer": "Blitz Desktop / Metal / Vello Hybrid",
+  "os": "macOS 26.7 (25G229)",
+  "architecture": "arm64",
+  "xcode": "27.0 (27A266a)",
+  "requestedLogicalSurface": [
+    1280,
+    720
+  ],
+  "startupPhysicalSurface": [
+    2560,
+    1440
+  ],
+  "startupScale": 2,
+  "pointerSamples": "Every recorded pointer sample reports 2560x1440, scale 2, light theme; raw log retained. Final focus record names its preceding sample.",
+  "capture": "Raw CUA JPEG includes chrome; image/input mapping is not a portable calibration",
+  "input": "CUA pointer/key/typeText API; keyboard mapping varied in this run",
+  "accessibilityFeature": false
+}

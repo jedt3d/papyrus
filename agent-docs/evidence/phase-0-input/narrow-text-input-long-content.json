@@ -1,0 +1,2058 @@
+{
+  "capturedAt": "2026-10-10T22:13:57.454Z",
+  "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+  "hashes": {
+    "../src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+    "../assets/story.css": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "../Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+    "../public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+    "../public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+    "./input.spec.mjs": "98240e3fde0da3c9ad4f9cf87311ad5c4483d393b19e89b7b8863808c0391848"
+  },
+  "browser": "156.0.8078.4",
+  "os": "darwin",
+  "architecture": "arm64",
+  "input": "Playwright browser keys and pointer; no injected focus or component state; OS IME untested",
+  "geometry": {
+    "fixture": "text-input/long-content",
+    "viewport": [
+      390,
+      600
+    ],
+    "scaleFactor": 1,
+    "scroll": [
+      0,
+      82
+    ],
+    "theme": {
+      "background": "rgb(244, 241, 233)",
+      "color": "rgb(32, 43, 37)"
+    },
+    "fontsReady": true,
+    "state": {
+      "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x",
+      "disabled": false,
+      "feedback": "Value: A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x",
+      "focus": ""
+    },
+    "rects": {
+      "picker": {
+        "x": 0,
+        "y": -82,
+        "width": 390,
+        "height": 286,
+        "font": "16px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "normal",
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "main": {
+        "x": 0,
+        "y": 204,
+        "width": 390,
+        "height": 502.5625,
+        "font": "16px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "normal",
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      "heading": {
+        "x": 24,
+        "y": 284,
+        "width": 342,
+        "height": 41,
+        "font": "36px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "normal",
+        "clientWidth": 342,
+        "scrollWidth": 342
+      },
+      "component": {
+        "x": 24,
+        "y": 376,
+        "width": 342,
+        "height": 45,
+        "font": "16px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "normal",
+        "clientWidth": 340,
+        "scrollWidth": 1768
+      },
+      "feedback": {
+        "x": 24,
+        "y": 437,
+        "width": 342,
+        "height": 153.5625,
+        "font": "16px / 25.6px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "25.6px",
+        "clientWidth": 342,
+        "scrollWidth": 342
+      },
+      "identity": {
+        "x": 24,
+        "y": 614.5625,
+        "width": 342,
+        "height": 15,
+        "font": "13px \"Papyrus Sans\", sans-serif",
+        "lineHeight": "normal",
+        "clientWidth": 342,
+        "scrollWidth": 342
+      }
+    }
+  },
+  "focus": {
+    "tag": "INPUT",
+    "id": "component-input",
+    "text": "",
+    "focusVisible": true,
+    "outline": "rgb(0, 95, 204) auto 1px",
+    "outlineOffset": "0px",
+    "selection": [
+      217,
+      217
+    ]
+  },
+  "accessibility": {
+    "nodes": [
+      {
+        "nodeId": "2",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "RootWebArea"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 144
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Papyrus — Web stories",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label",
+              "superseded": true
+            },
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "Papyrus — Web stories"
+              },
+              "nativeSource": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "url",
+            "value": {
+              "type": "string",
+              "value": "http://127.0.0.1:8080/"
+            }
+          }
+        ],
+        "childIds": [
+          "27"
+        ],
+        "backendDOMNodeId": 2,
+        "frameId": "4561AC4D958A1C068FF45A041AD3E1DD"
+      },
+      {
+        "nodeId": "27",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "2",
+        "childIds": [
+          "3"
+        ],
+        "backendDOMNodeId": 27
+      },
+      {
+        "nodeId": "3",
+        "ignored": true,
+        "ignoredReasons": [
+          {
+            "name": "uninteresting",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          }
+        ],
+        "role": {
+          "type": "role",
+          "value": "none"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 0
+        },
+        "parentId": "27",
+        "childIds": [
+          "33"
+        ],
+        "backendDOMNodeId": 3
+      },
+      {
+        "nodeId": "33",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "3",
+        "childIds": [
+          "34",
+          "77"
+        ],
+        "backendDOMNodeId": 33
+      },
+      {
+        "nodeId": "34",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "navigation"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 130
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Choose story",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "value": {
+                "type": "computedString",
+                "value": "Choose story"
+              },
+              "attribute": "aria-label",
+              "attributeValue": {
+                "type": "string",
+                "value": "Choose story"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "33",
+        "childIds": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "backendDOMNodeId": 34
+      },
+      {
+        "nodeId": "77",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "main"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 118
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "33",
+        "childIds": [
+          "71",
+          "75",
+          "76",
+          "72",
+          "73"
+        ],
+        "backendDOMNodeId": 77
+      },
+      {
+        "nodeId": "4",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Primary",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Primary"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "42"
+        ],
+        "backendDOMNodeId": 4
+      },
+      {
+        "nodeId": "5",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Disabled",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Disabled"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "43"
+        ],
+        "backendDOMNodeId": 5
+      },
+      {
+        "nodeId": "6",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Long content",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Long content"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "44"
+        ],
+        "backendDOMNodeId": 6
+      },
+      {
+        "nodeId": "7",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Default",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Card / Default"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "45"
+        ],
+        "backendDOMNodeId": 7
+      },
+      {
+        "nodeId": "8",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Long content",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Card / Long content"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "46"
+        ],
+        "backendDOMNodeId": 8
+      },
+      {
+        "nodeId": "9",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Default",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Default"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "47"
+        ],
+        "backendDOMNodeId": 9
+      },
+      {
+        "nodeId": "10",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Disabled",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Disabled"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "48"
+        ],
+        "backendDOMNodeId": 10
+      },
+      {
+        "nodeId": "11",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "button"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 175
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Long content",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Long content"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "pressed",
+            "value": {
+              "type": "tristate",
+              "value": "true"
+            }
+          }
+        ],
+        "parentId": "34",
+        "childIds": [
+          "49"
+        ],
+        "backendDOMNodeId": 11
+      },
+      {
+        "nodeId": "71",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "heading"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 96
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput"
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "level",
+            "value": {
+              "type": "integer",
+              "value": 1
+            }
+          }
+        ],
+        "parentId": "77",
+        "childIds": [
+          "78"
+        ],
+        "backendDOMNodeId": 71
+      },
+      {
+        "nodeId": "75",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "LabelText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 104
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "77",
+        "childIds": [
+          "79"
+        ],
+        "backendDOMNodeId": 75
+      },
+      {
+        "nodeId": "76",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "textbox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 170
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Component name",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "value": {
+                "type": "computedString",
+                "value": "Component name"
+              },
+              "nativeSource": "labelfor",
+              "nativeSourceValue": {
+                "type": "nodeList",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 75,
+                    "text": "Component name"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            },
+            {
+              "type": "placeholder",
+              "attribute": "placeholder",
+              "superseded": true
+            },
+            {
+              "type": "placeholder",
+              "attribute": "aria-placeholder",
+              "superseded": true
+            },
+            {
+              "type": "attribute",
+              "attribute": "title",
+              "superseded": true
+            }
+          ]
+        },
+        "value": {
+          "type": "string",
+          "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x"
+        },
+        "properties": [
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          },
+          {
+            "name": "focusable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "focused",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          },
+          {
+            "name": "settable",
+            "value": {
+              "type": "booleanOrUndefined",
+              "value": true
+            }
+          },
+          {
+            "name": "multiline",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "readonly",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "required",
+            "value": {
+              "type": "boolean",
+              "value": false
+            }
+          },
+          {
+            "name": "labelledby",
+            "value": {
+              "type": "nodeList",
+              "relatedNodes": [
+                {
+                  "backendDOMNodeId": 75,
+                  "text": "Component name"
+                }
+              ]
+            }
+          }
+        ],
+        "parentId": "77",
+        "childIds": [
+          "74"
+        ],
+        "backendDOMNodeId": 76
+      },
+      {
+        "nodeId": "72",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "status"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 159
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            },
+            {
+              "type": "relatedElement",
+              "nativeSource": "label"
+            },
+            {
+              "type": "attribute",
+              "attribute": "title"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "live",
+            "value": {
+              "type": "token",
+              "value": "polite"
+            }
+          },
+          {
+            "name": "atomic",
+            "value": {
+              "type": "boolean",
+              "value": true
+            }
+          },
+          {
+            "name": "relevant",
+            "value": {
+              "type": "tokenList",
+              "value": "additions text"
+            }
+          },
+          {
+            "name": "invalid",
+            "value": {
+              "type": "token",
+              "value": "false"
+            }
+          }
+        ],
+        "parentId": "77",
+        "childIds": [
+          "81"
+        ],
+        "backendDOMNodeId": 72
+      },
+      {
+        "nodeId": "73",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "paragraph"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 133
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "77",
+        "childIds": [
+          "82"
+        ],
+        "backendDOMNodeId": 73
+      },
+      {
+        "nodeId": "42",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Primary",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Primary"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "4",
+        "childIds": [
+          "-1000000002"
+        ],
+        "backendDOMNodeId": 42
+      },
+      {
+        "nodeId": "43",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Disabled",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Disabled"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "5",
+        "childIds": [
+          "-1000000003"
+        ],
+        "backendDOMNodeId": 43
+      },
+      {
+        "nodeId": "44",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Long content",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Button / Long content"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "6",
+        "childIds": [
+          "-1000000004"
+        ],
+        "backendDOMNodeId": 44
+      },
+      {
+        "nodeId": "45",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Default",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Card / Default"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "7",
+        "childIds": [
+          "-1000000005"
+        ],
+        "backendDOMNodeId": 45
+      },
+      {
+        "nodeId": "46",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Long content",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Card / Long content"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "8",
+        "childIds": [
+          "-1000000006"
+        ],
+        "backendDOMNodeId": 46
+      },
+      {
+        "nodeId": "47",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Default",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Default"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "9",
+        "childIds": [
+          "-1000000007"
+        ],
+        "backendDOMNodeId": 47
+      },
+      {
+        "nodeId": "48",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Disabled",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Disabled"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "10",
+        "childIds": [
+          "-1000000008"
+        ],
+        "backendDOMNodeId": 48
+      },
+      {
+        "nodeId": "49",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Long content",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput / Long content"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "11",
+        "childIds": [
+          "-1000000009"
+        ],
+        "backendDOMNodeId": 49
+      },
+      {
+        "nodeId": "78",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "TextInput"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "71",
+        "childIds": [
+          "-1000000053"
+        ],
+        "backendDOMNodeId": 78
+      },
+      {
+        "nodeId": "79",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Component name",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Component name"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "75",
+        "childIds": [
+          "-1000000054"
+        ],
+        "backendDOMNodeId": 79
+      },
+      {
+        "nodeId": "74",
+        "ignored": false,
+        "role": {
+          "type": "role",
+          "value": "generic"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 88
+        },
+        "name": {
+          "type": "computedString",
+          "value": "",
+          "sources": [
+            {
+              "type": "relatedElement",
+              "attribute": "aria-labelledby"
+            },
+            {
+              "type": "attribute",
+              "attribute": "aria-label"
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          }
+        ],
+        "parentId": "76",
+        "childIds": [
+          "80"
+        ],
+        "backendDOMNodeId": 74
+      },
+      {
+        "nodeId": "81",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Value: A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Value: A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "72",
+        "childIds": [
+          "-1000000071",
+          "-1000000072",
+          "-1000000073",
+          "-1000000074",
+          "-1000000075",
+          "-1000000076"
+        ],
+        "backendDOMNodeId": 81
+      },
+      {
+        "nodeId": "82",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Story: text-input/long-content",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "Story: text-input/long-content"
+              }
+            }
+          ]
+        },
+        "properties": [],
+        "parentId": "73",
+        "childIds": [
+          "-1000000062"
+        ],
+        "backendDOMNodeId": 82
+      },
+      {
+        "nodeId": "-1000000002",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Primary"
+        },
+        "properties": [],
+        "parentId": "42",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000003",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Disabled"
+        },
+        "properties": [],
+        "parentId": "43",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000004",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Button / Long content"
+        },
+        "properties": [],
+        "parentId": "44",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000005",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Default"
+        },
+        "properties": [],
+        "parentId": "45",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000006",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Card / Long content"
+        },
+        "properties": [],
+        "parentId": "46",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000007",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Default"
+        },
+        "properties": [],
+        "parentId": "47",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000008",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Disabled"
+        },
+        "properties": [],
+        "parentId": "48",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000009",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput / Long content"
+        },
+        "properties": [],
+        "parentId": "49",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000053",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "TextInput"
+        },
+        "properties": [],
+        "parentId": "78",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000054",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Component name"
+        },
+        "properties": [],
+        "parentId": "79",
+        "childIds": []
+      },
+      {
+        "nodeId": "80",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "StaticText"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 158
+        },
+        "name": {
+          "type": "computedString",
+          "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x",
+          "sources": [
+            {
+              "type": "contents",
+              "value": {
+                "type": "computedString",
+                "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x"
+              }
+            }
+          ]
+        },
+        "properties": [
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          }
+        ],
+        "parentId": "74",
+        "childIds": [
+          "-1000000064"
+        ],
+        "backendDOMNodeId": 80
+      },
+      {
+        "nodeId": "-1000000071",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Value: A narrow card still needs to keep "
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000072",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "every word readable. This fixture includes "
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000073",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "a longer sentence so we can inspect "
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000074",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "wrapping, spacing, and the end of the text "
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000075",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "across three renderers. The final words "
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000076",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "must remain visible.x"
+        },
+        "properties": [],
+        "parentId": "81",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000062",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "Story: text-input/long-content"
+        },
+        "properties": [],
+        "parentId": "82",
+        "childIds": []
+      },
+      {
+        "nodeId": "-1000000064",
+        "ignored": false,
+        "role": {
+          "type": "internalRole",
+          "value": "InlineTextBox"
+        },
+        "chromeRole": {
+          "type": "internalRole",
+          "value": 101
+        },
+        "name": {
+          "type": "computedString",
+          "value": "A narrow card still needs to keep every word readable. This fixture includes a longer sentence so we can inspect wrapping, spacing, and the end of the text across three renderers. The final words must remain visible.x"
+        },
+        "properties": [
+          {
+            "name": "editable",
+            "value": {
+              "type": "token",
+              "value": "plaintext"
+            }
+          }
+        ],
+        "parentId": "80",
+        "childIds": []
+      }
+    ]
+  }
+}

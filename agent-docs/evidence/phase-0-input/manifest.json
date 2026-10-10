@@ -1,0 +1,541 @@
+{
+  "issue": 7,
+  "software": {
+    "gitRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "filesSHA256": {
+      "source/Cargo.lock": "975b21f7b8974595b58630fca918053fcb296f8ab870c173827ba360777fafeb",
+      "source/Cargo.toml": "ae6ca8943d4b02bcb117e4d1bc571df3e1e55ee13c0a570dcb636bd3af496e07",
+      "source/Dioxus.toml": "baace396a904c69cdcfd39c6c5cc0ad6dba1f5468a5c50fe3b32a78c882332a5",
+      "source/assets/story.css": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+      "source/blitz-desktop/Cargo.lock": "af2749a0841fdb0aa9ae247065531151a69c70c57697dcb4912b491acf166208",
+      "source/blitz-desktop/Cargo.toml": "4e22259ca41b75e0c4fed11b688253265280bea26a4419d59c89d675fbb1ddfa",
+      "source/blitz-desktop/src/main.rs": "a222de28b2c49d98768f4986f86995ca3d088fb6d2aaf913a4f194fb05150e2a",
+      "source/blitz-wasm/Cargo.lock": "f50e8f1d2a70016f882628301e1d4023a8c7ba03f416c0111a6f7b25c1136530",
+      "source/blitz-wasm/Cargo.toml": "3f13005341f79165557f0d6f920991f826f29f5d01993e373181037f9eff4e35",
+      "source/blitz-wasm/index.html": "0f18edceb5de6184c686898c9d90a6bb0fe37a777b2ec1f2566cd51cd19b5578",
+      "source/blitz-wasm/src/lib.rs": "4a6a17cdaf3da5f6b14153e302a982d5bfe48d222dba3fe7d19526e635e5cd64",
+      "source/index.html": "b2b4aeeabcaf4fa2ea5c05cbaa9fef4f4da2a0ce2a6b8cbe3c25368f5aa95d4b",
+      "source/public/LICENSE-DejaVu.txt": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93",
+      "source/public/LICENSE-NotoSansThai.txt": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0",
+      "source/public/assets/DejaVuSans.woff2": "a75044e4dab293c1ac7f8eba9f20df03f183f41b9319054f43b955959981632a",
+      "source/public/assets/NotoSansThai.ttf": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8",
+      "source/rust-toolchain.toml": "9500030ccefd0bab631fb7f1763f79f4103eca3a344c36cf15be869e330683bb",
+      "source/src/lib.rs": "3f6f039749386c6f17af46aa231a0efa682b8f2dad9be326a7708333592dd38e",
+      "source/src/main.rs": "8309723e2e0ad90309b921525efbf3225a58e3626fb0f94e3b2b68e818794da4",
+      "source/tests/button_story.rs": "05b392d96f2e3c3469dfb32e3a1f5af904ce145073ca0bd6ce98ea5f3e841227",
+      "source/tests/embedded_assets.rs": "5b794cf307aeafae74c71bc9ab064c6040d00105e2e6e9428fba41c4aa68fd27",
+      "source/tests/text_input_story.rs": "5a4b67e079b51057cb6faee6bd85a74092cab1769e7c6ddbf9183f6024cd8160"
+    },
+    "sourceWasModified": false,
+    "pins": {
+      "rust": "1.98.1",
+      "dioxus": "0.7.10",
+      "blitz": "7832c177ff272128154bac58afe56c2b9164b417",
+      "native": "0.7.0",
+      "velloHybrid": "0.11.0",
+      "parley": "0.12.0",
+      "winit": "0.31.0-beta.3"
+    }
+  },
+  "profiles": {
+    "web": {
+      "file": "web-profile.json",
+      "sha256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    "wasm": {
+      "file": "wasm-profile.json",
+      "sha256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8"
+    },
+    "desktop": {
+      "file": "desktop-profile.json",
+      "sha256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586"
+    }
+  },
+  "binaries": {
+    "desktop": "e849db2bdc6f22e44cfb73063fe7d31cd39b9e128746907bf0cc65faf5df41b6",
+    "wasm": {
+      "papyrus-blitz-wasm-39e18b4cc7a839d1_bg.wasm": "7699943e49252235ebdf2fa442a302a754a923405be8dc184ec59096e2ce79b0"
+    },
+    "web": {
+      "papyrus-web_bg.wasm": "a59144159b4a8986ffe92e15a59746ab8055b23f3d94f07c9b17d73f4b639c77"
+    }
+  },
+  "web": [
+    {
+      "record": "disabled-button.json",
+      "image": "disabled-button.png",
+      "fixture": "button/disabled",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "keyboard-input.json",
+      "image": "keyboard-input.png",
+      "fixture": "text-input/default",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "disabled-input.json",
+      "image": "disabled-input.png",
+      "fixture": "text-input/disabled",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "narrow-text-input-long-content.json",
+      "image": "narrow-text-input-long-content.png",
+      "fixture": "text-input/long-content",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "narrow-button-long-content.json",
+      "image": "narrow-button-long-content.png",
+      "fixture": "button/long-content",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "narrow-card-long-content.json",
+      "image": "narrow-card-long-content.png",
+      "fixture": "card/long-content",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    },
+    {
+      "record": "keyboard-button.json",
+      "image": "keyboard-button.png",
+      "fixture": "button/primary",
+      "sourceRevision": "aceee2fe04c432e934841bb115acc66839720122",
+      "profileSHA256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f"
+    }
+  ],
+  "blitzRecords": "blitz-observations.json",
+  "artifacts": {
+    "narrow-text-input-long-content.json": {
+      "sha256": "4105e7bac5fd5fabe000d9f9fe2cf0203bd3a9228eb6076261291edab621c9f3",
+      "bytes": 50205
+    },
+    "desktop-tab-three.jpg": {
+      "sha256": "bb793d1dab7efd21f4ba977dc69bd36a41291378947aa5fb299734f75591f484",
+      "bytes": 170675,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-long-input-end.jpg": {
+      "sha256": "e8cffbdc5fb645fec4ba8d6dab129c42f01b20bec7f143e1d8006106312a916f",
+      "bytes": 254374,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "disabled-button.json": {
+      "sha256": "2dcfe1770ce825eaead1385c9e0ba2c21b3ae082bfc8001f05be761c12ceb539",
+      "bytes": 46604
+    },
+    "wasm-long-card.jpg": {
+      "sha256": "80d2198e9b177392f91b2e24497fa03af48b6c49bed466fe4f7171e5779c1835",
+      "bytes": 54057,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "keyboard-button.png": {
+      "sha256": "5e891f55b600cc905c3d2623c24c4497f6baf61ab97e33fc8bfe80848f703371",
+      "bytes": 48214,
+      "format": "PNG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-tab-two.jpg": {
+      "sha256": "bb793d1dab7efd21f4ba977dc69bd36a41291378947aa5fb299734f75591f484",
+      "bytes": 170675,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-disabled-input.jpg": {
+      "sha256": "c5e8ad980a8f1c67419498757932684318c77a5f12279f49610f08f3c6f526d5",
+      "bytes": 39952,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "disabled-input.png": {
+      "sha256": "9d5c3d571be5fc0f4a2a05cc52f31838751446d738f46628d0e738656ffda7cd",
+      "bytes": 37491,
+      "format": "PNG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-tab-one.jpg": {
+      "sha256": "af995a8e06043e5291fc1632fb4ce5fa11092ce6a335f6624b3048e953803b97",
+      "bytes": 38800,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-final-focus-input.jpg": {
+      "sha256": "0b36ae942239eccf3a9e752ea2ec59a16958c136cc7506a0958386afc1037490",
+      "bytes": 177247,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-primary-activation.jpg": {
+      "sha256": "1c6b454e7d267f9e11b4f8d54e052debabda669136f7a4fb832b1d9f9f8d93a1",
+      "bytes": 192236,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-profile.json": {
+      "sha256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+      "bytes": 655
+    },
+    "narrow-button-long-content.json": {
+      "sha256": "ee243563cafa9c5927cff39af7de4013a40ba639768660e606f101e8721026ae",
+      "bytes": 48609
+    },
+    "desktop-typed-text.jpg": {
+      "sha256": "ff5a9ebc51e562dbe77620e7b6640ea1ace92210408d8dade57c624c7feefe92",
+      "bytes": 176542,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-pointer-edit.jpg": {
+      "sha256": "930cbb45233da4248ee3b82e0ac3efe85a30f3ba6f18d8ef9e5d41f91ea1598d",
+      "bytes": 177108,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-disabled-button.jpg": {
+      "sha256": "7e7a39e650f36cc4c17bded2ca87d4d03833766f0a939f6d3d8180748602e1ff",
+      "bytes": 41133,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-reverse-focus.jpg": {
+      "sha256": "af995a8e06043e5291fc1632fb4ce5fa11092ce6a335f6624b3048e953803b97",
+      "bytes": 38800,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-long-button.jpg": {
+      "sha256": "eb064f79b029b96b5646df1ce81ee64a3b60f45926a80b113cfa1e1e5c454cf9",
+      "bytes": 203881,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-button-keyboard.jpg": {
+      "sha256": "e2010a9ed46ba7d16eda3f1b388c1ff11c99573518d0d497f5c2ade8282f08ac",
+      "bytes": 58676,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "disabled-button.png": {
+      "sha256": "5aa03c68769de2edfa899874041f1598a18f1e0b7330a5c6038488da934c0ca8",
+      "bytes": 41416,
+      "format": "PNG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-long-input-delete.jpg": {
+      "sha256": "cf6c7213ba870852b5f7f101e3a3e5ad856f6fd48fa695d09adeb7a6afa44a35",
+      "bytes": 59820,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-focus-return.jpg": {
+      "sha256": "f4709d9232cf3f9714e962f025a9e168af6ee8dc873158c0afda93b27bb8c4c5",
+      "bytes": 40271,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "blitz-observations.json": {
+      "sha256": "262774e277d9dae51479040cfd637b191410b204eaf1e920f1903962713355d9",
+      "bytes": 37145
+    },
+    "keyboard-button.json": {
+      "sha256": "35f9c2117eafdead116c5921319ab4a8c18806d754896e6e5af3113d35d76de6",
+      "bytes": 72647
+    },
+    "keyboard-input.png": {
+      "sha256": "fd3819894414973e41d71f57089459794f0112d0137c8fe2c88341b1dd6e2796",
+      "bytes": 35991,
+      "format": "PNG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-long-input.jpg": {
+      "sha256": "2ec709fda02e5be5fdd29ef4da09e01f02b96701d2d2b4b1b0ad5f31c95b8a59",
+      "bytes": 253759,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-tab-two.jpg": {
+      "sha256": "af995a8e06043e5291fc1632fb4ce5fa11092ce6a335f6624b3048e953803b97",
+      "bytes": 38800,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-reverse-focus.jpg": {
+      "sha256": "bb793d1dab7efd21f4ba977dc69bd36a41291378947aa5fb299734f75591f484",
+      "bytes": 170675,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-profile.json": {
+      "sha256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+      "bytes": 641
+    },
+    "wasm-button-tab-activation.jpg": {
+      "sha256": "1061625e8b2206131b9710ade9c836369454fccb659a95c437f89c646b129f9a",
+      "bytes": 44917,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-tab-three.jpg": {
+      "sha256": "af995a8e06043e5291fc1632fb4ce5fa11092ce6a335f6624b3048e953803b97",
+      "bytes": 38800,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "keyboard-input.json": {
+      "sha256": "0c1e52e258a132fce272e1f5452189c2b110d38c4fdb7dda1f509d79a25cdc2e",
+      "bytes": 46035
+    },
+    "narrow-button-long-content.png": {
+      "sha256": "cc656f9f69a64b36a0a22b70ad188bc724cd0c001080d1857701867aa003e762",
+      "bytes": 38744,
+      "format": "PNG",
+      "size": [
+        390,
+        600
+      ]
+    },
+    "desktop-long-card.jpg": {
+      "sha256": "66b6a8b3dbbf60036f9494dd201795b00587c6125771948dfdfd0c1ebd94a6d2",
+      "bytes": 226194,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "wasm-long-button.jpg": {
+      "sha256": "de15a38bbc1fca0040be0988e1ab9efc8c1ab85d2b387e1c6ab31aec37fb89a7",
+      "bytes": 47768,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "narrow-text-input-long-content.png": {
+      "sha256": "bf50f696743f3057b35aec6ca9bba885a796baeba1d1986cbc08412cabe35887",
+      "bytes": 45880,
+      "format": "PNG",
+      "size": [
+        390,
+        600
+      ]
+    },
+    "wasm-long-input.jpg": {
+      "sha256": "ff8527c34ad5bf3e4f58a3e50be4b8f2a5aa8e28ae0c2fe52d7a89b7c3b02c20",
+      "bytes": 60095,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-primary-activation.jpg": {
+      "sha256": "e422448d4921bf5888ac2eec864eff19d8bc7e079ee6202b9ecf35ea42161792",
+      "bytes": 44903,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "wasm-final-focus-input.jpg": {
+      "sha256": "f4709d9232cf3f9714e962f025a9e168af6ee8dc873158c0afda93b27bb8c4c5",
+      "bytes": 40271,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "narrow-card-long-content.png": {
+      "sha256": "8a9570844140225085558324eabda66c8c39fe53520cdd49d878ee6822717c82",
+      "bytes": 35168,
+      "format": "PNG",
+      "size": [
+        390,
+        600
+      ]
+    },
+    "desktop-disabled-button.jpg": {
+      "sha256": "1fd32902c32c25953203b20d70e0b5aaab3ed87588e4cd6de8a511f68e909ac0",
+      "bytes": 179401,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-focus-return.jpg": {
+      "sha256": "930cbb45233da4248ee3b82e0ac3efe85a30f3ba6f18d8ef9e5d41f91ea1598d",
+      "bytes": 177108,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "disabled-input.json": {
+      "sha256": "4041f868ed0b0f75aabe882315866fac6cc502887be16e862d81677e2c851837",
+      "bytes": 45765
+    },
+    "web-profile.json": {
+      "sha256": "4e196e2cda84c03530828e96b474b42ceed3ec46db92f896ab8e16c706cdca9f",
+      "bytes": 357
+    },
+    "wasm-pointer-edit.jpg": {
+      "sha256": "f4709d9232cf3f9714e962f025a9e168af6ee8dc873158c0afda93b27bb8c4c5",
+      "bytes": 40271,
+      "format": "JPEG",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "desktop-tab-one.jpg": {
+      "sha256": "bb793d1dab7efd21f4ba977dc69bd36a41291378947aa5fb299734f75591f484",
+      "bytes": 170675,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop.log": {
+      "sha256": "2807c7f9ab43eaf4e56c5c011272760cb70e0f7a699adc1b4075eeefefb4dd4b",
+      "bytes": 6820
+    },
+    "desktop-button-tab-activation.jpg": {
+      "sha256": "47bdc7cd1c50175a838d8d4c159371557b72d90581348bdd8804b89d74b9468f",
+      "bytes": 192353,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "narrow-card-long-content.json": {
+      "sha256": "011e35586e01416e4d55ab788c985b70d55bc40b9b112e17eb0d965ef1aeefd2",
+      "bytes": 44815
+    },
+    "desktop-long-input-delete.jpg": {
+      "sha256": "6c46f5b5a56c813082b4d25d579146e5bf589ae81e23ee0f71d854e075344491",
+      "bytes": 253936,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-button-keyboard.jpg": {
+      "sha256": "1a2b2ca0cff13900c810754af937deb0adcafd9f8236cf43f7a545c164ab6962",
+      "bytes": 245793,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    },
+    "desktop-disabled-input.jpg": {
+      "sha256": "ae3d525da339203a7692d62de133e267548e8bfee66905bd58abb2f44a1b2d7e",
+      "bytes": 174566,
+      "format": "JPEG",
+      "size": [
+        2560,
+        1504
+      ]
+    }
+  },
+  "limits": [
+    "No injected visual focus/state or synthetic Dioxus events used for runtime observations",
+    "Button focus node is not exposed by current Blitz launchers; no visible ring means exact focus cannot be read from a screenshot",
+    "Native key x produced U in earlier captures, then x in final capture; cause unisolated",
+    "First 32 WASM capture-time scales are unverified; final sample is 1280x720 viewport, 2560x1440 WebGPU canvas, scale 2",
+    "Baseline accessibility feature remains off; no screen-reader audit or opt-in adapter runtime claim"
+  ]
+}

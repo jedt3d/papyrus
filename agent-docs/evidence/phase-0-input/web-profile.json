@@ -1,0 +1,18 @@
+{
+  "renderer": "Dioxus Web / browser DOM CSS",
+  "os": "macOS 26.7 (25G229)",
+  "architecture": "arm64",
+  "browser": "Chromium 156.0.8078.4",
+  "playwright": "1.64.0",
+  "node": "26.9.0",
+  "viewport": [
+    1280,
+    720
+  ],
+  "scale": 1,
+  "additionalViewport": [
+    390,
+    600
+  ],
+  "input": "Playwright browser keys and mouse; OS IME untested"
+}

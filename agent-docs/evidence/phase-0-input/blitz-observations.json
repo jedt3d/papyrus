@@ -1,0 +1,639 @@
+[
+  {
+    "name": "wasm-button-keyboard",
+    "at": "2026-10-10T22:10:34.931Z",
+    "steps": [
+      "Click TextInput / Long content picker",
+      "Tab",
+      "Return",
+      "space"
+    ],
+    "observed": "Observe count and focus; no component event injection",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-button-keyboard.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-button-keyboard",
+    "at": "2026-10-10T22:10:35.858Z",
+    "steps": [
+      "Click TextInput / Long content picker",
+      "Tab",
+      "Return",
+      "space"
+    ],
+    "observed": "Observe selected fixture and keyboard activation",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-button-keyboard.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-primary-activation",
+    "at": "2026-10-10T22:10:43.673Z",
+    "steps": [
+      "Choose Button / Primary",
+      "Click Press me",
+      "Return",
+      "space"
+    ],
+    "observed": "Count after pointer and keyboard",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "button/primary",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-primary-activation.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-primary-activation",
+    "at": "2026-10-10T22:10:45.050Z",
+    "steps": [
+      "Choose Button / Primary",
+      "Click Press me",
+      "Return",
+      "space"
+    ],
+    "observed": "Count after pointer and keyboard",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "button/primary",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-primary-activation.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-tab-one",
+    "at": "2026-10-10T22:11:00.432Z",
+    "steps": [
+      "Choose TextInput / Default",
+      "Tab",
+      "x"
+    ],
+    "observed": "Input remains Papyrus or receives x",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-tab-one.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-tab-one",
+    "at": "2026-10-10T22:11:01.219Z",
+    "steps": [
+      "Choose TextInput / Default",
+      "Tab",
+      "x"
+    ],
+    "observed": "Input remains Papyrus or receives x",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-tab-one.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-tab-two",
+    "at": "2026-10-10T22:11:05.285Z",
+    "steps": [
+      "Continue from tab-one",
+      "Tab",
+      "x"
+    ],
+    "observed": "Observe input value",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-tab-two.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-tab-two",
+    "at": "2026-10-10T22:11:05.777Z",
+    "steps": [
+      "Continue from tab-one",
+      "Tab",
+      "x"
+    ],
+    "observed": "Observe input value",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-tab-two.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-tab-three",
+    "at": "2026-10-10T22:11:10.119Z",
+    "steps": [
+      "Continue from tab-two",
+      "Tab",
+      "x"
+    ],
+    "observed": "Input after three Tabs from Default picker",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-tab-three.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-tab-three",
+    "at": "2026-10-10T22:11:10.603Z",
+    "steps": [
+      "Continue from tab-two",
+      "Tab",
+      "x"
+    ],
+    "observed": "Input after three Tabs from Default picker",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-tab-three.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-pointer-edit",
+    "at": "2026-10-10T22:11:16.283Z",
+    "steps": [
+      "Click default input",
+      "x"
+    ],
+    "observed": "Pointer-focused editing control",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-pointer-edit.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-pointer-edit",
+    "at": "2026-10-10T22:11:17.069Z",
+    "steps": [
+      "Click default input",
+      "x"
+    ],
+    "observed": "Pointer-focused editing control",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-pointer-edit.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-reverse-focus",
+    "at": "2026-10-10T22:11:46.984Z",
+    "steps": [
+      "From pointer-edited input",
+      "BackSpace",
+      "shift+Tab",
+      "x"
+    ],
+    "observed": "Observe deletion and whether input loses keyboard focus",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-reverse-focus.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-reverse-focus",
+    "at": "2026-10-10T22:11:47.591Z",
+    "steps": [
+      "From pointer-edited input",
+      "BackSpace",
+      "shift+Tab",
+      "x"
+    ],
+    "observed": "Observe actual key mapping and focus",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-reverse-focus.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-focus-return",
+    "at": "2026-10-10T22:11:51.668Z",
+    "steps": [
+      "From reverse-focus",
+      "Tab",
+      "x"
+    ],
+    "observed": "Observe whether Tab restores input focus",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-focus-return.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-focus-return",
+    "at": "2026-10-10T22:11:52.257Z",
+    "steps": [
+      "From reverse-focus",
+      "Tab",
+      "x"
+    ],
+    "observed": "Observe whether Tab restores input focus",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-focus-return.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-button-tab-activation",
+    "at": "2026-10-10T22:12:28.520Z",
+    "steps": [
+      "Card / Default then Button / Primary (reset)",
+      "Click empty background",
+      "9 Tab presses",
+      "Return",
+      "space"
+    ],
+    "observed": "Primary count after keyboard-only activation attempt",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "button/primary",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-button-tab-activation.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-button-tab-activation",
+    "at": "2026-10-10T22:12:30.189Z",
+    "steps": [
+      "Card / Default then Button / Primary (reset)",
+      "Click empty background",
+      "9 Tab presses",
+      "Return",
+      "space"
+    ],
+    "observed": "Primary count after keyboard-only activation attempt",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "button/primary",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-button-tab-activation.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-disabled-button",
+    "at": "2026-10-10T22:12:43.357Z",
+    "steps": [
+      "Choose Button / Disabled",
+      "Click disabled Press me",
+      "Return",
+      "space"
+    ],
+    "observed": "Count remains 0",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "button/disabled",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-disabled-button.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-disabled-button",
+    "at": "2026-10-10T22:12:44.304Z",
+    "steps": [
+      "Choose Button / Disabled",
+      "Click disabled Press me",
+      "Return",
+      "space"
+    ],
+    "observed": "Count remains 0",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "button/disabled",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-disabled-button.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-disabled-input",
+    "at": "2026-10-10T22:12:49.159Z",
+    "steps": [
+      "Choose TextInput / Disabled",
+      "Click input",
+      "x",
+      "BackSpace"
+    ],
+    "observed": "Read only fixture remains unchanged",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/disabled",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-disabled-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-disabled-input",
+    "at": "2026-10-10T22:12:50.079Z",
+    "steps": [
+      "Choose TextInput / Disabled",
+      "Click input",
+      "x",
+      "BackSpace"
+    ],
+    "observed": "Read only fixture remains unchanged",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/disabled",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-disabled-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-long-card",
+    "at": "2026-10-10T22:13:04.296Z",
+    "steps": [
+      "Choose Card / Long content"
+    ],
+    "observed": "Wrapping body ends with The final words must remain visible.",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "card/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-long-card.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-long-card",
+    "at": "2026-10-10T22:13:04.975Z",
+    "steps": [
+      "Choose Card / Long content"
+    ],
+    "observed": "Wrapping body ends with The final words must remain visible.",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "card/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-long-card.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-long-button",
+    "at": "2026-10-10T22:13:12.084Z",
+    "steps": [
+      "Click long Button"
+    ],
+    "observed": "Count 1; all label lines visible",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "button/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-long-button.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-long-button",
+    "at": "2026-10-10T22:13:12.800Z",
+    "steps": [
+      "Click long Button"
+    ],
+    "observed": "Count 1; all label lines visible",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "button/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-long-button.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-long-input",
+    "at": "2026-10-10T22:13:13.980Z",
+    "steps": [
+      "Choose TextInput / Long content",
+      "Click input",
+      "End",
+      "x"
+    ],
+    "observed": "Observe end access and full wrapping feedback",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-long-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-long-input",
+    "at": "2026-10-10T22:13:15.235Z",
+    "steps": [
+      "Choose TextInput / Long content",
+      "Click input",
+      "super+Right",
+      "x"
+    ],
+    "observed": "Observe actual character and end access",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-long-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-long-input-end",
+    "at": "2026-10-10T22:13:21.444Z",
+    "steps": [
+      "From desktop-long-input",
+      "End",
+      "x"
+    ],
+    "observed": "Observe whether End exposes the final words and appended received character",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-long-input-end.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-long-input-delete",
+    "at": "2026-10-10T22:13:22.082Z",
+    "steps": [
+      "From wasm-long-input",
+      "BackSpace",
+      "Left",
+      "BackSpace"
+    ],
+    "observed": "Observe caret movement/deletion near the final words",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-long-input-delete.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-long-input-delete",
+    "at": "2026-10-10T22:13:22.602Z",
+    "steps": [
+      "From desktop-long-input-end",
+      "BackSpace"
+    ],
+    "observed": "Observe deletion and feedback agreement",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/long-content",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-long-input-delete.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "desktop-typed-text",
+    "at": "2026-10-10T22:13:30.966Z",
+    "steps": [
+      "Choose TextInput / Default (reset)",
+      "Click input",
+      "typeText(\"xy\")"
+    ],
+    "observed": "Compare text-entry API with physical key requests",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-typed-text.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Not sampled for this capture; see profile limits"
+  },
+  {
+    "name": "wasm-final-focus-input",
+    "at": "2026-10-10T22:14:39.275Z",
+    "steps": [
+      "Choose TextInput / Default (reset)",
+      "Click input",
+      "x"
+    ],
+    "observed": "Papyrusx and matching feedback; blue UA focus outline",
+    "ax": "Browser tab: 10, Title: \"Papyrus \u2014 Blitz WASM\", URL: \"http://127.0.0.1:8082/\".\n0 AXWebArea Papyrus \u2014 Blitz WASM, URL: 127.0.0.1:8082/\n\t1 image\n\nThe focused UI element is 1 image",
+    "surface": {
+      "canvases": [
+        {
+          "context": "webgpu",
+          "height": 1440,
+          "width": 2560
+        }
+      ],
+      "scale": 2,
+      "storyDOMControls": 0,
+      "viewport": [
+        1280,
+        720
+      ]
+    },
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "a1dd75f65069f6389a2dcad43a8e10dcc30590d3e29335ff1d40b49a4f45caf8",
+    "image": "wasm-final-focus-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Per-capture sample"
+  },
+  {
+    "name": "desktop-final-focus-input",
+    "at": "2026-10-10T22:14:40.755Z",
+    "steps": [
+      "Card / Default then TextInput / Default (reset)",
+      "Click input",
+      "x"
+    ],
+    "observed": "Papyrusu or PapyrusU; actual received character recorded separately",
+    "ax": "Window: \"Papyrus / Blitz Desktop / Phase 0\", App: Papyrus Input.\n0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise\n\t1 close button\n\t2 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window\n\t3 minimize button\n\t4 text Papyrus / Blitz Desktop / Phase 0\n5 menu bar\n\t6 Papyrus Input\n\nThe focused UI element is 0 standard window Papyrus / Blitz Desktop / Phase 0, Secondary Actions: Raise",
+    "surface": {
+      "lastPointerSample": "Papyrus capture: surface=PhysicalSize { width: 2560, height: 1440 }; scale=2; theme=Some(Light)",
+      "note": "Sample from the preceding real pointer event; capture mapping remains platform-specific"
+    },
+    "fixture": "text-input/default",
+    "sourceRevision": "7bdef00f23e1827fdf856de8ea0b90a22f61fcc9",
+    "styleSHA256": "35c7898f209a970cd73076d2dcd13bd6c2d9cb92e999d2d0c14e2c25c32f95db",
+    "profileSHA256": "6330a43c0ec6720e0832fb1d6d53382017d7e4f6717e95f8157773dd22a86586",
+    "image": "desktop-final-focus-input.jpg",
+    "inputKind": "Automated actual input request; rendered result inspected visually",
+    "surfaceSampling": "Per-capture sample"
+  }
+]

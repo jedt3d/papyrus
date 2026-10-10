@@ -16,4 +16,6 @@ Read root `AGENTS.md` first. This directory holds planning and evidence for AI a
 
 - [CSS reload evidence](evidence/phase-0-reload.md): local immutable builds, automatic reload/restart, retained failed drafts and rejection of delayed results.
 
+- [Focus/keyboard/accessibility evidence](evidence/phase-0-input.md): real input checks, Web accessibility trees, Blitz default-action and inspection limits, and Native key variation.
+
 Only `Papyrus.md` and its English translation are explicitly published by the site build. Other agent notes are not automatically published. Keep actual decisions and verified evidence in dated diary entries; mark unresolved work as planned.

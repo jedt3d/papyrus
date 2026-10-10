@@ -1,0 +1,25 @@
+{
+  "renderer": "Blitz WASM / WebGPU",
+  "os": "macOS 26.7 (25G229)",
+  "architecture": "arm64",
+  "browser": "Codex IAB; exact version unavailable",
+  "trunk": "0.21.14",
+  "surfaceSample": {
+    "canvases": [
+      {
+        "context": "webgpu",
+        "height": 1440,
+        "width": 2560
+      }
+    ],
+    "scale": 2,
+    "storyDOMControls": 0,
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "sampling": "Surface measured after the first 32 captures; final focus capture samples its own surface. Earlier capture-time scale is unverified.",
+  "input": "CUA pointer and key API; no component state injection",
+  "accessibilityFeature": false
+}
