@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Papyrus — Blitz WASM</title>
+    <script>
+      // Record the context actually opened; enabling a feature does not select a backend.
+      const nativeGetContext = HTMLCanvasElement.prototype.getContext;
+      HTMLCanvasElement.prototype.getContext = function(type, ...options) {
+        const context = nativeGetContext.call(this, type, ...options);
+        if (context) this.setAttribute("data-graphics-context", type);
+        return context;
+      };
+    </script>
     <link data-trunk rel="rust" data-target-name="papyrus_blitz_wasm">
     <link data-trunk rel="copy-file" href="../public/LICENSE-DejaVu.txt">
     <link data-trunk rel="copy-file" href="../public/LICENSE-NotoSansThai.txt">
