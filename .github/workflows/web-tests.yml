@@ -27,6 +27,8 @@ jobs:
         run: |
           cargo test --locked --no-default-features
           cargo test --locked --no-default-features --features embedded-style --test embedded_assets
+      - name: Check reload failure and stale results
+        run: node --test source/reload/experiment.test.mjs
       - name: Install Dioxus CLI 0.7.10
         working-directory: ${{ runner.temp }}
         run: |

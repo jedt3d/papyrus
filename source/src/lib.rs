@@ -76,7 +76,7 @@ pub fn TextInputStory() -> Element {
 
 #[component]
 pub fn Preview() -> Element {
-    let mut selected = use_signal(|| BUTTON_STORY_ID);
+    let mut selected = use_signal(|| option_env!("PAPYRUS_STORY_ID").unwrap_or(BUTTON_STORY_ID));
     // Native asset URLs call filesystem APIs on WASM; use the data URI provider.
     #[cfg(feature = "embedded-style")]
     let styles = {
@@ -88,6 +88,9 @@ pub fn Preview() -> Element {
 
     rsx! {
         {styles}
+        if let Some(revision) = option_env!("PAPYRUS_PREVIEW_REVISION") {
+            p { id: "preview-revision", style: "font-size: 12px; padding: 8px 24px; margin: 0 auto; max-width: 720px;", "{revision}" }
+        }
         nav { class: "story-picker", "aria-label": "Choose story",
             for (id, label) in [
                 (BUTTON_STORY_ID, "Button / Primary"),
