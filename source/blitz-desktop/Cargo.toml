@@ -1,0 +1,12 @@
+[package]
+name = "papyrus-blitz-desktop"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "MIT"
+
+[dependencies]
+dioxus = { version = "=0.7.10", default-features = false, features = ["lib"] }
+papyrus-stories = { path = "..", default-features = false, features = ["embedded-style"] }
+dioxus-native = { git = "https://github.com/DioxusLabs/blitz", rev = "7832c177ff272128154bac58afe56c2b9164b417", default-features = false, features = ["vello-hybrid", "woff", "complex-scripts", "data-uri"] }
+parley = { version = "=0.12.0", default-features = false, features = ["std"] }
