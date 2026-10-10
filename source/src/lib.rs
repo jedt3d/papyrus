@@ -38,7 +38,8 @@ pub fn Button(
             r#type: "button",
             class: "primary-button",
             disabled: disabled.then_some(true),
-            onclick: move |_| onpress.call(()),
+            // Native can deliver click events before checking disabled default actions.
+            onclick: move |_| { if !disabled { onpress.call(()) } },
             "{label}"
         }
     }
