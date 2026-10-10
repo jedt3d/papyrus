@@ -1,0 +1,11 @@
+{
+  "sourceRevision": "96732a6",
+  "method": "Codex typeText on focused canvas, then native Backspace and a key",
+  "intended": "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย",
+  "observedAfterUnicode": "u",
+  "observedAfterBackspaceAndAscii": "a",
+  "observation": "Visual reading of the rendered input and echo",
+  "composition": "idle; starts 0; updates 0; ends 0",
+  "actualOSComposition": "untested",
+  "errorsFromSuccessfulArtifact": []
+}

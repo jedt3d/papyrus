@@ -1,0 +1,27 @@
+{
+  "browser": "Codex In-app Browser",
+  "browserVersion": null,
+  "composition": "Composition: idle; starts: 0; updates: 0; ends: 0",
+  "echo": "Input value: น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย",
+  "fontFaces": 2,
+  "fontStatus": "loaded",
+  "input": "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไทย",
+  "os": "macOS 26.7 arm64",
+  "renderer": "Dioxus Web / browser DOM CSS",
+  "scaleFactor": 2,
+  "sourceRevision": "a87b2b1",
+  "stylesheets": [
+    "http://127.0.0.1:8080/assets/story-dxh90c8b3e7985c193f.css"
+  ],
+  "thaiFamily": "\"Papyrus Thai\", \"Papyrus Sans\", sans-serif",
+  "thaiFontLoaded": true,
+  "viewport": [
+    715,
+    845
+  ],
+  "wrapping": {
+    "height": 115.1875,
+    "lineHeight": "28.8px",
+    "width": 320
+  }
+}

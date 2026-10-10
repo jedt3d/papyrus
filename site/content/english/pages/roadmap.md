@@ -13,7 +13,7 @@ The developer diary is published and the [first Button story works on Dioxus Web
 
 Run shared Button, Card, and TextInput stories on Dioxus Web, Blitz WASM, and Blitz Desktop. Pin tool and renderer versions. Establish reload/restart, image capture, layout measurement, real input, focus, Thai text, and IME limitations.
 
-The Web Button baseline is verified. [Blitz WASM (#2)](https://github.com/jedt3d/papyrus/issues/2) is the next priority; [Desktop (#3)](https://github.com/jedt3d/papyrus/issues/3) is a separate experiment.
+The Web and Blitz WASM Button baselines are verified. [Thai/input checks and automatic Web tests]({{< relref "diary/004-thai-input-and-blitz-wasm.md" >}}) record their limits. [Desktop (#3)](https://github.com/jedt3d/papyrus/issues/3) is next; genuine composition and WebGL-only behavior remain unverified.
 
 **Gate:** traceable results for every target, including failures and unknowns. See the [agent experiment brief](https://github.com/jedt3d/papyrus/blob/main/agent-docs/phase-0.md).
 

@@ -2,6 +2,8 @@
 
 Checked on 11 October 2026. Status: verified for the Web baseline only. [Issue #1](https://github.com/jedt3d/papyrus/issues/1) asks for a working Button story and enough evidence to start the Blitz experiments.
 
+Follow-up: the [Thai experiment](phase-0-thai-web.md) found that an explicit `application.public_dir` is needed with this small CLI config. Existing copied files hid that issue in this captured run. The current run guide and config include the fix; use them for a fresh build.
+
 ## What ran
 
 Source revision: [`78d6005c851f5b6114c3fb1b06621b12ef3b570c`](https://github.com/jedt3d/papyrus/commit/78d6005c851f5b6114c3fb1b06621b12ef3b570c). The `button/primary` story uses one Rust Button component, the label `Press me`, and a local count starting at zero. The Web executable only launches that shared story.

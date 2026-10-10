@@ -18,10 +18,10 @@ Keep `AGENTS.md` and `README.md` at the repository root. Use these canonical upp
 
 ## Current status and priority
 
-The repository has a publishing site and a verified Dioxus Web Button experiment. The full Papyrus application and harness are still planned.
+The repository has a publishing site and verified Dioxus Web and Blitz WASM Button experiments, plus headless Web tests. The full Papyrus application and harness are still planned.
 
 1. Maintain the reproducible Hugo build and GitHub Pages deployment.
-2. Continue Phase 0 from the Web baseline in `agent-docs/evidence/phase-0-web.md`, with Blitz WASM (#2) and Desktop (#3) next. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
+2. Continue Phase 0 with Desktop (#3). Read the Web Thai and Blitz WASM records under `agent-docs/evidence/`; genuine IME composition remains unverified in #8. Read `agent-docs/phase-0.md`; pin versions before compatibility claims.
 3. Build the compatibility checker and harness from evidence gathered in Phase 0.
 4. Add Studio, local backend, revision-aware reload, and static gallery export.
 5. Add Web CSS import/adaptation and then team/CI workflows.
@@ -57,6 +57,10 @@ Before triage or ticket creation, read `agent-docs/skills/triage-labels.md` for 
 ### Domain docs
 
 Papyrus has one domain context. Read `agent-docs/skills/domain.md` before domain work. Keep configuration, glossary, and decision records under `agent-docs/`; use `agent-docs/skills/`, `agent-docs/GLOSSARY.md`, and `agent-docs/adr/` in place of the upstream examples' `docs/agents/`, root glossary, and `docs/adr/`. The project's three areas and Plain English rules apply to documents produced by these skills.
+
+## Browser checks
+
+When changing shared stories, Web assets or browser test code, read `source/browser-tests/README.md` and run its headless checks. `.github/workflows/web-tests.yml` runs Web behavior and asset checks on pushes and PRs. Its DOM assertions do not inspect the Blitz canvas or prove OS composition.
 
 ## Publishing workflow
 

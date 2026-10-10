@@ -1,0 +1,16 @@
+{
+  "automation": "Codex browser API using check-web.mjs; Unicode fill is not OS IME",
+  "composition": "Composition: idle; starts: 0; updates: 0; ends: 0",
+  "echo": "Input value: น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไท",
+  "fontStatus": "loaded",
+  "input": "น้ำ กุ้ง ปี่ กี้ เก้า ภาษาไท",
+  "lineHeight": "28.8px",
+  "scaleFactor": 1,
+  "thaiFontLoaded": true,
+  "viewport": [
+    715,
+    1064
+  ],
+  "wrapHeight": 115.1875,
+  "wrapWidth": 320
+}

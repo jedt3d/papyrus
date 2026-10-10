@@ -1,0 +1,34 @@
+{
+  "browser": "Codex In-app Browser",
+  "browserButtonElements": 0,
+  "browserInputElements": 0,
+  "browserVersion": null,
+  "canvas": {
+    "height": 720,
+    "width": 1280
+  },
+  "graphicsContext": "webgpu",
+  "os": "macOS 26.7 arm64",
+  "renderer": "Blitz WASM / anyrender_vello_hybrid 0.11.0",
+  "scaleFactor": 1,
+  "sourceRevision": "96732a6",
+  "viewport": [
+    1280,
+    720
+  ],
+  "actions": [
+    {
+      "action": "reload",
+      "observedCount": 0
+    },
+    {
+      "action": "canvas click at 398,280",
+      "observedCount": 1
+    },
+    {
+      "action": "canvas click at 398,280",
+      "observedCount": 2
+    }
+  ],
+  "countObservation": "Visual reading of real rendered canvas, not DOM text or assigned state"
+}

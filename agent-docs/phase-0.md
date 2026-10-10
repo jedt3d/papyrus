@@ -1,6 +1,6 @@
 # Phase 0 technical validation
 
-Status: in progress. The first Button story is [verified on Dioxus Web](evidence/phase-0-web.md). Blitz WASM, Blitz Desktop, and cross-renderer compatibility remain unverified.
+Status: in progress. The first Button story is [verified on Dioxus Web](evidence/phase-0-web.md). The shared Button is also [verified on Blitz WASM](evidence/phase-0-blitz-wasm.md). Desktop and full cross-renderer compatibility remain unverified.
 
 ## GitHub tickets and work order
 
@@ -18,7 +18,9 @@ The owner requested ticket creation on 11 October 2026. The experiments are trac
 | 8 | 1 | [#8: Thai text, fonts, and IME](https://github.com/jedt3d/papyrus/issues/8) | #4 |
 | 9 | 1 | [#9: Findings and architecture recommendation](https://github.com/jedt3d/papyrus/issues/9) | #5, #6, #7, #8 |
 
-The Web baseline in #1 is implemented and checked. Once #1 is closed, #2 and #3 are independent; favor WASM first because online preview is the first priority. After #4 closes, #5–#8 can proceed independently. Work the unblocked tickets, not every ticket with a readiness label. All nine are required; priority 1 means later, not optional. Native GitHub links are the source of truth if the plan changes.
+The Web baseline (#1) and Blitz WASM Button (#2) are implemented and checked. Desktop (#3) is the next renderer experiment. After #4 closes, #5–#8 can proceed independently. Work the unblocked tickets, not every ticket with a readiness label. All nine are required; priority 1 means later, not optional. Native GitHub links are the source of truth if the plan changes.
+
+The owner moved the Web part of #8 ahead of Blitz on 11 October 2026. [Thai rendering/input evidence](evidence/phase-0-thai-web.md) records that early check and its composition limits. #8 still retains its all-target dependency and remains open. The owner also requested headless Playwright and GitHub Actions; [Web test commands](../source/browser-tests/README.md) cover that added scope.
 
 ## Objective
 
