@@ -72,3 +72,5 @@ Hugoplate is vendored from [zeon-studio/hugoplate](https://github.com/zeon-studi
 ## License
 
 Project license: [MIT](LICENSE). Vendored dependencies retain their own license notices.
+
+Thai publishing text uses looped Boon webfonts under SIL OFL 1.1. See [font provenance and hashes](site/static/fonts/boon/UPSTREAM.md) and the included [font license](site/static/fonts/boon/OFL.txt).

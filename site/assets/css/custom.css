@@ -1,4 +1,36 @@
 /* Publishing UI; this stylesheet is not a Blitz compatibility fixture. */
+@font-face {
+  font-family: "Boon";
+  src: url("../fonts/boon/Boon-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F;
+}
+@font-face {
+  font-family: "Boon";
+  src: url("../fonts/boon/Boon-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F;
+}
+@font-face {
+  font-family: "Boon";
+  src: url("../fonts/boon/Boon-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F;
+}
+@font-face {
+  font-family: "Boon";
+  src: url("../fonts/boon/Boon-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0E00-0E7F;
+}
 .diary-shell { max-width: 1120px; margin-inline: auto; padding: 3rem 1.5rem 5rem; }
 .diary-kicker { color: var(--color-primary); font: 500 .8rem/1.5 var(--font-primary); letter-spacing: .13em; text-transform: uppercase; }
 .diary-intro { display: grid; grid-template-columns: 1.8fr 1fr; gap: 4rem; padding-block: 1rem 3.5rem; border-bottom: 1px solid var(--color-border); }
@@ -35,3 +67,5 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .dark .skip-link { background: var(--color-darkmode-body); }
 .dark a:focus-visible, .dark button:focus-visible, .dark summary:focus-visible { outline-color: var(--color-darkmode-primary); }
 @media (max-width: 720px) { .diary-intro { grid-template-columns: 1fr; gap: 2rem; } .diary-aside { border-left: 0; border-top: 1px solid var(--color-border); padding: 1.5rem 0 0; } .diary-entry { grid-template-columns: 1fr; gap: .6rem; } .diary-section-title { align-items: start; } }
+body:lang(th), [lang|="th"] { font-family: "Boon", var(--font-primary); }
+:lang(th):is(h1, h2, h3, h4, h5, h6, blockquote) { font-family: "Boon", var(--font-secondary); }
